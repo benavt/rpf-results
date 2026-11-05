@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'">
+<title>SR215 · RPF results</title>
+<link rel="stylesheet" href="./styles.css">
+<script src="./vendor/3Dmol-min.js" defer></script>
+<script src="./structure.js" defer></script>
+<script src="./app.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to results</a>
+<div class="app-shell">
+  <aside class="sidebar" aria-label="Collections and results">
+    <header class="brand-row"><a class="brand" href="#">RPF</a><span>SR215</span></header>
+    <div class="library-tools">
+      <input id="run-search" type="search" placeholder="Find collections or results" aria-label="Find collections or results">
+      <div class="filters"><select id="sampling-filter" aria-label="Sampling method"><option value="">All sampling</option></select><select id="variant-filter" aria-label="Input set"><option value="">All input sets</option></select></div>
+    </div>
+    <div id="run-count" class="section-caption"></div>
+    <nav id="run-list" aria-label="Model collections"><p class="empty-state">Loading results…</p></nav>
+    <footer class="sidebar-footer">Published results</footer>
+  </aside>
+  <main id="content" tabindex="-1"><p class="empty-state">Loading results…</p></main>
+</div>
+<div id="notice" role="status" aria-live="polite" hidden></div>
+</body>
+</html>

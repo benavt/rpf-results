@@ -1,0 +1,4750 @@
+{
+  "diagnostic_totals": {
+    "assigned_proton_residues": 136,
+    "by_spectrum": {
+      "cnoe.peaks": 1794,
+      "nnoe.peaks": 258
+    },
+    "mapped_residues": 139,
+    "reported_groups": 2052
+  },
+  "ensemble_sha256": "f4d7de3e5504bec791e253d788b1bc651640b8c322a35733dfd856db1a6798af",
+  "layers": [
+    {
+      "color_stops": [
+        {
+          "color": "#0000ff",
+          "value": 0
+        },
+        {
+          "color": "#0000ff",
+          "value": 35
+        },
+        {
+          "color": "#00ffff",
+          "value": 78
+        },
+        {
+          "color": "#00ff00",
+          "value": 121
+        },
+        {
+          "color": "#ffff00",
+          "value": 165
+        },
+        {
+          "color": "#ff8000",
+          "value": 268
+        },
+        {
+          "color": "#ff0000",
+          "value": 370
+        }
+      ],
+      "colors": [
+        "#0000ff",
+        "#0000ff",
+        "#00ffff",
+        "#00ff00",
+        "#ffff00",
+        "#ff8000",
+        "#ff0000"
+      ],
+      "definition": "Original ASDP web/Jmol precision heat projection: symmetric unsupported inter-residue interaction pairs, excluding atom H, weighted by 15000 × distance^-6 / 2 per direction after native ambiguity and spectrum-key collapsing.",
+      "direction": "higher_worse",
+      "domain": [
+        0,
+        370
+      ],
+      "id": "legacy_rpf_heat",
+      "label": "Legacy RPF heat index",
+      "missing_color": "#aeb4be",
+      "native_model_context": "Model ave",
+      "scale": "native_rpf_heat",
+      "scope": "ensemble",
+      "scope_label": "Ensemble diagnostic · shared by all conformers",
+      "shared_across_models": true,
+      "source_file": "sr215_DP.QP",
+      "source_files_sha256": {
+        "Web/Rasmol.pm": "7f79a331ef26a62148d7bb772028955d8443430e843c1fe0237e2aba104bd6e9",
+        "Web/Results.pm": "227780941768999b330c5958ab8399cc4c9329de38bfba5372344775306165c1"
+      },
+      "unit": "heat index",
+      "values": [
+        {
+          "assigned_proton_sites": 5,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 1,
+          "residue": "M",
+          "value": 6.959451218972044
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 2,
+          "residue": "L",
+          "value": 8.16336710450748
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 3,
+          "residue": "L",
+          "value": 7.632729677479914
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 4,
+          "residue": "I",
+          "value": 31.60242462019682
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 5,
+          "residue": "T",
+          "value": 11.217963508230214
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 6,
+          "residue": "P",
+          "value": 8.369670517386837
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 7,
+          "residue": "D",
+          "value": 2.5353298627466154
+        },
+        {
+          "assigned_proton_sites": 6,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 8,
+          "residue": "E",
+          "value": 8.05203604443725
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 9,
+          "residue": "L",
+          "value": 25.58060905066535
+        },
+        {
+          "assigned_proton_sites": 10,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 10,
+          "residue": "K",
+          "value": 18.600246594490173
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 11,
+          "residue": "S",
+          "value": 0.0
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 12,
+          "residue": "Y",
+          "value": 18.246167970003377
+        },
+        {
+          "assigned_proton_sites": 5,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 13,
+          "residue": "S",
+          "value": 32.798172612396
+        },
+        {
+          "assigned_proton_sites": 5,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 14,
+          "residue": "V",
+          "value": 6.648129157231238
+        },
+        {
+          "assigned_proton_sites": 9,
+          "chain": "A",
+          "color": "#0068ff",
+          "icode": "",
+          "resi": 15,
+          "residue": "F",
+          "value": 52.45546865718842
+        },
+        {
+          "assigned_proton_sites": 6,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 16,
+          "residue": "E",
+          "value": 13.842824821862806
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 17,
+          "residue": "S",
+          "value": 9.729407701810795
+        },
+        {
+          "assigned_proton_sites": 5,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 18,
+          "residue": "V",
+          "value": 21.16468605497493
+        },
+        {
+          "assigned_proton_sites": 10,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 19,
+          "residue": "K",
+          "value": 17.24134432634241
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 20,
+          "residue": "T",
+          "value": 5.231566791222893
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 21,
+          "residue": "R",
+          "value": 22.85877348897599
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 22,
+          "residue": "P",
+          "value": 8.223544521678145
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 23,
+          "residue": "D",
+          "value": 9.942747919553053
+        },
+        {
+          "assigned_proton_sites": 6,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 24,
+          "residue": "E",
+          "value": 7.185135824206857
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 25,
+          "residue": "L",
+          "value": 7.581266004736416
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "color": "#0030ff",
+          "icode": "",
+          "resi": 26,
+          "residue": "L",
+          "value": 43.064112741233444
+        },
+        {
+          "assigned_proton_sites": 10,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 27,
+          "residue": "K",
+          "value": 10.168781698089354
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 28,
+          "residue": "Q",
+          "value": 6.960229868822787
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 29,
+          "residue": "D",
+          "value": 15.114821028263226
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 30,
+          "residue": "I",
+          "value": 29.499276046847726
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 31,
+          "residue": "L",
+          "value": 0.0
+        },
+        {
+          "assigned_proton_sites": 6,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 32,
+          "residue": "E",
+          "value": 2.9139884000727747
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 33,
+          "residue": "A",
+          "value": 16.91231667686113
+        },
+        {
+          "assigned_proton_sites": 5,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 34,
+          "residue": "T",
+          "value": 29.84162213001347
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 35,
+          "residue": "A",
+          "value": 2.6748891262588366
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 36,
+          "residue": "D",
+          "value": 6.907913526244396
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "color": "#008eff",
+          "icode": "",
+          "resi": 37,
+          "residue": "I",
+          "value": 58.95474477797136
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "color": "#00bcff",
+          "icode": "",
+          "resi": 38,
+          "residue": "I",
+          "value": 66.65582678866663
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 39,
+          "residue": "L",
+          "value": 3.131848668880351
+        },
+        {
+          "assigned_proton_sites": 10,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 40,
+          "residue": "K",
+          "value": 14.719943904446644
+        },
+        {
+          "assigned_proton_sites": 5,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 41,
+          "residue": "V",
+          "value": 27.945084246638885
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 42,
+          "residue": "G",
+          "value": 7.832642805009707
+        },
+        {
+          "assigned_proton_sites": 6,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 43,
+          "residue": "H",
+          "value": 17.992135658767843
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 44,
+          "residue": "D",
+          "value": 8.356073322419604
+        },
+        {
+          "assigned_proton_sites": 9,
+          "chain": "A",
+          "color": "#4eff00",
+          "icode": "",
+          "resi": 45,
+          "residue": "F",
+          "value": 134.45688219800545
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 46,
+          "residue": "S",
+          "value": 6.944733313626406
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 47,
+          "residue": "D",
+          "value": 3.917681877042085
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 48,
+          "residue": "A",
+          "value": 4.16057422235187
+        },
+        {
+          "assigned_proton_sites": 6,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 49,
+          "residue": "E",
+          "value": 3.4991990451776083
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 50,
+          "residue": "Y",
+          "value": 6.968828401508708
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 51,
+          "residue": "I",
+          "value": 0.9774629013768711
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 52,
+          "residue": "P",
+          "value": 3.9095094694151937
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 53,
+          "residue": "L",
+          "value": 18.090660869093742
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "color": "#00f0ff",
+          "icode": "",
+          "resi": 54,
+          "residue": "P",
+          "value": 75.42836450715431
+        },
+        {
+          "assigned_proton_sites": 6,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 55,
+          "residue": "E",
+          "value": 1.6145638299018283
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 56,
+          "residue": "T",
+          "value": 25.154469283453054
+        },
+        {
+          "assigned_proton_sites": 5,
+          "chain": "A",
+          "color": "#00ff9d",
+          "icode": "",
+          "resi": 57,
+          "residue": "V",
+          "value": 94.54069544233644
+        },
+        {
+          "assigned_proton_sites": 9,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 58,
+          "residue": "R",
+          "value": 13.179633191001118
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 59,
+          "residue": "L",
+          "value": 4.2455812328411575
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 60,
+          "residue": "A",
+          "value": 20.108396390688856
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 61,
+          "residue": "L",
+          "value": 11.742442298640238
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 62,
+          "residue": "L",
+          "value": 33.901229901361276
+        },
+        {
+          "assigned_proton_sites": 10,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 63,
+          "residue": "K",
+          "value": 13.247257824201123
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 64,
+          "residue": "L",
+          "value": 22.92212438684673
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 65,
+          "residue": "S",
+          "value": 16.11458972898407
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "color": "#0026ff",
+          "icode": "",
+          "resi": 66,
+          "residue": "Q",
+          "value": 41.40999117482775
+        },
+        {
+          "assigned_proton_sites": 9,
+          "chain": "A",
+          "color": "#d3ff00",
+          "icode": "",
+          "resi": 67,
+          "residue": "F",
+          "value": 157.38851636447168
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "color": "#0020ff",
+          "icode": "",
+          "resi": 68,
+          "residue": "Y",
+          "value": 40.41744022727095
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 69,
+          "residue": "A",
+          "value": 13.50037437307015
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 70,
+          "residue": "L",
+          "value": 30.350757422779772
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 71,
+          "residue": "I",
+          "value": 23.505493065343238
+        },
+        {
+          "assigned_proton_sites": 6,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 72,
+          "residue": "N",
+          "value": 23.40410118311342
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 73,
+          "residue": "G",
+          "value": 19.127369794488807
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 74,
+          "residue": "D",
+          "value": 6.108133580614645
+        },
+        {
+          "assigned_proton_sites": 6,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 75,
+          "residue": "E",
+          "value": 1.8429628239910196
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 76,
+          "residue": "S",
+          "value": 1.0321185070561256
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 77,
+          "residue": "I",
+          "value": 2.563451420245667
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 78,
+          "residue": "I",
+          "value": 4.130541037396037
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 79,
+          "residue": "K",
+          "value": 7.513331076938069
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 80,
+          "residue": "G",
+          "value": 8.71847418916169
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 81,
+          "residue": "Y",
+          "value": 9.57360659337813
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 82,
+          "residue": "T",
+          "value": 7.351356757889066
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 83,
+          "residue": "T",
+          "value": 3.6039841301138975
+        },
+        {
+          "assigned_proton_sites": 6,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 84,
+          "residue": "E",
+          "value": 4.235625690610088
+        },
+        {
+          "assigned_proton_sites": 10,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 85,
+          "residue": "K",
+          "value": 12.41568896536425
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 86,
+          "residue": "I",
+          "value": 9.702731597793592
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 87,
+          "residue": "G",
+          "value": 3.5541433519396652
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 88,
+          "residue": "D",
+          "value": 4.9021138336510175
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 89,
+          "residue": "Y",
+          "value": 5.664113882796146
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 90,
+          "residue": "S",
+          "value": 11.886518149188706
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 91,
+          "residue": "Y",
+          "value": 10.335708195847088
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 92,
+          "residue": "T",
+          "value": 14.923712038544991
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 93,
+          "residue": "L",
+          "value": 11.500142865987998
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 94,
+          "residue": "G",
+          "value": 8.880424779380563
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 95,
+          "residue": "D",
+          "value": 11.721750684208406
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 96,
+          "residue": "G",
+          "value": 6.5543046781295775
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 97,
+          "residue": "S",
+          "value": 4.340999292321004
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 98,
+          "residue": "S",
+          "value": 8.992145443023194
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 99,
+          "residue": "L",
+          "value": 21.474695613859218
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 100,
+          "residue": "Q",
+          "value": 13.559056402842618
+        },
+        {
+          "assigned_proton_sites": 10,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 101,
+          "residue": "K",
+          "value": 31.205175263073105
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "color": "#00edff",
+          "icode": "",
+          "resi": 102,
+          "residue": "P",
+          "value": 74.99543325901003
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 103,
+          "residue": "D",
+          "value": 14.761140997472072
+        },
+        {
+          "assigned_proton_sites": 5,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 104,
+          "residue": "V",
+          "value": 35.004775396537205
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 105,
+          "residue": "Y",
+          "value": 12.860081710434944
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 106,
+          "residue": "A",
+          "value": 11.454841536678249
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 107,
+          "residue": "L",
+          "value": 23.140707776429558
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "color": "#00fffe",
+          "icode": "",
+          "resi": 108,
+          "residue": "I",
+          "value": 78.15760135493983
+        },
+        {
+          "assigned_proton_sites": 10,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 109,
+          "residue": "K",
+          "value": 6.442254593306596
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 110,
+          "residue": "D",
+          "value": 7.967409835146139
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "color": "#006eff",
+          "icode": "",
+          "resi": 111,
+          "residue": "Y",
+          "value": 53.555002786493034
+        },
+        {
+          "assigned_proton_sites": 5,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 112,
+          "residue": "V",
+          "value": 13.836065567371312
+        },
+        {
+          "assigned_proton_sites": 10,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 113,
+          "residue": "K",
+          "value": 6.095197824288131
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 114,
+          "residue": "P",
+          "value": 4.562626001272686
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 115,
+          "residue": "A",
+          "value": 2.5454096060792204
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 116,
+          "residue": "D",
+          "value": 8.390137304738662
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 117,
+          "residue": "P",
+          "value": 9.044904459470047
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 118,
+          "residue": "D",
+          "value": 5.601481231002593
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 119,
+          "residue": "L",
+          "value": 2.4013044701919872
+        },
+        {
+          "assigned_proton_sites": 6,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 120,
+          "residue": "E",
+          "value": 2.637126599761402
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 121,
+          "residue": "G",
+          "value": 8.29735061657397
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 122,
+          "residue": "I",
+          "value": 6.717773366329203
+        },
+        {
+          "assigned_proton_sites": 6,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 123,
+          "residue": "E",
+          "value": 1.0575493495166355
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 124,
+          "residue": "A",
+          "value": 0.0
+        },
+        {
+          "assigned_proton_sites": 10,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 125,
+          "residue": "K",
+          "value": 0.0
+        },
+        {
+          "assigned_proton_sites": 5,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 126,
+          "residue": "V",
+          "value": 1.5627363231894291
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 127,
+          "residue": "R",
+          "value": 1.418514200213941
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 128,
+          "residue": "M",
+          "value": 2.98125052340337
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 129,
+          "residue": "R",
+          "value": 2.832385615613685
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 130,
+          "residue": "S",
+          "value": 2.832385615613685
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 131,
+          "residue": "I",
+          "value": 0.0
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 132,
+          "residue": "L",
+          "value": 1.7825101347721484
+        },
+        {
+          "assigned_proton_sites": 6,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 133,
+          "residue": "E",
+          "value": 14.567749492238057
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 134,
+          "residue": "H",
+          "value": 12.785239357465908
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 135,
+          "residue": "H",
+          "value": 0.0
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "color": "#0000ff",
+          "icode": "",
+          "resi": 136,
+          "residue": "H",
+          "value": 0.0
+        },
+        {
+          "assigned_proton_sites": 0,
+          "chain": "A",
+          "color": "#aeb4be",
+          "icode": "",
+          "resi": 137,
+          "residue": "H",
+          "value": null
+        },
+        {
+          "assigned_proton_sites": 0,
+          "chain": "A",
+          "color": "#aeb4be",
+          "icode": "",
+          "resi": 138,
+          "residue": "H",
+          "value": null
+        },
+        {
+          "assigned_proton_sites": 0,
+          "chain": "A",
+          "color": "#aeb4be",
+          "icode": "",
+          "resi": 139,
+          "residue": "H",
+          "value": null
+        }
+      ]
+    },
+    {
+      "colors": [
+        "#2166ac",
+        "#f7f7f7",
+        "#b2182b"
+      ],
+      "definition": "Number of native directed unsupported-interaction groups involving the residue; count each group once per residue, regardless of alternative atom-pair count.",
+      "direction": "higher_worse",
+      "domain": [
+        0,
+        123
+      ],
+      "id": "precision_violation_groups",
+      "label": "Precision violation groups",
+      "missing_color": "#aeb4be",
+      "native_model_context": "Model ave",
+      "scope": "ensemble",
+      "scope_label": "Ensemble diagnostic · shared by all conformers",
+      "shared_across_models": true,
+      "source_file": "sr215_DP.QP",
+      "unit": "groups",
+      "values": [
+        {
+          "assigned_proton_sites": 5,
+          "chain": "A",
+          "icode": "",
+          "resi": 1,
+          "residue": "M",
+          "value": 12
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 2,
+          "residue": "L",
+          "value": 23
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 3,
+          "residue": "L",
+          "value": 25
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 4,
+          "residue": "I",
+          "value": 73
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 5,
+          "residue": "T",
+          "value": 36
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 6,
+          "residue": "P",
+          "value": 38
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 7,
+          "residue": "D",
+          "value": 25
+        },
+        {
+          "assigned_proton_sites": 6,
+          "chain": "A",
+          "icode": "",
+          "resi": 8,
+          "residue": "E",
+          "value": 25
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 9,
+          "residue": "L",
+          "value": 72
+        },
+        {
+          "assigned_proton_sites": 10,
+          "chain": "A",
+          "icode": "",
+          "resi": 10,
+          "residue": "K",
+          "value": 61
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 11,
+          "residue": "S",
+          "value": 14
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "icode": "",
+          "resi": 12,
+          "residue": "Y",
+          "value": 32
+        },
+        {
+          "assigned_proton_sites": 5,
+          "chain": "A",
+          "icode": "",
+          "resi": 13,
+          "residue": "S",
+          "value": 54
+        },
+        {
+          "assigned_proton_sites": 5,
+          "chain": "A",
+          "icode": "",
+          "resi": 14,
+          "residue": "V",
+          "value": 25
+        },
+        {
+          "assigned_proton_sites": 9,
+          "chain": "A",
+          "icode": "",
+          "resi": 15,
+          "residue": "F",
+          "value": 67
+        },
+        {
+          "assigned_proton_sites": 6,
+          "chain": "A",
+          "icode": "",
+          "resi": 16,
+          "residue": "E",
+          "value": 41
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 17,
+          "residue": "S",
+          "value": 21
+        },
+        {
+          "assigned_proton_sites": 5,
+          "chain": "A",
+          "icode": "",
+          "resi": 18,
+          "residue": "V",
+          "value": 45
+        },
+        {
+          "assigned_proton_sites": 10,
+          "chain": "A",
+          "icode": "",
+          "resi": 19,
+          "residue": "K",
+          "value": 61
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 20,
+          "residue": "T",
+          "value": 11
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "icode": "",
+          "resi": 21,
+          "residue": "R",
+          "value": 44
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 22,
+          "residue": "P",
+          "value": 18
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 23,
+          "residue": "D",
+          "value": 24
+        },
+        {
+          "assigned_proton_sites": 6,
+          "chain": "A",
+          "icode": "",
+          "resi": 24,
+          "residue": "E",
+          "value": 16
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 25,
+          "residue": "L",
+          "value": 30
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 26,
+          "residue": "L",
+          "value": 74
+        },
+        {
+          "assigned_proton_sites": 10,
+          "chain": "A",
+          "icode": "",
+          "resi": 27,
+          "residue": "K",
+          "value": 37
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "icode": "",
+          "resi": 28,
+          "residue": "Q",
+          "value": 18
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 29,
+          "residue": "D",
+          "value": 35
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 30,
+          "residue": "I",
+          "value": 77
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 31,
+          "residue": "L",
+          "value": 23
+        },
+        {
+          "assigned_proton_sites": 6,
+          "chain": "A",
+          "icode": "",
+          "resi": 32,
+          "residue": "E",
+          "value": 19
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "icode": "",
+          "resi": 33,
+          "residue": "A",
+          "value": 41
+        },
+        {
+          "assigned_proton_sites": 5,
+          "chain": "A",
+          "icode": "",
+          "resi": 34,
+          "residue": "T",
+          "value": 50
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "icode": "",
+          "resi": 35,
+          "residue": "A",
+          "value": 14
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 36,
+          "residue": "D",
+          "value": 25
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 37,
+          "residue": "I",
+          "value": 78
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 38,
+          "residue": "I",
+          "value": 66
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 39,
+          "residue": "L",
+          "value": 21
+        },
+        {
+          "assigned_proton_sites": 10,
+          "chain": "A",
+          "icode": "",
+          "resi": 40,
+          "residue": "K",
+          "value": 39
+        },
+        {
+          "assigned_proton_sites": 5,
+          "chain": "A",
+          "icode": "",
+          "resi": 41,
+          "residue": "V",
+          "value": 38
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "icode": "",
+          "resi": 42,
+          "residue": "G",
+          "value": 18
+        },
+        {
+          "assigned_proton_sites": 6,
+          "chain": "A",
+          "icode": "",
+          "resi": 43,
+          "residue": "H",
+          "value": 23
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 44,
+          "residue": "D",
+          "value": 20
+        },
+        {
+          "assigned_proton_sites": 9,
+          "chain": "A",
+          "icode": "",
+          "resi": 45,
+          "residue": "F",
+          "value": 114
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 46,
+          "residue": "S",
+          "value": 19
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 47,
+          "residue": "D",
+          "value": 11
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "icode": "",
+          "resi": 48,
+          "residue": "A",
+          "value": 9
+        },
+        {
+          "assigned_proton_sites": 6,
+          "chain": "A",
+          "icode": "",
+          "resi": 49,
+          "residue": "E",
+          "value": 11
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "icode": "",
+          "resi": 50,
+          "residue": "Y",
+          "value": 25
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 51,
+          "residue": "I",
+          "value": 15
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 52,
+          "residue": "P",
+          "value": 13
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 53,
+          "residue": "L",
+          "value": 43
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 54,
+          "residue": "P",
+          "value": 39
+        },
+        {
+          "assigned_proton_sites": 6,
+          "chain": "A",
+          "icode": "",
+          "resi": 55,
+          "residue": "E",
+          "value": 20
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 56,
+          "residue": "T",
+          "value": 38
+        },
+        {
+          "assigned_proton_sites": 5,
+          "chain": "A",
+          "icode": "",
+          "resi": 57,
+          "residue": "V",
+          "value": 68
+        },
+        {
+          "assigned_proton_sites": 9,
+          "chain": "A",
+          "icode": "",
+          "resi": 58,
+          "residue": "R",
+          "value": 51
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 59,
+          "residue": "L",
+          "value": 16
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "icode": "",
+          "resi": 60,
+          "residue": "A",
+          "value": 35
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 61,
+          "residue": "L",
+          "value": 41
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 62,
+          "residue": "L",
+          "value": 48
+        },
+        {
+          "assigned_proton_sites": 10,
+          "chain": "A",
+          "icode": "",
+          "resi": 63,
+          "residue": "K",
+          "value": 35
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 64,
+          "residue": "L",
+          "value": 45
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 65,
+          "residue": "S",
+          "value": 40
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "icode": "",
+          "resi": 66,
+          "residue": "Q",
+          "value": 68
+        },
+        {
+          "assigned_proton_sites": 9,
+          "chain": "A",
+          "icode": "",
+          "resi": 67,
+          "residue": "F",
+          "value": 123
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "icode": "",
+          "resi": 68,
+          "residue": "Y",
+          "value": 65
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "icode": "",
+          "resi": 69,
+          "residue": "A",
+          "value": 35
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 70,
+          "residue": "L",
+          "value": 40
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 71,
+          "residue": "I",
+          "value": 53
+        },
+        {
+          "assigned_proton_sites": 6,
+          "chain": "A",
+          "icode": "",
+          "resi": 72,
+          "residue": "N",
+          "value": 37
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "icode": "",
+          "resi": 73,
+          "residue": "G",
+          "value": 27
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 74,
+          "residue": "D",
+          "value": 20
+        },
+        {
+          "assigned_proton_sites": 6,
+          "chain": "A",
+          "icode": "",
+          "resi": 75,
+          "residue": "E",
+          "value": 15
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 76,
+          "residue": "S",
+          "value": 15
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 77,
+          "residue": "I",
+          "value": 20
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 78,
+          "residue": "I",
+          "value": 13
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 79,
+          "residue": "K",
+          "value": 12
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "icode": "",
+          "resi": 80,
+          "residue": "G",
+          "value": 17
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "icode": "",
+          "resi": 81,
+          "residue": "Y",
+          "value": 23
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 82,
+          "residue": "T",
+          "value": 15
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 83,
+          "residue": "T",
+          "value": 10
+        },
+        {
+          "assigned_proton_sites": 6,
+          "chain": "A",
+          "icode": "",
+          "resi": 84,
+          "residue": "E",
+          "value": 12
+        },
+        {
+          "assigned_proton_sites": 10,
+          "chain": "A",
+          "icode": "",
+          "resi": 85,
+          "residue": "K",
+          "value": 23
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 86,
+          "residue": "I",
+          "value": 18
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "icode": "",
+          "resi": 87,
+          "residue": "G",
+          "value": 8
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 88,
+          "residue": "D",
+          "value": 10
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "icode": "",
+          "resi": 89,
+          "residue": "Y",
+          "value": 15
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 90,
+          "residue": "S",
+          "value": 24
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "icode": "",
+          "resi": 91,
+          "residue": "Y",
+          "value": 21
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 92,
+          "residue": "T",
+          "value": 31
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 93,
+          "residue": "L",
+          "value": 17
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "icode": "",
+          "resi": 94,
+          "residue": "G",
+          "value": 13
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 95,
+          "residue": "D",
+          "value": 10
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "icode": "",
+          "resi": 96,
+          "residue": "G",
+          "value": 9
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 97,
+          "residue": "S",
+          "value": 11
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 98,
+          "residue": "S",
+          "value": 15
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 99,
+          "residue": "L",
+          "value": 31
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "icode": "",
+          "resi": 100,
+          "residue": "Q",
+          "value": 21
+        },
+        {
+          "assigned_proton_sites": 10,
+          "chain": "A",
+          "icode": "",
+          "resi": 101,
+          "residue": "K",
+          "value": 40
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 102,
+          "residue": "P",
+          "value": 35
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 103,
+          "residue": "D",
+          "value": 14
+        },
+        {
+          "assigned_proton_sites": 5,
+          "chain": "A",
+          "icode": "",
+          "resi": 104,
+          "residue": "V",
+          "value": 57
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "icode": "",
+          "resi": 105,
+          "residue": "Y",
+          "value": 47
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "icode": "",
+          "resi": 106,
+          "residue": "A",
+          "value": 26
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 107,
+          "residue": "L",
+          "value": 38
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 108,
+          "residue": "I",
+          "value": 109
+        },
+        {
+          "assigned_proton_sites": 10,
+          "chain": "A",
+          "icode": "",
+          "resi": 109,
+          "residue": "K",
+          "value": 35
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 110,
+          "residue": "D",
+          "value": 19
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "icode": "",
+          "resi": 111,
+          "residue": "Y",
+          "value": 58
+        },
+        {
+          "assigned_proton_sites": 5,
+          "chain": "A",
+          "icode": "",
+          "resi": 112,
+          "residue": "V",
+          "value": 39
+        },
+        {
+          "assigned_proton_sites": 10,
+          "chain": "A",
+          "icode": "",
+          "resi": 113,
+          "residue": "K",
+          "value": 15
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 114,
+          "residue": "P",
+          "value": 9
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "icode": "",
+          "resi": 115,
+          "residue": "A",
+          "value": 10
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 116,
+          "residue": "D",
+          "value": 13
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 117,
+          "residue": "P",
+          "value": 17
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 118,
+          "residue": "D",
+          "value": 19
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 119,
+          "residue": "L",
+          "value": 15
+        },
+        {
+          "assigned_proton_sites": 6,
+          "chain": "A",
+          "icode": "",
+          "resi": 120,
+          "residue": "E",
+          "value": 9
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "icode": "",
+          "resi": 121,
+          "residue": "G",
+          "value": 10
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 122,
+          "residue": "I",
+          "value": 17
+        },
+        {
+          "assigned_proton_sites": 6,
+          "chain": "A",
+          "icode": "",
+          "resi": 123,
+          "residue": "E",
+          "value": 14
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "icode": "",
+          "resi": 124,
+          "residue": "A",
+          "value": 10
+        },
+        {
+          "assigned_proton_sites": 10,
+          "chain": "A",
+          "icode": "",
+          "resi": 125,
+          "residue": "K",
+          "value": 9
+        },
+        {
+          "assigned_proton_sites": 5,
+          "chain": "A",
+          "icode": "",
+          "resi": 126,
+          "residue": "V",
+          "value": 11
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "icode": "",
+          "resi": 127,
+          "residue": "R",
+          "value": 6
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 128,
+          "residue": "M",
+          "value": 9
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "icode": "",
+          "resi": 129,
+          "residue": "R",
+          "value": 11
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 130,
+          "residue": "S",
+          "value": 14
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 131,
+          "residue": "I",
+          "value": 14
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 132,
+          "residue": "L",
+          "value": 13
+        },
+        {
+          "assigned_proton_sites": 6,
+          "chain": "A",
+          "icode": "",
+          "resi": 133,
+          "residue": "E",
+          "value": 16
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 134,
+          "residue": "H",
+          "value": 12
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 135,
+          "residue": "H",
+          "value": 10
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 136,
+          "residue": "H",
+          "value": 2
+        },
+        {
+          "assigned_proton_sites": 0,
+          "chain": "A",
+          "icode": "",
+          "resi": 137,
+          "residue": "H",
+          "value": null
+        },
+        {
+          "assigned_proton_sites": 0,
+          "chain": "A",
+          "icode": "",
+          "resi": 138,
+          "residue": "H",
+          "value": null
+        },
+        {
+          "assigned_proton_sites": 0,
+          "chain": "A",
+          "icode": "",
+          "resi": 139,
+          "residue": "H",
+          "value": null
+        }
+      ]
+    },
+    {
+      "colors": [
+        "#2166ac",
+        "#f7f7f7",
+        "#b2182b"
+      ],
+      "definition": "Reported unsupported-interaction groups involving the residue whose native printed effective group distance is strictly below 3 Å.",
+      "direction": "higher_worse",
+      "domain": [
+        0,
+        8
+      ],
+      "id": "short_precision_violation_groups",
+      "label": "Short violations (<3 Å)",
+      "missing_color": "#aeb4be",
+      "native_model_context": "Model ave",
+      "scope": "ensemble",
+      "scope_label": "Ensemble diagnostic · shared by all conformers",
+      "shared_across_models": true,
+      "source_file": "sr215_DP.QP",
+      "unit": "groups",
+      "values": [
+        {
+          "assigned_proton_sites": 5,
+          "chain": "A",
+          "icode": "",
+          "resi": 1,
+          "residue": "M",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 2,
+          "residue": "L",
+          "value": 1
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 3,
+          "residue": "L",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 4,
+          "residue": "I",
+          "value": 7
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 5,
+          "residue": "T",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 6,
+          "residue": "P",
+          "value": 1
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 7,
+          "residue": "D",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 6,
+          "chain": "A",
+          "icode": "",
+          "resi": 8,
+          "residue": "E",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 9,
+          "residue": "L",
+          "value": 7
+        },
+        {
+          "assigned_proton_sites": 10,
+          "chain": "A",
+          "icode": "",
+          "resi": 10,
+          "residue": "K",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 11,
+          "residue": "S",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "icode": "",
+          "resi": 12,
+          "residue": "Y",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 5,
+          "chain": "A",
+          "icode": "",
+          "resi": 13,
+          "residue": "S",
+          "value": 1
+        },
+        {
+          "assigned_proton_sites": 5,
+          "chain": "A",
+          "icode": "",
+          "resi": 14,
+          "residue": "V",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 9,
+          "chain": "A",
+          "icode": "",
+          "resi": 15,
+          "residue": "F",
+          "value": 1
+        },
+        {
+          "assigned_proton_sites": 6,
+          "chain": "A",
+          "icode": "",
+          "resi": 16,
+          "residue": "E",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 17,
+          "residue": "S",
+          "value": 1
+        },
+        {
+          "assigned_proton_sites": 5,
+          "chain": "A",
+          "icode": "",
+          "resi": 18,
+          "residue": "V",
+          "value": 2
+        },
+        {
+          "assigned_proton_sites": 10,
+          "chain": "A",
+          "icode": "",
+          "resi": 19,
+          "residue": "K",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 20,
+          "residue": "T",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "icode": "",
+          "resi": 21,
+          "residue": "R",
+          "value": 2
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 22,
+          "residue": "P",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 23,
+          "residue": "D",
+          "value": 1
+        },
+        {
+          "assigned_proton_sites": 6,
+          "chain": "A",
+          "icode": "",
+          "resi": 24,
+          "residue": "E",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 25,
+          "residue": "L",
+          "value": 1
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 26,
+          "residue": "L",
+          "value": 1
+        },
+        {
+          "assigned_proton_sites": 10,
+          "chain": "A",
+          "icode": "",
+          "resi": 27,
+          "residue": "K",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "icode": "",
+          "resi": 28,
+          "residue": "Q",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 29,
+          "residue": "D",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 30,
+          "residue": "I",
+          "value": 8
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 31,
+          "residue": "L",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 6,
+          "chain": "A",
+          "icode": "",
+          "resi": 32,
+          "residue": "E",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "icode": "",
+          "resi": 33,
+          "residue": "A",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 5,
+          "chain": "A",
+          "icode": "",
+          "resi": 34,
+          "residue": "T",
+          "value": 3
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "icode": "",
+          "resi": 35,
+          "residue": "A",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 36,
+          "residue": "D",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 37,
+          "residue": "I",
+          "value": 1
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 38,
+          "residue": "I",
+          "value": 5
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 39,
+          "residue": "L",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 10,
+          "chain": "A",
+          "icode": "",
+          "resi": 40,
+          "residue": "K",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 5,
+          "chain": "A",
+          "icode": "",
+          "resi": 41,
+          "residue": "V",
+          "value": 1
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "icode": "",
+          "resi": 42,
+          "residue": "G",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 6,
+          "chain": "A",
+          "icode": "",
+          "resi": 43,
+          "residue": "H",
+          "value": 1
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 44,
+          "residue": "D",
+          "value": 1
+        },
+        {
+          "assigned_proton_sites": 9,
+          "chain": "A",
+          "icode": "",
+          "resi": 45,
+          "residue": "F",
+          "value": 5
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 46,
+          "residue": "S",
+          "value": 1
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 47,
+          "residue": "D",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "icode": "",
+          "resi": 48,
+          "residue": "A",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 6,
+          "chain": "A",
+          "icode": "",
+          "resi": 49,
+          "residue": "E",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "icode": "",
+          "resi": 50,
+          "residue": "Y",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 51,
+          "residue": "I",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 52,
+          "residue": "P",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 53,
+          "residue": "L",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 54,
+          "residue": "P",
+          "value": 4
+        },
+        {
+          "assigned_proton_sites": 6,
+          "chain": "A",
+          "icode": "",
+          "resi": 55,
+          "residue": "E",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 56,
+          "residue": "T",
+          "value": 1
+        },
+        {
+          "assigned_proton_sites": 5,
+          "chain": "A",
+          "icode": "",
+          "resi": 57,
+          "residue": "V",
+          "value": 3
+        },
+        {
+          "assigned_proton_sites": 9,
+          "chain": "A",
+          "icode": "",
+          "resi": 58,
+          "residue": "R",
+          "value": 3
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 59,
+          "residue": "L",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "icode": "",
+          "resi": 60,
+          "residue": "A",
+          "value": 1
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 61,
+          "residue": "L",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 62,
+          "residue": "L",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 10,
+          "chain": "A",
+          "icode": "",
+          "resi": 63,
+          "residue": "K",
+          "value": 1
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 64,
+          "residue": "L",
+          "value": 1
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 65,
+          "residue": "S",
+          "value": 3
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "icode": "",
+          "resi": 66,
+          "residue": "Q",
+          "value": 2
+        },
+        {
+          "assigned_proton_sites": 9,
+          "chain": "A",
+          "icode": "",
+          "resi": 67,
+          "residue": "F",
+          "value": 6
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "icode": "",
+          "resi": 68,
+          "residue": "Y",
+          "value": 1
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "icode": "",
+          "resi": 69,
+          "residue": "A",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 70,
+          "residue": "L",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 71,
+          "residue": "I",
+          "value": 1
+        },
+        {
+          "assigned_proton_sites": 6,
+          "chain": "A",
+          "icode": "",
+          "resi": 72,
+          "residue": "N",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "icode": "",
+          "resi": 73,
+          "residue": "G",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 74,
+          "residue": "D",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 6,
+          "chain": "A",
+          "icode": "",
+          "resi": 75,
+          "residue": "E",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 76,
+          "residue": "S",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 77,
+          "residue": "I",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 78,
+          "residue": "I",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 79,
+          "residue": "K",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "icode": "",
+          "resi": 80,
+          "residue": "G",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "icode": "",
+          "resi": 81,
+          "residue": "Y",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 82,
+          "residue": "T",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 83,
+          "residue": "T",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 6,
+          "chain": "A",
+          "icode": "",
+          "resi": 84,
+          "residue": "E",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 10,
+          "chain": "A",
+          "icode": "",
+          "resi": 85,
+          "residue": "K",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 86,
+          "residue": "I",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "icode": "",
+          "resi": 87,
+          "residue": "G",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 88,
+          "residue": "D",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "icode": "",
+          "resi": 89,
+          "residue": "Y",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 90,
+          "residue": "S",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "icode": "",
+          "resi": 91,
+          "residue": "Y",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 92,
+          "residue": "T",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 93,
+          "residue": "L",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "icode": "",
+          "resi": 94,
+          "residue": "G",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 95,
+          "residue": "D",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "icode": "",
+          "resi": 96,
+          "residue": "G",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 97,
+          "residue": "S",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 98,
+          "residue": "S",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 99,
+          "residue": "L",
+          "value": 3
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "icode": "",
+          "resi": 100,
+          "residue": "Q",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 10,
+          "chain": "A",
+          "icode": "",
+          "resi": 101,
+          "residue": "K",
+          "value": 1
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 102,
+          "residue": "P",
+          "value": 3
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 103,
+          "residue": "D",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 5,
+          "chain": "A",
+          "icode": "",
+          "resi": 104,
+          "residue": "V",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "icode": "",
+          "resi": 105,
+          "residue": "Y",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "icode": "",
+          "resi": 106,
+          "residue": "A",
+          "value": 1
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 107,
+          "residue": "L",
+          "value": 1
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 108,
+          "residue": "I",
+          "value": 2
+        },
+        {
+          "assigned_proton_sites": 10,
+          "chain": "A",
+          "icode": "",
+          "resi": 109,
+          "residue": "K",
+          "value": 1
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 110,
+          "residue": "D",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "icode": "",
+          "resi": 111,
+          "residue": "Y",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 5,
+          "chain": "A",
+          "icode": "",
+          "resi": 112,
+          "residue": "V",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 10,
+          "chain": "A",
+          "icode": "",
+          "resi": 113,
+          "residue": "K",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 114,
+          "residue": "P",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "icode": "",
+          "resi": 115,
+          "residue": "A",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 116,
+          "residue": "D",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 117,
+          "residue": "P",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 118,
+          "residue": "D",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 119,
+          "residue": "L",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 6,
+          "chain": "A",
+          "icode": "",
+          "resi": 120,
+          "residue": "E",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "icode": "",
+          "resi": 121,
+          "residue": "G",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 122,
+          "residue": "I",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 6,
+          "chain": "A",
+          "icode": "",
+          "resi": 123,
+          "residue": "E",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "icode": "",
+          "resi": 124,
+          "residue": "A",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 10,
+          "chain": "A",
+          "icode": "",
+          "resi": 125,
+          "residue": "K",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 5,
+          "chain": "A",
+          "icode": "",
+          "resi": 126,
+          "residue": "V",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "icode": "",
+          "resi": 127,
+          "residue": "R",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 128,
+          "residue": "M",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "icode": "",
+          "resi": 129,
+          "residue": "R",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 130,
+          "residue": "S",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 131,
+          "residue": "I",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 132,
+          "residue": "L",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 6,
+          "chain": "A",
+          "icode": "",
+          "resi": 133,
+          "residue": "E",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 134,
+          "residue": "H",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 135,
+          "residue": "H",
+          "value": 3
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 136,
+          "residue": "H",
+          "value": 0
+        },
+        {
+          "assigned_proton_sites": 0,
+          "chain": "A",
+          "icode": "",
+          "resi": 137,
+          "residue": "H",
+          "value": null
+        },
+        {
+          "assigned_proton_sites": 0,
+          "chain": "A",
+          "icode": "",
+          "resi": 138,
+          "residue": "H",
+          "value": null
+        },
+        {
+          "assigned_proton_sites": 0,
+          "chain": "A",
+          "icode": "",
+          "resi": 139,
+          "residue": "H",
+          "value": null
+        }
+      ]
+    },
+    {
+      "colors": [
+        "#b2182b",
+        "#f7f7f7",
+        "#2166ac"
+      ],
+      "definition": "Minimum native printed effective distance among unsupported-interaction groups involving the residue; unavailable when no group is reported.",
+      "direction": "lower_worse",
+      "domain": [
+        1,
+        5
+      ],
+      "id": "shortest_unsupported_distance",
+      "label": "Shortest unsupported distance",
+      "missing_color": "#aeb4be",
+      "native_model_context": "Model ave",
+      "scope": "ensemble",
+      "scope_label": "Ensemble diagnostic · shared by all conformers",
+      "shared_across_models": true,
+      "source_file": "sr215_DP.QP",
+      "unit": "Å",
+      "values": [
+        {
+          "assigned_proton_sites": 5,
+          "chain": "A",
+          "icode": "",
+          "resi": 1,
+          "residue": "M",
+          "value": 3.93
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 2,
+          "residue": "L",
+          "value": 2.975
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 3,
+          "residue": "L",
+          "value": 3.34
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 4,
+          "residue": "I",
+          "value": 2.185
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 5,
+          "residue": "T",
+          "value": 3.335
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 6,
+          "residue": "P",
+          "value": 2.94
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 7,
+          "residue": "D",
+          "value": 3.315
+        },
+        {
+          "assigned_proton_sites": 6,
+          "chain": "A",
+          "icode": "",
+          "resi": 8,
+          "residue": "E",
+          "value": 3.53
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 9,
+          "residue": "L",
+          "value": 2.015
+        },
+        {
+          "assigned_proton_sites": 10,
+          "chain": "A",
+          "icode": "",
+          "resi": 10,
+          "residue": "K",
+          "value": 3.28
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 11,
+          "residue": "S",
+          "value": 4.055
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "icode": "",
+          "resi": 12,
+          "residue": "Y",
+          "value": 3.48
+        },
+        {
+          "assigned_proton_sites": 5,
+          "chain": "A",
+          "icode": "",
+          "resi": 13,
+          "residue": "S",
+          "value": 2.475
+        },
+        {
+          "assigned_proton_sites": 5,
+          "chain": "A",
+          "icode": "",
+          "resi": 14,
+          "residue": "V",
+          "value": 3.295
+        },
+        {
+          "assigned_proton_sites": 9,
+          "chain": "A",
+          "icode": "",
+          "resi": 15,
+          "residue": "F",
+          "value": 2.75
+        },
+        {
+          "assigned_proton_sites": 6,
+          "chain": "A",
+          "icode": "",
+          "resi": 16,
+          "residue": "E",
+          "value": 3.255
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 17,
+          "residue": "S",
+          "value": 2.75
+        },
+        {
+          "assigned_proton_sites": 5,
+          "chain": "A",
+          "icode": "",
+          "resi": 18,
+          "residue": "V",
+          "value": 2.475
+        },
+        {
+          "assigned_proton_sites": 10,
+          "chain": "A",
+          "icode": "",
+          "resi": 19,
+          "residue": "K",
+          "value": 3.225
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 20,
+          "residue": "T",
+          "value": 3.905
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "icode": "",
+          "resi": 21,
+          "residue": "R",
+          "value": 2.23
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 22,
+          "residue": "P",
+          "value": 3.525
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 23,
+          "residue": "D",
+          "value": 2.94
+        },
+        {
+          "assigned_proton_sites": 6,
+          "chain": "A",
+          "icode": "",
+          "resi": 24,
+          "residue": "E",
+          "value": 3.575
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 25,
+          "residue": "L",
+          "value": 2.23
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 26,
+          "residue": "L",
+          "value": 2.915
+        },
+        {
+          "assigned_proton_sites": 10,
+          "chain": "A",
+          "icode": "",
+          "resi": 27,
+          "residue": "K",
+          "value": 3.525
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "icode": "",
+          "resi": 28,
+          "residue": "Q",
+          "value": 3.95
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 29,
+          "residue": "D",
+          "value": 3.225
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 30,
+          "residue": "I",
+          "value": 2.185
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 31,
+          "residue": "L",
+          "value": 3.565
+        },
+        {
+          "assigned_proton_sites": 6,
+          "chain": "A",
+          "icode": "",
+          "resi": 32,
+          "residue": "E",
+          "value": 3.68
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "icode": "",
+          "resi": 33,
+          "residue": "A",
+          "value": 3.195
+        },
+        {
+          "assigned_proton_sites": 5,
+          "chain": "A",
+          "icode": "",
+          "resi": 34,
+          "residue": "T",
+          "value": 2.69
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "icode": "",
+          "resi": 35,
+          "residue": "A",
+          "value": 3.705
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 36,
+          "residue": "D",
+          "value": 3.555
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 37,
+          "residue": "I",
+          "value": 2.18
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 38,
+          "residue": "I",
+          "value": 2.69
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 39,
+          "residue": "L",
+          "value": 3.57
+        },
+        {
+          "assigned_proton_sites": 10,
+          "chain": "A",
+          "icode": "",
+          "resi": 40,
+          "residue": "K",
+          "value": 3.36
+        },
+        {
+          "assigned_proton_sites": 5,
+          "chain": "A",
+          "icode": "",
+          "resi": 41,
+          "residue": "V",
+          "value": 2.995
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "icode": "",
+          "resi": 42,
+          "residue": "G",
+          "value": 3.57
+        },
+        {
+          "assigned_proton_sites": 6,
+          "chain": "A",
+          "icode": "",
+          "resi": 43,
+          "residue": "H",
+          "value": 2.995
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 44,
+          "residue": "D",
+          "value": 2.915
+        },
+        {
+          "assigned_proton_sites": 9,
+          "chain": "A",
+          "icode": "",
+          "resi": 45,
+          "residue": "F",
+          "value": 2.685
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 46,
+          "residue": "S",
+          "value": 2.915
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 47,
+          "residue": "D",
+          "value": 4.415
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "icode": "",
+          "resi": 48,
+          "residue": "A",
+          "value": 4.265
+        },
+        {
+          "assigned_proton_sites": 6,
+          "chain": "A",
+          "icode": "",
+          "resi": 49,
+          "residue": "E",
+          "value": 4.405
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "icode": "",
+          "resi": 50,
+          "residue": "Y",
+          "value": 3.735
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 51,
+          "residue": "I",
+          "value": 3.28
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 52,
+          "residue": "P",
+          "value": 3.28
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 53,
+          "residue": "L",
+          "value": 3.34
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 54,
+          "residue": "P",
+          "value": 2.59
+        },
+        {
+          "assigned_proton_sites": 6,
+          "chain": "A",
+          "icode": "",
+          "resi": 55,
+          "residue": "E",
+          "value": 3.48
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 56,
+          "residue": "T",
+          "value": 2.885
+        },
+        {
+          "assigned_proton_sites": 5,
+          "chain": "A",
+          "icode": "",
+          "resi": 57,
+          "residue": "V",
+          "value": 2.59
+        },
+        {
+          "assigned_proton_sites": 9,
+          "chain": "A",
+          "icode": "",
+          "resi": 58,
+          "residue": "R",
+          "value": 2.745
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 59,
+          "residue": "L",
+          "value": 4.12
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "icode": "",
+          "resi": 60,
+          "residue": "A",
+          "value": 2.11
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 61,
+          "residue": "L",
+          "value": 3.325
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 62,
+          "residue": "L",
+          "value": 3.155
+        },
+        {
+          "assigned_proton_sites": 10,
+          "chain": "A",
+          "icode": "",
+          "resi": 63,
+          "residue": "K",
+          "value": 2.81
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 64,
+          "residue": "L",
+          "value": 2.18
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 65,
+          "residue": "S",
+          "value": 2.015
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "icode": "",
+          "resi": 66,
+          "residue": "Q",
+          "value": 2.81
+        },
+        {
+          "assigned_proton_sites": 9,
+          "chain": "A",
+          "icode": "",
+          "resi": 67,
+          "residue": "F",
+          "value": 2.4
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "icode": "",
+          "resi": 68,
+          "residue": "Y",
+          "value": 2.64
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "icode": "",
+          "resi": 69,
+          "residue": "A",
+          "value": 3.005
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 70,
+          "residue": "L",
+          "value": 3.605
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 71,
+          "residue": "I",
+          "value": 2.4
+        },
+        {
+          "assigned_proton_sites": 6,
+          "chain": "A",
+          "icode": "",
+          "resi": 72,
+          "residue": "N",
+          "value": 3.005
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "icode": "",
+          "resi": 73,
+          "residue": "G",
+          "value": 3.515
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 74,
+          "residue": "D",
+          "value": 3.115
+        },
+        {
+          "assigned_proton_sites": 6,
+          "chain": "A",
+          "icode": "",
+          "resi": 75,
+          "residue": "E",
+          "value": 4.355
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 76,
+          "residue": "S",
+          "value": 3.115
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 77,
+          "residue": "I",
+          "value": 3.86
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 78,
+          "residue": "I",
+          "value": 4.05
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 79,
+          "residue": "K",
+          "value": 3.86
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "icode": "",
+          "resi": 80,
+          "residue": "G",
+          "value": 3.97
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "icode": "",
+          "resi": 81,
+          "residue": "Y",
+          "value": 3.97
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 82,
+          "residue": "T",
+          "value": 3.795
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 83,
+          "residue": "T",
+          "value": 3.795
+        },
+        {
+          "assigned_proton_sites": 6,
+          "chain": "A",
+          "icode": "",
+          "resi": 84,
+          "residue": "E",
+          "value": 4.035
+        },
+        {
+          "assigned_proton_sites": 10,
+          "chain": "A",
+          "icode": "",
+          "resi": 85,
+          "residue": "K",
+          "value": 4.035
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 86,
+          "residue": "I",
+          "value": 4.035
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "icode": "",
+          "resi": 87,
+          "residue": "G",
+          "value": 4.02
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 88,
+          "residue": "D",
+          "value": 3.955
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "icode": "",
+          "resi": 89,
+          "residue": "Y",
+          "value": 3.695
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 90,
+          "residue": "S",
+          "value": 3.695
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "icode": "",
+          "resi": 91,
+          "residue": "Y",
+          "value": 4.27
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 92,
+          "residue": "T",
+          "value": 3.985
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 93,
+          "residue": "L",
+          "value": 3.985
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "icode": "",
+          "resi": 94,
+          "residue": "G",
+          "value": 3.895
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 95,
+          "residue": "D",
+          "value": 3.895
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "icode": "",
+          "resi": 96,
+          "residue": "G",
+          "value": 3.91
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 97,
+          "residue": "S",
+          "value": 4.305
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 98,
+          "residue": "S",
+          "value": 4.225
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 99,
+          "residue": "L",
+          "value": 2.9
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "icode": "",
+          "resi": 100,
+          "residue": "Q",
+          "value": 3.725
+        },
+        {
+          "assigned_proton_sites": 10,
+          "chain": "A",
+          "icode": "",
+          "resi": 101,
+          "residue": "K",
+          "value": 2.845
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 102,
+          "residue": "P",
+          "value": 2.705
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 103,
+          "residue": "D",
+          "value": 3.49
+        },
+        {
+          "assigned_proton_sites": 5,
+          "chain": "A",
+          "icode": "",
+          "resi": 104,
+          "residue": "V",
+          "value": 3.045
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "icode": "",
+          "resi": 105,
+          "residue": "Y",
+          "value": 3.485
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "icode": "",
+          "resi": 106,
+          "residue": "A",
+          "value": 2.76
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 107,
+          "residue": "L",
+          "value": 2.775
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 108,
+          "residue": "I",
+          "value": 2.11
+        },
+        {
+          "assigned_proton_sites": 10,
+          "chain": "A",
+          "icode": "",
+          "resi": 109,
+          "residue": "K",
+          "value": 2.76
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 110,
+          "residue": "D",
+          "value": 3.435
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "icode": "",
+          "resi": 111,
+          "residue": "Y",
+          "value": 3.005
+        },
+        {
+          "assigned_proton_sites": 5,
+          "chain": "A",
+          "icode": "",
+          "resi": 112,
+          "residue": "V",
+          "value": 3.175
+        },
+        {
+          "assigned_proton_sites": 10,
+          "chain": "A",
+          "icode": "",
+          "resi": 113,
+          "residue": "K",
+          "value": 4.07
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 114,
+          "residue": "P",
+          "value": 3.51
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "icode": "",
+          "resi": 115,
+          "residue": "A",
+          "value": 3.65
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 116,
+          "residue": "D",
+          "value": 3.725
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 117,
+          "residue": "P",
+          "value": 3.725
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 118,
+          "residue": "D",
+          "value": 3.795
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 119,
+          "residue": "L",
+          "value": 3.225
+        },
+        {
+          "assigned_proton_sites": 6,
+          "chain": "A",
+          "icode": "",
+          "resi": 120,
+          "residue": "E",
+          "value": 3.95
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "icode": "",
+          "resi": 121,
+          "residue": "G",
+          "value": 3.225
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 122,
+          "residue": "I",
+          "value": 3.72
+        },
+        {
+          "assigned_proton_sites": 6,
+          "chain": "A",
+          "icode": "",
+          "resi": 123,
+          "residue": "E",
+          "value": 3.525
+        },
+        {
+          "assigned_proton_sites": 3,
+          "chain": "A",
+          "icode": "",
+          "resi": 124,
+          "residue": "A",
+          "value": 3.56
+        },
+        {
+          "assigned_proton_sites": 10,
+          "chain": "A",
+          "icode": "",
+          "resi": 125,
+          "residue": "K",
+          "value": 4.255
+        },
+        {
+          "assigned_proton_sites": 5,
+          "chain": "A",
+          "icode": "",
+          "resi": 126,
+          "residue": "V",
+          "value": 3.56
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "icode": "",
+          "resi": 127,
+          "residue": "R",
+          "value": 4.34
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 128,
+          "residue": "M",
+          "value": 4.11
+        },
+        {
+          "assigned_proton_sites": 8,
+          "chain": "A",
+          "icode": "",
+          "resi": 129,
+          "residue": "R",
+          "value": 4.035
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 130,
+          "residue": "S",
+          "value": 3.705
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 131,
+          "residue": "I",
+          "value": 3.705
+        },
+        {
+          "assigned_proton_sites": 7,
+          "chain": "A",
+          "icode": "",
+          "resi": 132,
+          "residue": "L",
+          "value": 4.055
+        },
+        {
+          "assigned_proton_sites": 6,
+          "chain": "A",
+          "icode": "",
+          "resi": 133,
+          "residue": "E",
+          "value": 3.72
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 134,
+          "residue": "H",
+          "value": 3.1
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 135,
+          "residue": "H",
+          "value": 2.565
+        },
+        {
+          "assigned_proton_sites": 4,
+          "chain": "A",
+          "icode": "",
+          "resi": 136,
+          "residue": "H",
+          "value": 4.425
+        },
+        {
+          "assigned_proton_sites": 0,
+          "chain": "A",
+          "icode": "",
+          "resi": 137,
+          "residue": "H",
+          "value": null
+        },
+        {
+          "assigned_proton_sites": 0,
+          "chain": "A",
+          "icode": "",
+          "resi": 138,
+          "residue": "H",
+          "value": null
+        },
+        {
+          "assigned_proton_sites": 0,
+          "chain": "A",
+          "icode": "",
+          "resi": 139,
+          "residue": "H",
+          "value": null
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "color_semantics": "Legacy RPF heat index uses the original Web/Rasmol.pm piecewise RGB formula and thresholds. Count/distance layers use an explicitly separate blue-white-red browser palette.",
+    "limitations": [
+      "No residue-wise Recall, Precision fraction or DP is inferred.",
+      "Direction and spectrum multiplicities are retained; these are reported groups, not unique undirected contacts.",
+      "Unassigned-proton residues are unavailable rather than zero. A zero means no reported group, not proof of complete experimental coverage.",
+      "The multi-model QP report is ensemble-level and cannot distinguish individual conformers."
+    ],
+    "native_output": "ASDP 2.3 QP ensemble precision report",
+    "native_source": "experiment_Qfactor.cpp NOESY::LFactor(deque<Pdb>&), i==0 report branch",
+    "paper_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3394279/"
+  },
+  "run_id": "sr215-s2-disco-50-uploaded",
+  "schema_version": 1
+}

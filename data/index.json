@@ -1,0 +1,464 @@
+{
+  "collection_count": 6,
+  "model_evaluations": 600,
+  "run_count": 12,
+  "runs": [
+    {
+      "collection_definition": "SR215 · HDBSCAN · residues 32–47 and 78–99",
+      "collection_id": "8fb0130a3d6282b18bb6765e6d1b50b7b3707979bcd6ddeb55f7a550349a3959",
+      "collection_label": "DISCO · 50 models",
+      "collection_state": "S1",
+      "ensemble_definition": "ASDP 2.3 Model ave: midrange inter-proton distances (minimum + maximum)/2 across input conformers, via the legacy function named median(); not statistical median or arithmetic mean of member DP.",
+      "ensemble_metrics": {
+        "dp": 0.8,
+        "precision": 0.96,
+        "recall": 0.94
+      },
+      "id": "sr215-s1-disco-50-original",
+      "input_variant": "original",
+      "metric_availability": {
+        "energy": false,
+        "model_dp": true,
+        "model_precision": true,
+        "model_recall": true,
+        "plddt": false,
+        "ptm": false,
+        "residue_dp": false,
+        "residue_precision": false,
+        "residue_recall": false
+      },
+      "metrics": {
+        "dp": 0.8,
+        "precision": 0.96,
+        "recall": 0.94
+      },
+      "model_count": 50,
+      "name": "SR215 · S1 · DISCO · original",
+      "sampling": "DISCO",
+      "state": "S1",
+      "status": "complete",
+      "target": "SR215",
+      "title": "SR215 · S1 · DISCO · original",
+      "url": "data/runs/sr215-s1-disco-50-original.json"
+    },
+    {
+      "collection_definition": "SR215 · HDBSCAN · residues 32–47 and 78–99",
+      "collection_id": "8fb0130a3d6282b18bb6765e6d1b50b7b3707979bcd6ddeb55f7a550349a3959",
+      "collection_label": "DISCO · 50 models",
+      "collection_state": "S1",
+      "ensemble_definition": "ASDP 2.3 Model ave: midrange inter-proton distances (minimum + maximum)/2 across input conformers, via the legacy function named median(); not statistical median or arithmetic mean of member DP.",
+      "ensemble_metrics": {
+        "dp": 0.82,
+        "precision": 0.96,
+        "recall": 0.95
+      },
+      "id": "sr215-s1-disco-50-uploaded",
+      "input_variant": "uploaded",
+      "metric_availability": {
+        "energy": false,
+        "model_dp": true,
+        "model_precision": true,
+        "model_recall": true,
+        "plddt": false,
+        "ptm": false,
+        "residue_dp": false,
+        "residue_precision": false,
+        "residue_recall": false
+      },
+      "metrics": {
+        "dp": 0.82,
+        "precision": 0.96,
+        "recall": 0.95
+      },
+      "model_count": 50,
+      "name": "SR215 · S1 · DISCO · uploaded",
+      "sampling": "DISCO",
+      "state": "S1",
+      "status": "complete",
+      "target": "SR215",
+      "title": "SR215 · S1 · DISCO · uploaded",
+      "url": "data/runs/sr215-s1-disco-50-uploaded.json"
+    },
+    {
+      "collection_definition": "SR215 · HDBSCAN · residues 32–47 and 78–99",
+      "collection_id": "322292a32be961b473ddd077bc04b493ac2fdac3f620b65f687850b3a6f3733f",
+      "collection_label": "MCMC · 50 models",
+      "collection_state": "S1",
+      "ensemble_definition": "ASDP 2.3 Model ave: midrange inter-proton distances (minimum + maximum)/2 across input conformers, via the legacy function named median(); not statistical median or arithmetic mean of member DP.",
+      "ensemble_metrics": {
+        "dp": 0.79,
+        "precision": 0.96,
+        "recall": 0.94
+      },
+      "id": "sr215-s1-mcmc-50-original",
+      "input_variant": "original",
+      "metric_availability": {
+        "energy": false,
+        "model_dp": true,
+        "model_precision": true,
+        "model_recall": true,
+        "plddt": false,
+        "ptm": false,
+        "residue_dp": false,
+        "residue_precision": false,
+        "residue_recall": false
+      },
+      "metrics": {
+        "dp": 0.79,
+        "precision": 0.96,
+        "recall": 0.94
+      },
+      "model_count": 50,
+      "name": "SR215 · S1 · MCMC · original",
+      "sampling": "MCMC",
+      "state": "S1",
+      "status": "complete",
+      "target": "SR215",
+      "title": "SR215 · S1 · MCMC · original",
+      "url": "data/runs/sr215-s1-mcmc-50-original.json"
+    },
+    {
+      "collection_definition": "SR215 · HDBSCAN · residues 32–47 and 78–99",
+      "collection_id": "322292a32be961b473ddd077bc04b493ac2fdac3f620b65f687850b3a6f3733f",
+      "collection_label": "MCMC · 50 models",
+      "collection_state": "S1",
+      "ensemble_definition": "ASDP 2.3 Model ave: midrange inter-proton distances (minimum + maximum)/2 across input conformers, via the legacy function named median(); not statistical median or arithmetic mean of member DP.",
+      "ensemble_metrics": {
+        "dp": 0.81,
+        "precision": 0.96,
+        "recall": 0.95
+      },
+      "id": "sr215-s1-mcmc-50-uploaded",
+      "input_variant": "uploaded",
+      "metric_availability": {
+        "energy": false,
+        "model_dp": true,
+        "model_precision": true,
+        "model_recall": true,
+        "plddt": false,
+        "ptm": false,
+        "residue_dp": false,
+        "residue_precision": false,
+        "residue_recall": false
+      },
+      "metrics": {
+        "dp": 0.81,
+        "precision": 0.96,
+        "recall": 0.95
+      },
+      "model_count": 50,
+      "name": "SR215 · S1 · MCMC · uploaded",
+      "sampling": "MCMC",
+      "state": "S1",
+      "status": "complete",
+      "target": "SR215",
+      "title": "SR215 · S1 · MCMC · uploaded",
+      "url": "data/runs/sr215-s1-mcmc-50-uploaded.json"
+    },
+    {
+      "collection_definition": "SR215 · HDBSCAN · residues 32–47 and 78–99",
+      "collection_id": "d98df4ce32efae651e4c668d88293d966d2c259da07ec97a6a3547a02424b2c6",
+      "collection_label": "DISCO · 50 models",
+      "collection_state": "S2",
+      "ensemble_definition": "ASDP 2.3 Model ave: midrange inter-proton distances (minimum + maximum)/2 across input conformers, via the legacy function named median(); not statistical median or arithmetic mean of member DP.",
+      "ensemble_metrics": {
+        "dp": 0.79,
+        "precision": 0.96,
+        "recall": 0.94
+      },
+      "id": "sr215-s2-disco-50-original",
+      "input_variant": "original",
+      "metric_availability": {
+        "energy": false,
+        "model_dp": true,
+        "model_precision": true,
+        "model_recall": true,
+        "plddt": false,
+        "ptm": false,
+        "residue_dp": false,
+        "residue_precision": false,
+        "residue_recall": false
+      },
+      "metrics": {
+        "dp": 0.79,
+        "precision": 0.96,
+        "recall": 0.94
+      },
+      "model_count": 50,
+      "name": "SR215 · S2 · DISCO · original",
+      "sampling": "DISCO",
+      "state": "S2",
+      "status": "complete",
+      "target": "SR215",
+      "title": "SR215 · S2 · DISCO · original",
+      "url": "data/runs/sr215-s2-disco-50-original.json"
+    },
+    {
+      "collection_definition": "SR215 · HDBSCAN · residues 32–47 and 78–99",
+      "collection_id": "d98df4ce32efae651e4c668d88293d966d2c259da07ec97a6a3547a02424b2c6",
+      "collection_label": "DISCO · 50 models",
+      "collection_state": "S2",
+      "ensemble_definition": "ASDP 2.3 Model ave: midrange inter-proton distances (minimum + maximum)/2 across input conformers, via the legacy function named median(); not statistical median or arithmetic mean of member DP.",
+      "ensemble_metrics": {
+        "dp": 0.81,
+        "precision": 0.96,
+        "recall": 0.94
+      },
+      "id": "sr215-s2-disco-50-uploaded",
+      "input_variant": "uploaded",
+      "metric_availability": {
+        "energy": false,
+        "model_dp": true,
+        "model_precision": true,
+        "model_recall": true,
+        "plddt": false,
+        "ptm": false,
+        "residue_dp": false,
+        "residue_precision": false,
+        "residue_recall": false
+      },
+      "metrics": {
+        "dp": 0.81,
+        "precision": 0.96,
+        "recall": 0.94
+      },
+      "model_count": 50,
+      "name": "SR215 · S2 · DISCO · uploaded",
+      "sampling": "DISCO",
+      "state": "S2",
+      "status": "complete",
+      "target": "SR215",
+      "title": "SR215 · S2 · DISCO · uploaded",
+      "url": "data/runs/sr215-s2-disco-50-uploaded.json"
+    },
+    {
+      "collection_definition": "SR215 · HDBSCAN · residues 32–47 and 78–99",
+      "collection_id": "378a5e1519e3e58d5f2fbe33e6aa8e8b42163be9478ab8447410dba2dd898a8b",
+      "collection_label": "MCMC · 50 models",
+      "collection_state": "S2",
+      "ensemble_definition": "ASDP 2.3 Model ave: midrange inter-proton distances (minimum + maximum)/2 across input conformers, via the legacy function named median(); not statistical median or arithmetic mean of member DP.",
+      "ensemble_metrics": {
+        "dp": 0.79,
+        "precision": 0.96,
+        "recall": 0.94
+      },
+      "id": "sr215-s2-mcmc-50-original",
+      "input_variant": "original",
+      "metric_availability": {
+        "energy": false,
+        "model_dp": true,
+        "model_precision": true,
+        "model_recall": true,
+        "plddt": false,
+        "ptm": false,
+        "residue_dp": false,
+        "residue_precision": false,
+        "residue_recall": false
+      },
+      "metrics": {
+        "dp": 0.79,
+        "precision": 0.96,
+        "recall": 0.94
+      },
+      "model_count": 50,
+      "name": "SR215 · S2 · MCMC · original",
+      "sampling": "MCMC",
+      "state": "S2",
+      "status": "complete",
+      "target": "SR215",
+      "title": "SR215 · S2 · MCMC · original",
+      "url": "data/runs/sr215-s2-mcmc-50-original.json"
+    },
+    {
+      "collection_definition": "SR215 · HDBSCAN · residues 32–47 and 78–99",
+      "collection_id": "378a5e1519e3e58d5f2fbe33e6aa8e8b42163be9478ab8447410dba2dd898a8b",
+      "collection_label": "MCMC · 50 models",
+      "collection_state": "S2",
+      "ensemble_definition": "ASDP 2.3 Model ave: midrange inter-proton distances (minimum + maximum)/2 across input conformers, via the legacy function named median(); not statistical median or arithmetic mean of member DP.",
+      "ensemble_metrics": {
+        "dp": 0.81,
+        "precision": 0.97,
+        "recall": 0.94
+      },
+      "id": "sr215-s2-mcmc-50-uploaded",
+      "input_variant": "uploaded",
+      "metric_availability": {
+        "energy": false,
+        "model_dp": true,
+        "model_precision": true,
+        "model_recall": true,
+        "plddt": false,
+        "ptm": false,
+        "residue_dp": false,
+        "residue_precision": false,
+        "residue_recall": false
+      },
+      "metrics": {
+        "dp": 0.81,
+        "precision": 0.97,
+        "recall": 0.94
+      },
+      "model_count": 50,
+      "name": "SR215 · S2 · MCMC · uploaded",
+      "sampling": "MCMC",
+      "state": "S2",
+      "status": "complete",
+      "target": "SR215",
+      "title": "SR215 · S2 · MCMC · uploaded",
+      "url": "data/runs/sr215-s2-mcmc-50-uploaded.json"
+    },
+    {
+      "collection_definition": "SR215 · HDBSCAN · residues 32–47 and 78–99",
+      "collection_id": "f443ce80e269c4b061640842287cdea89a6baaa7756203c5c3b05d4678e7bb9f",
+      "collection_label": "DISCO · 50 models",
+      "collection_state": "S3",
+      "ensemble_definition": "ASDP 2.3 Model ave: midrange inter-proton distances (minimum + maximum)/2 across input conformers, via the legacy function named median(); not statistical median or arithmetic mean of member DP.",
+      "ensemble_metrics": {
+        "dp": 0.8,
+        "precision": 0.96,
+        "recall": 0.95
+      },
+      "id": "sr215-s3-disco-50-original",
+      "input_variant": "original",
+      "metric_availability": {
+        "energy": false,
+        "model_dp": true,
+        "model_precision": true,
+        "model_recall": true,
+        "plddt": false,
+        "ptm": false,
+        "residue_dp": false,
+        "residue_precision": false,
+        "residue_recall": false
+      },
+      "metrics": {
+        "dp": 0.8,
+        "precision": 0.96,
+        "recall": 0.95
+      },
+      "model_count": 50,
+      "name": "SR215 · S3 · DISCO · original",
+      "sampling": "DISCO",
+      "state": "S3",
+      "status": "complete",
+      "target": "SR215",
+      "title": "SR215 · S3 · DISCO · original",
+      "url": "data/runs/sr215-s3-disco-50-original.json"
+    },
+    {
+      "collection_definition": "SR215 · HDBSCAN · residues 32–47 and 78–99",
+      "collection_id": "f443ce80e269c4b061640842287cdea89a6baaa7756203c5c3b05d4678e7bb9f",
+      "collection_label": "DISCO · 50 models",
+      "collection_state": "S3",
+      "ensemble_definition": "ASDP 2.3 Model ave: midrange inter-proton distances (minimum + maximum)/2 across input conformers, via the legacy function named median(); not statistical median or arithmetic mean of member DP.",
+      "ensemble_metrics": {
+        "dp": 0.81,
+        "precision": 0.96,
+        "recall": 0.95
+      },
+      "id": "sr215-s3-disco-50-uploaded",
+      "input_variant": "uploaded",
+      "metric_availability": {
+        "energy": false,
+        "model_dp": true,
+        "model_precision": true,
+        "model_recall": true,
+        "plddt": false,
+        "ptm": false,
+        "residue_dp": false,
+        "residue_precision": false,
+        "residue_recall": false
+      },
+      "metrics": {
+        "dp": 0.81,
+        "precision": 0.96,
+        "recall": 0.95
+      },
+      "model_count": 50,
+      "name": "SR215 · S3 · DISCO · uploaded",
+      "sampling": "DISCO",
+      "state": "S3",
+      "status": "complete",
+      "target": "SR215",
+      "title": "SR215 · S3 · DISCO · uploaded",
+      "url": "data/runs/sr215-s3-disco-50-uploaded.json"
+    },
+    {
+      "collection_definition": "SR215 · HDBSCAN · residues 32–47 and 78–99",
+      "collection_id": "2e5ef2882aa0e7e6247642f809dec2fd7844988230cd25bef0e692c2808f1f66",
+      "collection_label": "MCMC · 50 models",
+      "collection_state": "S3",
+      "ensemble_definition": "ASDP 2.3 Model ave: midrange inter-proton distances (minimum + maximum)/2 across input conformers, via the legacy function named median(); not statistical median or arithmetic mean of member DP.",
+      "ensemble_metrics": {
+        "dp": 0.81,
+        "precision": 0.96,
+        "recall": 0.94
+      },
+      "id": "sr215-s3-mcmc-50-original",
+      "input_variant": "original",
+      "metric_availability": {
+        "energy": false,
+        "model_dp": true,
+        "model_precision": true,
+        "model_recall": true,
+        "plddt": false,
+        "ptm": false,
+        "residue_dp": false,
+        "residue_precision": false,
+        "residue_recall": false
+      },
+      "metrics": {
+        "dp": 0.81,
+        "precision": 0.96,
+        "recall": 0.94
+      },
+      "model_count": 50,
+      "name": "SR215 · S3 · MCMC · original",
+      "sampling": "MCMC",
+      "state": "S3",
+      "status": "complete",
+      "target": "SR215",
+      "title": "SR215 · S3 · MCMC · original",
+      "url": "data/runs/sr215-s3-mcmc-50-original.json"
+    },
+    {
+      "collection_definition": "SR215 · HDBSCAN · residues 32–47 and 78–99",
+      "collection_id": "2e5ef2882aa0e7e6247642f809dec2fd7844988230cd25bef0e692c2808f1f66",
+      "collection_label": "MCMC · 50 models",
+      "collection_state": "S3",
+      "ensemble_definition": "ASDP 2.3 Model ave: midrange inter-proton distances (minimum + maximum)/2 across input conformers, via the legacy function named median(); not statistical median or arithmetic mean of member DP.",
+      "ensemble_metrics": {
+        "dp": 0.82,
+        "precision": 0.96,
+        "recall": 0.95
+      },
+      "id": "sr215-s3-mcmc-50-uploaded",
+      "input_variant": "uploaded",
+      "metric_availability": {
+        "energy": false,
+        "model_dp": true,
+        "model_precision": true,
+        "model_recall": true,
+        "plddt": false,
+        "ptm": false,
+        "residue_dp": false,
+        "residue_precision": false,
+        "residue_recall": false
+      },
+      "metrics": {
+        "dp": 0.82,
+        "precision": 0.96,
+        "recall": 0.95
+      },
+      "model_count": 50,
+      "name": "SR215 · S3 · MCMC · uploaded",
+      "sampling": "MCMC",
+      "state": "S3",
+      "status": "complete",
+      "target": "SR215",
+      "title": "SR215 · S3 · MCMC · uploaded",
+      "url": "data/runs/sr215-s3-mcmc-50-uploaded.json"
+    }
+  ],
+  "schema_version": 1
+}

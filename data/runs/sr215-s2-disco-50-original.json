@@ -1,0 +1,1709 @@
+{
+  "artifacts": [
+    {
+      "available": true,
+      "bytes": 9263678,
+      "key": "ensemble",
+      "kind": "models",
+      "media_type": "chemical/x-pdb",
+      "name": "ensemble.pdb",
+      "sha256": "f4d7de3e5504bec791e253d788b1bc651640b8c322a35733dfd856db1a6798af",
+      "url": "assets/f4d7de3e5504bec791e253d788b1bc651640b8c322a35733dfd856db1a6798af.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-1",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFCluster__0225.pdb",
+      "sha256": "a59ea9e734d4f432489094ffbd8c473f0a2c27c2fe2ca78c7fc745e4fed2038d",
+      "url": "assets/a59ea9e734d4f432489094ffbd8c473f0a2c27c2fe2ca78c7fc745e4fed2038d.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-2",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFCluster__0253.pdb",
+      "sha256": "8bddc531c3857e26f0af944e9c7dd3d605bef5412d2d3b97fb05cac83833663a",
+      "url": "assets/8bddc531c3857e26f0af944e9c7dd3d605bef5412d2d3b97fb05cac83833663a.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-3",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFCluster__0533.pdb",
+      "sha256": "d4d11c93aac385ce8fbb5d21a5bea81360be54bae20273355e72a7897a7f9969",
+      "url": "assets/d4d11c93aac385ce8fbb5d21a5bea81360be54bae20273355e72a7897a7f9969.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-4",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFCluster__0589.pdb",
+      "sha256": "da219210eddca8f57deb39b8ef64c1ef84de832ca4c630c54e94a9bbbb93a0e7",
+      "url": "assets/da219210eddca8f57deb39b8ef64c1ef84de832ca4c630c54e94a9bbbb93a0e7.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-5",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFCluster__0631.pdb",
+      "sha256": "3cb5c9e638feb77f03ec423791f19923fc13b9414c67acd9efe3eb9b0305e36f",
+      "url": "assets/3cb5c9e638feb77f03ec423791f19923fc13b9414c67acd9efe3eb9b0305e36f.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-6",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFCluster__0729.pdb",
+      "sha256": "afdfc447074d9003ae96ca394412072d5d838dc2ddecf87cd81407ad168b2c62",
+      "url": "assets/afdfc447074d9003ae96ca394412072d5d838dc2ddecf87cd81407ad168b2c62.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-7",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFCluster__0799.pdb",
+      "sha256": "4f689876ca678f7fe7f2037fcf12bfd1db05b82b1f50cbe47b7c9acd467fd82b",
+      "url": "assets/4f689876ca678f7fe7f2037fcf12bfd1db05b82b1f50cbe47b7c9acd467fd82b.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-8",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFCluster__0827.pdb",
+      "sha256": "d4e48774171decf8ce7a3952a73eae4850ef7397b89f53583cf70a7b7fc01515",
+      "url": "assets/d4e48774171decf8ce7a3952a73eae4850ef7397b89f53583cf70a7b7fc01515.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-9",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFCluster__0869.pdb",
+      "sha256": "9ba6ab7d7f162db835e3fd127126bf15376355e6a2c758760d2b38fe25f1104c",
+      "url": "assets/9ba6ab7d7f162db835e3fd127126bf15376355e6a2c758760d2b38fe25f1104c.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-10",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFCluster__0967.pdb",
+      "sha256": "03b64d96fdd5e2c9b01db1354836ddea60499132149f6b5e06cf72902ce8e21e",
+      "url": "assets/03b64d96fdd5e2c9b01db1354836ddea60499132149f6b5e06cf72902ce8e21e.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-11",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0004.pdb",
+      "sha256": "a5cb06d7fa202efcab657bb18da19ed1748fc5ee68a7d6bbcfdc3a53c214c7bc",
+      "url": "assets/a5cb06d7fa202efcab657bb18da19ed1748fc5ee68a7d6bbcfdc3a53c214c7bc.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-12",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0011.pdb",
+      "sha256": "07775a435e62d7b4b58d23e0bfe3e4dc1e1353325cd9618b17dd4cb7ad33245f",
+      "url": "assets/07775a435e62d7b4b58d23e0bfe3e4dc1e1353325cd9618b17dd4cb7ad33245f.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-13",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0065.pdb",
+      "sha256": "a0470e12f279f8f8c72c1015388937385b224feed3e109155f1c66e70dd3442a",
+      "url": "assets/a0470e12f279f8f8c72c1015388937385b224feed3e109155f1c66e70dd3442a.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-14",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0089.pdb",
+      "sha256": "29af97f1318e548f796907a7c82a008036c320bdb8186176d92c20edd8ea9f1b",
+      "url": "assets/29af97f1318e548f796907a7c82a008036c320bdb8186176d92c20edd8ea9f1b.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-15",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0102.pdb",
+      "sha256": "8a26aedd5331f78b8e4e802403a4d9efce9e05f952682d80a9cee4f74ac51986",
+      "url": "assets/8a26aedd5331f78b8e4e802403a4d9efce9e05f952682d80a9cee4f74ac51986.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-16",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0103.pdb",
+      "sha256": "e986d4cba6fcf6f6baf10a74200ad5c8870f531e067001acf772828af76e2557",
+      "url": "assets/e986d4cba6fcf6f6baf10a74200ad5c8870f531e067001acf772828af76e2557.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-17",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0142.pdb",
+      "sha256": "61fba40d3a0919df8b67de6fb6cc2a52803774542595a93bb9d668435ff29c89",
+      "url": "assets/61fba40d3a0919df8b67de6fb6cc2a52803774542595a93bb9d668435ff29c89.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-18",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0143.pdb",
+      "sha256": "8e45bd04b2ad7a69b77c928479e536cb20733752f2abd9ffd6de7ae9dce5d2c4",
+      "url": "assets/8e45bd04b2ad7a69b77c928479e536cb20733752f2abd9ffd6de7ae9dce5d2c4.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-19",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0160.pdb",
+      "sha256": "08f889b5dc62b177e958cb9a24b2c9b3eabf4f003b2406185e15635330a68cd0",
+      "url": "assets/08f889b5dc62b177e958cb9a24b2c9b3eabf4f003b2406185e15635330a68cd0.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-20",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0164.pdb",
+      "sha256": "4b29b7d6ea81700ca3db7e3a37af6303e2aa614c269e26d3bcf194c40784f148",
+      "url": "assets/4b29b7d6ea81700ca3db7e3a37af6303e2aa614c269e26d3bcf194c40784f148.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-21",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0286.pdb",
+      "sha256": "cc81418152f54468554491616aa5fd0a5b6faf6be0b78e897bbb9c6d41898c4b",
+      "url": "assets/cc81418152f54468554491616aa5fd0a5b6faf6be0b78e897bbb9c6d41898c4b.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-22",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0305.pdb",
+      "sha256": "58926928db5651c6227663a8806098902c42d5d14885306117eb8bb84413c9bf",
+      "url": "assets/58926928db5651c6227663a8806098902c42d5d14885306117eb8bb84413c9bf.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-23",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0328.pdb",
+      "sha256": "f5af2d1f451837d0607533bb21bc9ac7bb9e5051fd0b0eacc281e7a8fb20f46d",
+      "url": "assets/f5af2d1f451837d0607533bb21bc9ac7bb9e5051fd0b0eacc281e7a8fb20f46d.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-24",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0359.pdb",
+      "sha256": "3447c503fa0cb3e6d51261080de3d7e03e880ac2372d4e2ca08e49dc0e71fd92",
+      "url": "assets/3447c503fa0cb3e6d51261080de3d7e03e880ac2372d4e2ca08e49dc0e71fd92.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-25",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0400.pdb",
+      "sha256": "a342270c986dd2c4d8b1e91f5b8538bb2b8fd0248f5d18ec80a3c1a02368555e",
+      "url": "assets/a342270c986dd2c4d8b1e91f5b8538bb2b8fd0248f5d18ec80a3c1a02368555e.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-26",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0435.pdb",
+      "sha256": "5759a2cb2f4730b35b6ba36001260899d820ce6af54377a43178a8bca358f459",
+      "url": "assets/5759a2cb2f4730b35b6ba36001260899d820ce6af54377a43178a8bca358f459.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-27",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0452.pdb",
+      "sha256": "971dd21177a8f4e8b71a518e32f75ff0b640af736b8a333af9c5de5c480b3274",
+      "url": "assets/971dd21177a8f4e8b71a518e32f75ff0b640af736b8a333af9c5de5c480b3274.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-28",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0474.pdb",
+      "sha256": "7a91e2e0e8ccb570b10b9d7d4be0b81ad189b42a8e2014df7d9f3fd327472147",
+      "url": "assets/7a91e2e0e8ccb570b10b9d7d4be0b81ad189b42a8e2014df7d9f3fd327472147.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-29",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0487.pdb",
+      "sha256": "3819eff79e50fbbb11483f42bd16339025065da0a652f035f3a20efab29871a1",
+      "url": "assets/3819eff79e50fbbb11483f42bd16339025065da0a652f035f3a20efab29871a1.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-30",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0519.pdb",
+      "sha256": "8053c096bfcd9fd2701a7b0328417dfb58401d5ca0ab1fad6e052a822d122ca1",
+      "url": "assets/8053c096bfcd9fd2701a7b0328417dfb58401d5ca0ab1fad6e052a822d122ca1.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-31",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0558.pdb",
+      "sha256": "f7a930ba23fbb3cd415b4cd900a92d8667da1d7690f2290416900e0d3474d00e",
+      "url": "assets/f7a930ba23fbb3cd415b4cd900a92d8667da1d7690f2290416900e0d3474d00e.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-32",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0568.pdb",
+      "sha256": "d3c25e13b5a6f92e11d3b190ae089e9001007f52654e47faf4d3f7c33372abfe",
+      "url": "assets/d3c25e13b5a6f92e11d3b190ae089e9001007f52654e47faf4d3f7c33372abfe.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-33",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0615.pdb",
+      "sha256": "9375f3f82ae61994d99f7498e0432436319a60aa49e80979915a631011290b82",
+      "url": "assets/9375f3f82ae61994d99f7498e0432436319a60aa49e80979915a631011290b82.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-34",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0663.pdb",
+      "sha256": "1614deac989d60c63871931152c70b1ed1cff590fcc86975f3b6c20c742f65ff",
+      "url": "assets/1614deac989d60c63871931152c70b1ed1cff590fcc86975f3b6c20c742f65ff.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-35",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0712.pdb",
+      "sha256": "d96ef3e10ae6ba4a73c3ba220d82885e8ff16737822842d2c69e9c1ea64b1e27",
+      "url": "assets/d96ef3e10ae6ba4a73c3ba220d82885e8ff16737822842d2c69e9c1ea64b1e27.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-36",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0754.pdb",
+      "sha256": "fe9cdd81e4aaa839311fab599e40aac1337634f3ac581aa686566ae73708e877",
+      "url": "assets/fe9cdd81e4aaa839311fab599e40aac1337634f3ac581aa686566ae73708e877.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-37",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0797.pdb",
+      "sha256": "f1395577873bc50d3094b8526562c3e07eee58711e50f25b61a1fffe2577d53c",
+      "url": "assets/f1395577873bc50d3094b8526562c3e07eee58711e50f25b61a1fffe2577d53c.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-38",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0832.pdb",
+      "sha256": "27947d6e40e6cb030e1f2162a7e6b0eca063d02fe2c59509446e9988a3330f8e",
+      "url": "assets/27947d6e40e6cb030e1f2162a7e6b0eca063d02fe2c59509446e9988a3330f8e.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-39",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0916.pdb",
+      "sha256": "455153787ea50bc3f8a118bfb1b00d68eac8202f5553477158bb83ef7fd482b4",
+      "url": "assets/455153787ea50bc3f8a118bfb1b00d68eac8202f5553477158bb83ef7fd482b4.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-40",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0931.pdb",
+      "sha256": "ee958b46e9077c7367c631810a8de89df7cd2aedcef1958877a6febdbac11386",
+      "url": "assets/ee958b46e9077c7367c631810a8de89df7cd2aedcef1958877a6febdbac11386.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-41",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0959.pdb",
+      "sha256": "d6a9370994893ebb1da1f5520496b8de754cc2a9b25dca84241a0f347fa7b591",
+      "url": "assets/d6a9370994893ebb1da1f5520496b8de754cc2a9b25dca84241a0f347fa7b591.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-42",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0997.pdb",
+      "sha256": "5e1585072ac20cc8aef02b6c690c6e1cf251e7c6b56abba309a0d8e34cbf0fc1",
+      "url": "assets/5e1585072ac20cc8aef02b6c690c6e1cf251e7c6b56abba309a0d8e34cbf0fc1.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185335,
+      "key": "model-43",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample3__0806.pdb",
+      "sha256": "370cd4297c01b9695e1fafbddadc70ffd9f20ce6c24dcd6b59c8b193e25dc522",
+      "url": "assets/370cd4297c01b9695e1fafbddadc70ffd9f20ce6c24dcd6b59c8b193e25dc522.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185253,
+      "key": "model-44",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__SPEACHAF__0023.pdb",
+      "sha256": "d79f4e0d9f8196897798507a64f425d192f4974100a641f2b86c093d6d2e026b",
+      "url": "assets/d79f4e0d9f8196897798507a64f425d192f4974100a641f2b86c093d6d2e026b.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185253,
+      "key": "model-45",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__SPEACHAF__0024.pdb",
+      "sha256": "3413c0db36f829816a662a224aa4d10e7a4792c424ceac06b945072756dca96d",
+      "url": "assets/3413c0db36f829816a662a224aa4d10e7a4792c424ceac06b945072756dca96d.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185253,
+      "key": "model-46",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__SPEACHAF__0223.pdb",
+      "sha256": "c65c9bbd5a93c14fffb882db3d602b71ac03287681fe12d325163c9541566651",
+      "url": "assets/c65c9bbd5a93c14fffb882db3d602b71ac03287681fe12d325163c9541566651.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185253,
+      "key": "model-47",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__SPEACHAF__0324.pdb",
+      "sha256": "76b22f2d897627fb9c2b21aa2a47aa09bc713cec74ef6967cadab8b17ffc67cc",
+      "url": "assets/76b22f2d897627fb9c2b21aa2a47aa09bc713cec74ef6967cadab8b17ffc67cc.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185253,
+      "key": "model-48",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__SPEACHAF__0473.pdb",
+      "sha256": "b3b05faabcf6e42809d70c10226def97eba086a4d5c1eff5fbebe02de9ec2d3a",
+      "url": "assets/b3b05faabcf6e42809d70c10226def97eba086a4d5c1eff5fbebe02de9ec2d3a.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185253,
+      "key": "model-49",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__SPEACHAF__0622.pdb",
+      "sha256": "1a225c3baf3c2d97e791661584f16ae36c40778960d3491f34d252e2584b8a0c",
+      "url": "assets/1a225c3baf3c2d97e791661584f16ae36c40778960d3491f34d252e2584b8a0c.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185253,
+      "key": "model-50",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__SPEACHAF__0774.pdb",
+      "sha256": "726b803122533f0b0e3b150d923f33ae5616de78dd3df3964700aaa5b697dbb1",
+      "url": "assets/726b803122533f0b0e3b150d923f33ae5616de78dd3df3964700aaa5b697dbb1.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 1984,
+      "key": "input-seq-bmrb",
+      "kind": "input",
+      "media_type": "text/plain",
+      "name": "seq.bmrb",
+      "sha256": "cd516e9ad3b167f6d9bcfbecaa7d616c89eca4e753e0f72d26b6fa0be2980000",
+      "url": "assets/cd516e9ad3b167f6d9bcfbecaa7d616c89eca4e753e0f72d26b6fa0be2980000.txt"
+    },
+    {
+      "available": true,
+      "bytes": 68400,
+      "key": "input-sr215-bmrb",
+      "kind": "input",
+      "media_type": "text/plain",
+      "name": "sr215.bmrb",
+      "sha256": "b9402c3fa0191ec4c2e9e7795cd54412404565142842903c7450e06d715469af",
+      "url": "assets/b9402c3fa0191ec4c2e9e7795cd54412404565142842903c7450e06d715469af.txt"
+    },
+    {
+      "available": true,
+      "bytes": 524256,
+      "key": "input-cnoe-peaks",
+      "kind": "input",
+      "media_type": "text/plain",
+      "name": "cnoe.peaks",
+      "sha256": "633b56ae89db987115724b4fc148080def6cf90ba5c24d94affea66f88334482",
+      "url": "assets/633b56ae89db987115724b4fc148080def6cf90ba5c24d94affea66f88334482.txt"
+    },
+    {
+      "available": true,
+      "bytes": 183746,
+      "key": "input-nnoe-peaks",
+      "kind": "input",
+      "media_type": "text/plain",
+      "name": "nnoe.peaks",
+      "sha256": "10e90f8c5e571491c173e4cc842f342fe701bceba22f574db50817e01e63102a",
+      "url": "assets/10e90f8c5e571491c173e4cc842f342fe701bceba22f574db50817e01e63102a.txt"
+    },
+    {
+      "available": true,
+      "bytes": 1886,
+      "key": "input-par-tbl",
+      "kind": "input",
+      "media_type": "text/plain",
+      "name": "par.tbl",
+      "sha256": "39e7829c3a305924c013ee0137402757255c3871422823f1ea4a834bc859f244",
+      "url": "assets/39e7829c3a305924c013ee0137402757255c3871422823f1ea4a834bc859f244.txt"
+    },
+    {
+      "available": true,
+      "bytes": 927,
+      "key": "portable-control",
+      "kind": "input",
+      "media_type": "text/plain",
+      "name": "rpf.control",
+      "sha256": "3c11ebdfd45a3af2e293fde7b93a805ebc84c73509e51c229cf280d68828cc4f",
+      "url": "assets/3c11ebdfd45a3af2e293fde7b93a805ebc84c73509e51c229cf280d68828cc4f.txt"
+    },
+    {
+      "available": true,
+      "bytes": 2512,
+      "key": "scores",
+      "kind": "scores",
+      "media_type": "text/csv",
+      "name": "scores.csv",
+      "sha256": "4ea76aa30d537f7a1390bd89186f9b0785fb18bfc07ce6b087ce27959a79b681",
+      "url": "assets/4ea76aa30d537f7a1390bd89186f9b0785fb18bfc07ce6b087ce27959a79b681.csv"
+    },
+    {
+      "available": true,
+      "bytes": 2029876,
+      "key": "run-bundle",
+      "kind": "bundle",
+      "media_type": "application/zip",
+      "name": "sr215-s2-disco-50-original.zip",
+      "sha256": "068d276c1df8899856b9038efab06217ad222066e9a1df4baae79aca7454a0f8",
+      "url": "assets/068d276c1df8899856b9038efab06217ad222066e9a1df4baae79aca7454a0f8.zip"
+    }
+  ],
+  "collection_definition": "SR215 · HDBSCAN · residues 32–47 and 78–99",
+  "collection_id": "d98df4ce32efae651e4c668d88293d966d2c259da07ec97a6a3547a02424b2c6",
+  "collection_label": "DISCO · 50 models",
+  "collection_state": "S2",
+  "ensemble_definition": "ASDP 2.3 Model ave: midrange inter-proton distances (minimum + maximum)/2 across input conformers, via the legacy function named median(); not statistical median or arithmetic mean of member DP.",
+  "ensemble_metrics": {
+    "dp": 0.79,
+    "precision": 0.96,
+    "recall": 0.94
+  },
+  "files": [
+    {
+      "available": true,
+      "bytes": 9263678,
+      "key": "ensemble",
+      "kind": "models",
+      "media_type": "chemical/x-pdb",
+      "name": "ensemble.pdb",
+      "sha256": "f4d7de3e5504bec791e253d788b1bc651640b8c322a35733dfd856db1a6798af",
+      "url": "assets/f4d7de3e5504bec791e253d788b1bc651640b8c322a35733dfd856db1a6798af.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-1",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFCluster__0225.pdb",
+      "sha256": "a59ea9e734d4f432489094ffbd8c473f0a2c27c2fe2ca78c7fc745e4fed2038d",
+      "url": "assets/a59ea9e734d4f432489094ffbd8c473f0a2c27c2fe2ca78c7fc745e4fed2038d.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-2",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFCluster__0253.pdb",
+      "sha256": "8bddc531c3857e26f0af944e9c7dd3d605bef5412d2d3b97fb05cac83833663a",
+      "url": "assets/8bddc531c3857e26f0af944e9c7dd3d605bef5412d2d3b97fb05cac83833663a.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-3",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFCluster__0533.pdb",
+      "sha256": "d4d11c93aac385ce8fbb5d21a5bea81360be54bae20273355e72a7897a7f9969",
+      "url": "assets/d4d11c93aac385ce8fbb5d21a5bea81360be54bae20273355e72a7897a7f9969.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-4",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFCluster__0589.pdb",
+      "sha256": "da219210eddca8f57deb39b8ef64c1ef84de832ca4c630c54e94a9bbbb93a0e7",
+      "url": "assets/da219210eddca8f57deb39b8ef64c1ef84de832ca4c630c54e94a9bbbb93a0e7.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-5",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFCluster__0631.pdb",
+      "sha256": "3cb5c9e638feb77f03ec423791f19923fc13b9414c67acd9efe3eb9b0305e36f",
+      "url": "assets/3cb5c9e638feb77f03ec423791f19923fc13b9414c67acd9efe3eb9b0305e36f.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-6",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFCluster__0729.pdb",
+      "sha256": "afdfc447074d9003ae96ca394412072d5d838dc2ddecf87cd81407ad168b2c62",
+      "url": "assets/afdfc447074d9003ae96ca394412072d5d838dc2ddecf87cd81407ad168b2c62.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-7",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFCluster__0799.pdb",
+      "sha256": "4f689876ca678f7fe7f2037fcf12bfd1db05b82b1f50cbe47b7c9acd467fd82b",
+      "url": "assets/4f689876ca678f7fe7f2037fcf12bfd1db05b82b1f50cbe47b7c9acd467fd82b.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-8",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFCluster__0827.pdb",
+      "sha256": "d4e48774171decf8ce7a3952a73eae4850ef7397b89f53583cf70a7b7fc01515",
+      "url": "assets/d4e48774171decf8ce7a3952a73eae4850ef7397b89f53583cf70a7b7fc01515.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-9",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFCluster__0869.pdb",
+      "sha256": "9ba6ab7d7f162db835e3fd127126bf15376355e6a2c758760d2b38fe25f1104c",
+      "url": "assets/9ba6ab7d7f162db835e3fd127126bf15376355e6a2c758760d2b38fe25f1104c.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-10",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFCluster__0967.pdb",
+      "sha256": "03b64d96fdd5e2c9b01db1354836ddea60499132149f6b5e06cf72902ce8e21e",
+      "url": "assets/03b64d96fdd5e2c9b01db1354836ddea60499132149f6b5e06cf72902ce8e21e.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-11",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0004.pdb",
+      "sha256": "a5cb06d7fa202efcab657bb18da19ed1748fc5ee68a7d6bbcfdc3a53c214c7bc",
+      "url": "assets/a5cb06d7fa202efcab657bb18da19ed1748fc5ee68a7d6bbcfdc3a53c214c7bc.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-12",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0011.pdb",
+      "sha256": "07775a435e62d7b4b58d23e0bfe3e4dc1e1353325cd9618b17dd4cb7ad33245f",
+      "url": "assets/07775a435e62d7b4b58d23e0bfe3e4dc1e1353325cd9618b17dd4cb7ad33245f.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-13",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0065.pdb",
+      "sha256": "a0470e12f279f8f8c72c1015388937385b224feed3e109155f1c66e70dd3442a",
+      "url": "assets/a0470e12f279f8f8c72c1015388937385b224feed3e109155f1c66e70dd3442a.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-14",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0089.pdb",
+      "sha256": "29af97f1318e548f796907a7c82a008036c320bdb8186176d92c20edd8ea9f1b",
+      "url": "assets/29af97f1318e548f796907a7c82a008036c320bdb8186176d92c20edd8ea9f1b.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-15",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0102.pdb",
+      "sha256": "8a26aedd5331f78b8e4e802403a4d9efce9e05f952682d80a9cee4f74ac51986",
+      "url": "assets/8a26aedd5331f78b8e4e802403a4d9efce9e05f952682d80a9cee4f74ac51986.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-16",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0103.pdb",
+      "sha256": "e986d4cba6fcf6f6baf10a74200ad5c8870f531e067001acf772828af76e2557",
+      "url": "assets/e986d4cba6fcf6f6baf10a74200ad5c8870f531e067001acf772828af76e2557.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-17",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0142.pdb",
+      "sha256": "61fba40d3a0919df8b67de6fb6cc2a52803774542595a93bb9d668435ff29c89",
+      "url": "assets/61fba40d3a0919df8b67de6fb6cc2a52803774542595a93bb9d668435ff29c89.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-18",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0143.pdb",
+      "sha256": "8e45bd04b2ad7a69b77c928479e536cb20733752f2abd9ffd6de7ae9dce5d2c4",
+      "url": "assets/8e45bd04b2ad7a69b77c928479e536cb20733752f2abd9ffd6de7ae9dce5d2c4.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-19",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0160.pdb",
+      "sha256": "08f889b5dc62b177e958cb9a24b2c9b3eabf4f003b2406185e15635330a68cd0",
+      "url": "assets/08f889b5dc62b177e958cb9a24b2c9b3eabf4f003b2406185e15635330a68cd0.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-20",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0164.pdb",
+      "sha256": "4b29b7d6ea81700ca3db7e3a37af6303e2aa614c269e26d3bcf194c40784f148",
+      "url": "assets/4b29b7d6ea81700ca3db7e3a37af6303e2aa614c269e26d3bcf194c40784f148.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-21",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0286.pdb",
+      "sha256": "cc81418152f54468554491616aa5fd0a5b6faf6be0b78e897bbb9c6d41898c4b",
+      "url": "assets/cc81418152f54468554491616aa5fd0a5b6faf6be0b78e897bbb9c6d41898c4b.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-22",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0305.pdb",
+      "sha256": "58926928db5651c6227663a8806098902c42d5d14885306117eb8bb84413c9bf",
+      "url": "assets/58926928db5651c6227663a8806098902c42d5d14885306117eb8bb84413c9bf.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-23",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0328.pdb",
+      "sha256": "f5af2d1f451837d0607533bb21bc9ac7bb9e5051fd0b0eacc281e7a8fb20f46d",
+      "url": "assets/f5af2d1f451837d0607533bb21bc9ac7bb9e5051fd0b0eacc281e7a8fb20f46d.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-24",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0359.pdb",
+      "sha256": "3447c503fa0cb3e6d51261080de3d7e03e880ac2372d4e2ca08e49dc0e71fd92",
+      "url": "assets/3447c503fa0cb3e6d51261080de3d7e03e880ac2372d4e2ca08e49dc0e71fd92.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-25",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0400.pdb",
+      "sha256": "a342270c986dd2c4d8b1e91f5b8538bb2b8fd0248f5d18ec80a3c1a02368555e",
+      "url": "assets/a342270c986dd2c4d8b1e91f5b8538bb2b8fd0248f5d18ec80a3c1a02368555e.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-26",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0435.pdb",
+      "sha256": "5759a2cb2f4730b35b6ba36001260899d820ce6af54377a43178a8bca358f459",
+      "url": "assets/5759a2cb2f4730b35b6ba36001260899d820ce6af54377a43178a8bca358f459.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-27",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0452.pdb",
+      "sha256": "971dd21177a8f4e8b71a518e32f75ff0b640af736b8a333af9c5de5c480b3274",
+      "url": "assets/971dd21177a8f4e8b71a518e32f75ff0b640af736b8a333af9c5de5c480b3274.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-28",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0474.pdb",
+      "sha256": "7a91e2e0e8ccb570b10b9d7d4be0b81ad189b42a8e2014df7d9f3fd327472147",
+      "url": "assets/7a91e2e0e8ccb570b10b9d7d4be0b81ad189b42a8e2014df7d9f3fd327472147.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-29",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0487.pdb",
+      "sha256": "3819eff79e50fbbb11483f42bd16339025065da0a652f035f3a20efab29871a1",
+      "url": "assets/3819eff79e50fbbb11483f42bd16339025065da0a652f035f3a20efab29871a1.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-30",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0519.pdb",
+      "sha256": "8053c096bfcd9fd2701a7b0328417dfb58401d5ca0ab1fad6e052a822d122ca1",
+      "url": "assets/8053c096bfcd9fd2701a7b0328417dfb58401d5ca0ab1fad6e052a822d122ca1.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-31",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0558.pdb",
+      "sha256": "f7a930ba23fbb3cd415b4cd900a92d8667da1d7690f2290416900e0d3474d00e",
+      "url": "assets/f7a930ba23fbb3cd415b4cd900a92d8667da1d7690f2290416900e0d3474d00e.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-32",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0568.pdb",
+      "sha256": "d3c25e13b5a6f92e11d3b190ae089e9001007f52654e47faf4d3f7c33372abfe",
+      "url": "assets/d3c25e13b5a6f92e11d3b190ae089e9001007f52654e47faf4d3f7c33372abfe.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-33",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0615.pdb",
+      "sha256": "9375f3f82ae61994d99f7498e0432436319a60aa49e80979915a631011290b82",
+      "url": "assets/9375f3f82ae61994d99f7498e0432436319a60aa49e80979915a631011290b82.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-34",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0663.pdb",
+      "sha256": "1614deac989d60c63871931152c70b1ed1cff590fcc86975f3b6c20c742f65ff",
+      "url": "assets/1614deac989d60c63871931152c70b1ed1cff590fcc86975f3b6c20c742f65ff.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-35",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0712.pdb",
+      "sha256": "d96ef3e10ae6ba4a73c3ba220d82885e8ff16737822842d2c69e9c1ea64b1e27",
+      "url": "assets/d96ef3e10ae6ba4a73c3ba220d82885e8ff16737822842d2c69e9c1ea64b1e27.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-36",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0754.pdb",
+      "sha256": "fe9cdd81e4aaa839311fab599e40aac1337634f3ac581aa686566ae73708e877",
+      "url": "assets/fe9cdd81e4aaa839311fab599e40aac1337634f3ac581aa686566ae73708e877.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-37",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0797.pdb",
+      "sha256": "f1395577873bc50d3094b8526562c3e07eee58711e50f25b61a1fffe2577d53c",
+      "url": "assets/f1395577873bc50d3094b8526562c3e07eee58711e50f25b61a1fffe2577d53c.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-38",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0832.pdb",
+      "sha256": "27947d6e40e6cb030e1f2162a7e6b0eca063d02fe2c59509446e9988a3330f8e",
+      "url": "assets/27947d6e40e6cb030e1f2162a7e6b0eca063d02fe2c59509446e9988a3330f8e.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-39",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0916.pdb",
+      "sha256": "455153787ea50bc3f8a118bfb1b00d68eac8202f5553477158bb83ef7fd482b4",
+      "url": "assets/455153787ea50bc3f8a118bfb1b00d68eac8202f5553477158bb83ef7fd482b4.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-40",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0931.pdb",
+      "sha256": "ee958b46e9077c7367c631810a8de89df7cd2aedcef1958877a6febdbac11386",
+      "url": "assets/ee958b46e9077c7367c631810a8de89df7cd2aedcef1958877a6febdbac11386.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-41",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0959.pdb",
+      "sha256": "d6a9370994893ebb1da1f5520496b8de754cc2a9b25dca84241a0f347fa7b591",
+      "url": "assets/d6a9370994893ebb1da1f5520496b8de754cc2a9b25dca84241a0f347fa7b591.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185254,
+      "key": "model-42",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample2__0997.pdb",
+      "sha256": "5e1585072ac20cc8aef02b6c690c6e1cf251e7c6b56abba309a0d8e34cbf0fc1",
+      "url": "assets/5e1585072ac20cc8aef02b6c690c6e1cf251e7c6b56abba309a0d8e34cbf0fc1.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185335,
+      "key": "model-43",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__AFSample3__0806.pdb",
+      "sha256": "370cd4297c01b9695e1fafbddadc70ffd9f20ce6c24dcd6b59c8b193e25dc522",
+      "url": "assets/370cd4297c01b9695e1fafbddadc70ffd9f20ce6c24dcd6b59c8b193e25dc522.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185253,
+      "key": "model-44",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__SPEACHAF__0023.pdb",
+      "sha256": "d79f4e0d9f8196897798507a64f425d192f4974100a641f2b86c093d6d2e026b",
+      "url": "assets/d79f4e0d9f8196897798507a64f425d192f4974100a641f2b86c093d6d2e026b.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185253,
+      "key": "model-45",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__SPEACHAF__0024.pdb",
+      "sha256": "3413c0db36f829816a662a224aa4d10e7a4792c424ceac06b945072756dca96d",
+      "url": "assets/3413c0db36f829816a662a224aa4d10e7a4792c424ceac06b945072756dca96d.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185253,
+      "key": "model-46",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__SPEACHAF__0223.pdb",
+      "sha256": "c65c9bbd5a93c14fffb882db3d602b71ac03287681fe12d325163c9541566651",
+      "url": "assets/c65c9bbd5a93c14fffb882db3d602b71ac03287681fe12d325163c9541566651.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185253,
+      "key": "model-47",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__SPEACHAF__0324.pdb",
+      "sha256": "76b22f2d897627fb9c2b21aa2a47aa09bc713cec74ef6967cadab8b17ffc67cc",
+      "url": "assets/76b22f2d897627fb9c2b21aa2a47aa09bc713cec74ef6967cadab8b17ffc67cc.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185253,
+      "key": "model-48",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__SPEACHAF__0473.pdb",
+      "sha256": "b3b05faabcf6e42809d70c10226def97eba086a4d5c1eff5fbebe02de9ec2d3a",
+      "url": "assets/b3b05faabcf6e42809d70c10226def97eba086a4d5c1eff5fbebe02de9ec2d3a.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185253,
+      "key": "model-49",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__SPEACHAF__0622.pdb",
+      "sha256": "1a225c3baf3c2d97e791661584f16ae36c40778960d3491f34d252e2584b8a0c",
+      "url": "assets/1a225c3baf3c2d97e791661584f16ae36c40778960d3491f34d252e2584b8a0c.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 185253,
+      "key": "model-50",
+      "kind": "model",
+      "media_type": "chemical/x-pdb",
+      "name": "SR215_bmr6366__SPEACHAF__0774.pdb",
+      "sha256": "726b803122533f0b0e3b150d923f33ae5616de78dd3df3964700aaa5b697dbb1",
+      "url": "assets/726b803122533f0b0e3b150d923f33ae5616de78dd3df3964700aaa5b697dbb1.pdb"
+    },
+    {
+      "available": true,
+      "bytes": 1984,
+      "key": "input-seq-bmrb",
+      "kind": "input",
+      "media_type": "text/plain",
+      "name": "seq.bmrb",
+      "sha256": "cd516e9ad3b167f6d9bcfbecaa7d616c89eca4e753e0f72d26b6fa0be2980000",
+      "url": "assets/cd516e9ad3b167f6d9bcfbecaa7d616c89eca4e753e0f72d26b6fa0be2980000.txt"
+    },
+    {
+      "available": true,
+      "bytes": 68400,
+      "key": "input-sr215-bmrb",
+      "kind": "input",
+      "media_type": "text/plain",
+      "name": "sr215.bmrb",
+      "sha256": "b9402c3fa0191ec4c2e9e7795cd54412404565142842903c7450e06d715469af",
+      "url": "assets/b9402c3fa0191ec4c2e9e7795cd54412404565142842903c7450e06d715469af.txt"
+    },
+    {
+      "available": true,
+      "bytes": 524256,
+      "key": "input-cnoe-peaks",
+      "kind": "input",
+      "media_type": "text/plain",
+      "name": "cnoe.peaks",
+      "sha256": "633b56ae89db987115724b4fc148080def6cf90ba5c24d94affea66f88334482",
+      "url": "assets/633b56ae89db987115724b4fc148080def6cf90ba5c24d94affea66f88334482.txt"
+    },
+    {
+      "available": true,
+      "bytes": 183746,
+      "key": "input-nnoe-peaks",
+      "kind": "input",
+      "media_type": "text/plain",
+      "name": "nnoe.peaks",
+      "sha256": "10e90f8c5e571491c173e4cc842f342fe701bceba22f574db50817e01e63102a",
+      "url": "assets/10e90f8c5e571491c173e4cc842f342fe701bceba22f574db50817e01e63102a.txt"
+    },
+    {
+      "available": true,
+      "bytes": 1886,
+      "key": "input-par-tbl",
+      "kind": "input",
+      "media_type": "text/plain",
+      "name": "par.tbl",
+      "sha256": "39e7829c3a305924c013ee0137402757255c3871422823f1ea4a834bc859f244",
+      "url": "assets/39e7829c3a305924c013ee0137402757255c3871422823f1ea4a834bc859f244.txt"
+    },
+    {
+      "available": true,
+      "bytes": 927,
+      "key": "portable-control",
+      "kind": "input",
+      "media_type": "text/plain",
+      "name": "rpf.control",
+      "sha256": "3c11ebdfd45a3af2e293fde7b93a805ebc84c73509e51c229cf280d68828cc4f",
+      "url": "assets/3c11ebdfd45a3af2e293fde7b93a805ebc84c73509e51c229cf280d68828cc4f.txt"
+    },
+    {
+      "available": true,
+      "bytes": 2512,
+      "key": "scores",
+      "kind": "scores",
+      "media_type": "text/csv",
+      "name": "scores.csv",
+      "sha256": "4ea76aa30d537f7a1390bd89186f9b0785fb18bfc07ce6b087ce27959a79b681",
+      "url": "assets/4ea76aa30d537f7a1390bd89186f9b0785fb18bfc07ce6b087ce27959a79b681.csv"
+    },
+    {
+      "available": true,
+      "bytes": 2029876,
+      "key": "run-bundle",
+      "kind": "bundle",
+      "media_type": "application/zip",
+      "name": "sr215-s2-disco-50-original.zip",
+      "sha256": "068d276c1df8899856b9038efab06217ad222066e9a1df4baae79aca7454a0f8",
+      "url": "assets/068d276c1df8899856b9038efab06217ad222066e9a1df4baae79aca7454a0f8.zip"
+    }
+  ],
+  "id": "sr215-s2-disco-50-original",
+  "input_variant": "original",
+  "inputs": [
+    {
+      "available": true,
+      "bytes": 1984,
+      "key": "input-seq-bmrb",
+      "kind": "input",
+      "media_type": "text/plain",
+      "name": "seq.bmrb",
+      "sha256": "cd516e9ad3b167f6d9bcfbecaa7d616c89eca4e753e0f72d26b6fa0be2980000",
+      "url": "assets/cd516e9ad3b167f6d9bcfbecaa7d616c89eca4e753e0f72d26b6fa0be2980000.txt"
+    },
+    {
+      "available": true,
+      "bytes": 68400,
+      "key": "input-sr215-bmrb",
+      "kind": "input",
+      "media_type": "text/plain",
+      "name": "sr215.bmrb",
+      "sha256": "b9402c3fa0191ec4c2e9e7795cd54412404565142842903c7450e06d715469af",
+      "url": "assets/b9402c3fa0191ec4c2e9e7795cd54412404565142842903c7450e06d715469af.txt"
+    },
+    {
+      "available": true,
+      "bytes": 524256,
+      "key": "input-cnoe-peaks",
+      "kind": "input",
+      "media_type": "text/plain",
+      "name": "cnoe.peaks",
+      "sha256": "633b56ae89db987115724b4fc148080def6cf90ba5c24d94affea66f88334482",
+      "url": "assets/633b56ae89db987115724b4fc148080def6cf90ba5c24d94affea66f88334482.txt"
+    },
+    {
+      "available": true,
+      "bytes": 183746,
+      "key": "input-nnoe-peaks",
+      "kind": "input",
+      "media_type": "text/plain",
+      "name": "nnoe.peaks",
+      "sha256": "10e90f8c5e571491c173e4cc842f342fe701bceba22f574db50817e01e63102a",
+      "url": "assets/10e90f8c5e571491c173e4cc842f342fe701bceba22f574db50817e01e63102a.txt"
+    },
+    {
+      "available": true,
+      "bytes": 1886,
+      "key": "input-par-tbl",
+      "kind": "input",
+      "media_type": "text/plain",
+      "name": "par.tbl",
+      "sha256": "39e7829c3a305924c013ee0137402757255c3871422823f1ea4a834bc859f244",
+      "url": "assets/39e7829c3a305924c013ee0137402757255c3871422823f1ea4a834bc859f244.txt"
+    },
+    {
+      "available": true,
+      "bytes": 927,
+      "key": "portable-control",
+      "kind": "input",
+      "media_type": "text/plain",
+      "name": "rpf.control",
+      "sha256": "3c11ebdfd45a3af2e293fde7b93a805ebc84c73509e51c229cf280d68828cc4f",
+      "url": "assets/3c11ebdfd45a3af2e293fde7b93a805ebc84c73509e51c229cf280d68828cc4f.txt"
+    }
+  ],
+  "metric_availability": {
+    "energy": false,
+    "model_dp": true,
+    "model_precision": true,
+    "model_recall": true,
+    "plddt": false,
+    "ptm": false,
+    "residue_dp": false,
+    "residue_precision": false,
+    "residue_recall": false
+  },
+  "metrics": {
+    "dp": 0.79,
+    "precision": 0.96,
+    "recall": 0.94
+  },
+  "model_count": 50,
+  "models": [
+    {
+      "dp": 0.72,
+      "id": "SR215_bmr6366__AFCluster__0225",
+      "index": 1,
+      "precision": 0.91,
+      "recall": 0.95,
+      "structure_key": "model-1"
+    },
+    {
+      "dp": 0.74,
+      "id": "SR215_bmr6366__AFCluster__0253",
+      "index": 2,
+      "precision": 0.92,
+      "recall": 0.95,
+      "structure_key": "model-2"
+    },
+    {
+      "dp": 0.75,
+      "id": "SR215_bmr6366__AFCluster__0533",
+      "index": 3,
+      "precision": 0.93,
+      "recall": 0.95,
+      "structure_key": "model-3"
+    },
+    {
+      "dp": 0.69,
+      "id": "SR215_bmr6366__AFCluster__0589",
+      "index": 4,
+      "precision": 0.91,
+      "recall": 0.95,
+      "structure_key": "model-4"
+    },
+    {
+      "dp": 0.73,
+      "id": "SR215_bmr6366__AFCluster__0631",
+      "index": 5,
+      "precision": 0.92,
+      "recall": 0.96,
+      "structure_key": "model-5"
+    },
+    {
+      "dp": 0.77,
+      "id": "SR215_bmr6366__AFCluster__0729",
+      "index": 6,
+      "precision": 0.93,
+      "recall": 0.96,
+      "structure_key": "model-6"
+    },
+    {
+      "dp": 0.75,
+      "id": "SR215_bmr6366__AFCluster__0799",
+      "index": 7,
+      "precision": 0.93,
+      "recall": 0.95,
+      "structure_key": "model-7"
+    },
+    {
+      "dp": 0.72,
+      "id": "SR215_bmr6366__AFCluster__0827",
+      "index": 8,
+      "precision": 0.92,
+      "recall": 0.95,
+      "structure_key": "model-8"
+    },
+    {
+      "dp": 0.74,
+      "id": "SR215_bmr6366__AFCluster__0869",
+      "index": 9,
+      "precision": 0.92,
+      "recall": 0.95,
+      "structure_key": "model-9"
+    },
+    {
+      "dp": 0.75,
+      "id": "SR215_bmr6366__AFCluster__0967",
+      "index": 10,
+      "precision": 0.93,
+      "recall": 0.95,
+      "structure_key": "model-10"
+    },
+    {
+      "dp": 0.73,
+      "id": "SR215_bmr6366__AFSample2__0004",
+      "index": 11,
+      "precision": 0.92,
+      "recall": 0.95,
+      "structure_key": "model-11"
+    },
+    {
+      "dp": 0.72,
+      "id": "SR215_bmr6366__AFSample2__0011",
+      "index": 12,
+      "precision": 0.92,
+      "recall": 0.95,
+      "structure_key": "model-12"
+    },
+    {
+      "dp": 0.69,
+      "id": "SR215_bmr6366__AFSample2__0065",
+      "index": 13,
+      "precision": 0.91,
+      "recall": 0.95,
+      "structure_key": "model-13"
+    },
+    {
+      "dp": 0.74,
+      "id": "SR215_bmr6366__AFSample2__0089",
+      "index": 14,
+      "precision": 0.93,
+      "recall": 0.94,
+      "structure_key": "model-14"
+    },
+    {
+      "dp": 0.71,
+      "id": "SR215_bmr6366__AFSample2__0102",
+      "index": 15,
+      "precision": 0.92,
+      "recall": 0.94,
+      "structure_key": "model-15"
+    },
+    {
+      "dp": 0.74,
+      "id": "SR215_bmr6366__AFSample2__0103",
+      "index": 16,
+      "precision": 0.92,
+      "recall": 0.95,
+      "structure_key": "model-16"
+    },
+    {
+      "dp": 0.74,
+      "id": "SR215_bmr6366__AFSample2__0142",
+      "index": 17,
+      "precision": 0.92,
+      "recall": 0.95,
+      "structure_key": "model-17"
+    },
+    {
+      "dp": 0.75,
+      "id": "SR215_bmr6366__AFSample2__0143",
+      "index": 18,
+      "precision": 0.93,
+      "recall": 0.95,
+      "structure_key": "model-18"
+    },
+    {
+      "dp": 0.71,
+      "id": "SR215_bmr6366__AFSample2__0160",
+      "index": 19,
+      "precision": 0.92,
+      "recall": 0.94,
+      "structure_key": "model-19"
+    },
+    {
+      "dp": 0.74,
+      "id": "SR215_bmr6366__AFSample2__0164",
+      "index": 20,
+      "precision": 0.93,
+      "recall": 0.95,
+      "structure_key": "model-20"
+    },
+    {
+      "dp": 0.72,
+      "id": "SR215_bmr6366__AFSample2__0286",
+      "index": 21,
+      "precision": 0.92,
+      "recall": 0.94,
+      "structure_key": "model-21"
+    },
+    {
+      "dp": 0.73,
+      "id": "SR215_bmr6366__AFSample2__0305",
+      "index": 22,
+      "precision": 0.92,
+      "recall": 0.95,
+      "structure_key": "model-22"
+    },
+    {
+      "dp": 0.76,
+      "id": "SR215_bmr6366__AFSample2__0328",
+      "index": 23,
+      "precision": 0.93,
+      "recall": 0.96,
+      "structure_key": "model-23"
+    },
+    {
+      "dp": 0.75,
+      "id": "SR215_bmr6366__AFSample2__0359",
+      "index": 24,
+      "precision": 0.93,
+      "recall": 0.95,
+      "structure_key": "model-24"
+    },
+    {
+      "dp": 0.69,
+      "id": "SR215_bmr6366__AFSample2__0400",
+      "index": 25,
+      "precision": 0.91,
+      "recall": 0.94,
+      "structure_key": "model-25"
+    },
+    {
+      "dp": 0.74,
+      "id": "SR215_bmr6366__AFSample2__0435",
+      "index": 26,
+      "precision": 0.92,
+      "recall": 0.95,
+      "structure_key": "model-26"
+    },
+    {
+      "dp": 0.72,
+      "id": "SR215_bmr6366__AFSample2__0452",
+      "index": 27,
+      "precision": 0.92,
+      "recall": 0.94,
+      "structure_key": "model-27"
+    },
+    {
+      "dp": 0.69,
+      "id": "SR215_bmr6366__AFSample2__0474",
+      "index": 28,
+      "precision": 0.9,
+      "recall": 0.95,
+      "structure_key": "model-28"
+    },
+    {
+      "dp": 0.73,
+      "id": "SR215_bmr6366__AFSample2__0487",
+      "index": 29,
+      "precision": 0.92,
+      "recall": 0.95,
+      "structure_key": "model-29"
+    },
+    {
+      "dp": 0.72,
+      "id": "SR215_bmr6366__AFSample2__0519",
+      "index": 30,
+      "precision": 0.92,
+      "recall": 0.95,
+      "structure_key": "model-30"
+    },
+    {
+      "dp": 0.7,
+      "id": "SR215_bmr6366__AFSample2__0558",
+      "index": 31,
+      "precision": 0.91,
+      "recall": 0.95,
+      "structure_key": "model-31"
+    },
+    {
+      "dp": 0.73,
+      "id": "SR215_bmr6366__AFSample2__0568",
+      "index": 32,
+      "precision": 0.92,
+      "recall": 0.95,
+      "structure_key": "model-32"
+    },
+    {
+      "dp": 0.75,
+      "id": "SR215_bmr6366__AFSample2__0615",
+      "index": 33,
+      "precision": 0.93,
+      "recall": 0.95,
+      "structure_key": "model-33"
+    },
+    {
+      "dp": 0.74,
+      "id": "SR215_bmr6366__AFSample2__0663",
+      "index": 34,
+      "precision": 0.93,
+      "recall": 0.95,
+      "structure_key": "model-34"
+    },
+    {
+      "dp": 0.76,
+      "id": "SR215_bmr6366__AFSample2__0712",
+      "index": 35,
+      "precision": 0.94,
+      "recall": 0.95,
+      "structure_key": "model-35"
+    },
+    {
+      "dp": 0.75,
+      "id": "SR215_bmr6366__AFSample2__0754",
+      "index": 36,
+      "precision": 0.93,
+      "recall": 0.95,
+      "structure_key": "model-36"
+    },
+    {
+      "dp": 0.74,
+      "id": "SR215_bmr6366__AFSample2__0797",
+      "index": 37,
+      "precision": 0.93,
+      "recall": 0.94,
+      "structure_key": "model-37"
+    },
+    {
+      "dp": 0.77,
+      "id": "SR215_bmr6366__AFSample2__0832",
+      "index": 38,
+      "precision": 0.93,
+      "recall": 0.95,
+      "structure_key": "model-38"
+    },
+    {
+      "dp": 0.76,
+      "id": "SR215_bmr6366__AFSample2__0916",
+      "index": 39,
+      "precision": 0.93,
+      "recall": 0.95,
+      "structure_key": "model-39"
+    },
+    {
+      "dp": 0.75,
+      "id": "SR215_bmr6366__AFSample2__0931",
+      "index": 40,
+      "precision": 0.94,
+      "recall": 0.95,
+      "structure_key": "model-40"
+    },
+    {
+      "dp": 0.76,
+      "id": "SR215_bmr6366__AFSample2__0959",
+      "index": 41,
+      "precision": 0.93,
+      "recall": 0.95,
+      "structure_key": "model-41"
+    },
+    {
+      "dp": 0.72,
+      "id": "SR215_bmr6366__AFSample2__0997",
+      "index": 42,
+      "precision": 0.93,
+      "recall": 0.94,
+      "structure_key": "model-42"
+    },
+    {
+      "dp": 0.79,
+      "id": "SR215_bmr6366__AFSample3__0806",
+      "index": 43,
+      "precision": 0.93,
+      "recall": 0.97,
+      "structure_key": "model-43"
+    },
+    {
+      "dp": 0.78,
+      "id": "SR215_bmr6366__SPEACHAF__0023",
+      "index": 44,
+      "precision": 0.94,
+      "recall": 0.95,
+      "structure_key": "model-44"
+    },
+    {
+      "dp": 0.78,
+      "id": "SR215_bmr6366__SPEACHAF__0024",
+      "index": 45,
+      "precision": 0.93,
+      "recall": 0.96,
+      "structure_key": "model-45"
+    },
+    {
+      "dp": 0.78,
+      "id": "SR215_bmr6366__SPEACHAF__0223",
+      "index": 46,
+      "precision": 0.94,
+      "recall": 0.95,
+      "structure_key": "model-46"
+    },
+    {
+      "dp": 0.76,
+      "id": "SR215_bmr6366__SPEACHAF__0324",
+      "index": 47,
+      "precision": 0.93,
+      "recall": 0.95,
+      "structure_key": "model-47"
+    },
+    {
+      "dp": 0.78,
+      "id": "SR215_bmr6366__SPEACHAF__0473",
+      "index": 48,
+      "precision": 0.94,
+      "recall": 0.95,
+      "structure_key": "model-48"
+    },
+    {
+      "dp": 0.77,
+      "id": "SR215_bmr6366__SPEACHAF__0622",
+      "index": 49,
+      "precision": 0.93,
+      "recall": 0.96,
+      "structure_key": "model-49"
+    },
+    {
+      "dp": 0.76,
+      "id": "SR215_bmr6366__SPEACHAF__0774",
+      "index": 50,
+      "precision": 0.93,
+      "recall": 0.96,
+      "structure_key": "model-50"
+    }
+  ],
+  "name": "SR215 · S2 · DISCO · original",
+  "provenance": [
+    {
+      "label": "BMRB 6366",
+      "url": "https://bmrb.io/data_library/summary/index.php?bmrbId=6366"
+    },
+    {
+      "label": "ASDP source",
+      "url": "https://github.rpi.edu/RPIBioinformatics/ASDP_public"
+    },
+    {
+      "label": "AIS selection",
+      "value": "SR215 · HDBSCAN · residues 32–47 and 78–99"
+    },
+    {
+      "label": "Input variant",
+      "value": "original"
+    },
+    {
+      "label": "Ensemble SHA-256",
+      "value": "f4d7de3e5504bec791e253d788b1bc651640b8c322a35733dfd856db1a6798af"
+    }
+  ],
+  "residue_metrics_url": "data/residues/sr215-s2-disco-50-original.json",
+  "sampling": "DISCO",
+  "state": "S2",
+  "status": "complete",
+  "structure_key": "ensemble",
+  "target": "SR215",
+  "title": "SR215 · S2 · DISCO · original"
+}

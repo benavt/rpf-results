@@ -1,0 +1,59 @@
+#this file defines the parameters that used by noesy_assign to 
+#make assignment, generate constraints and check violations.
+
+#Used in assigned expected peaks, htol for assignment, x_tol for assignment 
+EXPECT 		0.03 0.3
+
+#Used in assigned expected peaks
+#frequence_cutoff,  htol for assignment, x_tol for assignment 
+CF     		2 0.03 0.3
+
+#Used in Symmtry method
+# tol for check symmtry, htol for assignment, x_tol for assignment
+SYM    		0.03 0.03 0.3
+
+# distance_cutoff, tol for check symmtry, htol for assignment, x_tol for assignment
+SYMPDB		10.0 0.8 2.0 0.03 0.03 0.3
+
+#Used in assign peaks with unqiue match
+# intensity filter, htol for assignment, x_tol for assignment 
+UNIQUE		0.03 0.3
+
+#Used in assignment ambigous peaks
+# intensity filter, htol for assignment, x_tol for assignment 
+AMBI		0.05 0.5 
+
+#Used in initfold method
+#case1_meanCutoff, case1_nextOff, case1_nextCutoff, case2_nextOff, case3_meanCutoff, case4_meanCutoff, case4_std, htol for assignment, x_tol for assignment
+INITF          5.0 3.0 8.0 2.0 6.0 8.0 0.8 0.03 0.3  
+
+#Used in Pdb method
+#case1_meanCutoff, case1_nextOff, case1_nextCutoff, case2_nextOff, case3_meanCutoff, case4_meanCutoff, case4_std, htol for assignment, x_tol for assignment 
+PDB    		5.0 3.0 8.0 2.0 6.0 8.0 0.8 0.03 0.3
+
+#Identifying inconsistent assignments
+#weak_violation_distance, weak_violation_perc, strong_violation_distance, strong_violation_perc, checking GreaterThanOne?, checking Hdistance>Pdistance?
+VIO 		0.6 0.6 0.7 0.7 1 1
+
+#Local_refinement
+#HtolCutoff, XtolCutoff, HStd, XStd, Htol for assignment, Xtol for assignment
+LOCREF    	0.03 0.2 0.03 0.3 0.02 0.2
+
+#Cutoff used in identifying secondary structure
+# anti_parallel_register_requency_cutoff, parallel_register_requency_cutoff, j_helix_cutoff, j_sheet_cutoff
+SEC	 	5 4 6 7 0.03 0.3
+
+#lower/upper bound of h-bonds
+#1.5, 2.4 2.3, 3.3
+HBOND		1.8 2.7 2.0 3.0
+
+
+
+
+
+
+
+
+
+
+
