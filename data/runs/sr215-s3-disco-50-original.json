@@ -1684,7 +1684,7 @@
     },
     {
       "label": "ASDP source",
-      "url": "https://github.rpi.edu/RPIBioinformatics/ASDP_public"
+      "value": "ASDP (institutional source repository; no public URL)"
     },
     {
       "label": "AIS selection",
