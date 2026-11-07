@@ -6,27 +6,52 @@
 <meta name="color-scheme" content="light">
 <meta name="referrer" content="no-referrer">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'">
-<title>SR215 · RPF results</title>
+<title>SR215 · Current model scores</title>
 <link rel="stylesheet" href="./styles.css">
-<script src="./vendor/3Dmol-min.js" defer></script>
-<script src="./structure.js" defer></script>
-<script src="./app.js" defer></script>
+<link rel="stylesheet" href="./current.css">
+<script src="./current.js" defer></script>
 </head>
 <body>
-<a class="skip-link" href="#content">Skip to results</a>
-<div class="app-shell">
-  <aside class="sidebar" aria-label="Collections and results">
-    <header class="brand-row"><a class="brand" href="#">RPF</a><span>SR215</span></header>
-    <div class="library-tools">
-      <input id="run-search" type="search" placeholder="Find collections or results" aria-label="Find collections or results">
-      <div class="filters"><select id="sampling-filter" aria-label="Sampling method"><option value="">All sampling</option></select><select id="variant-filter" aria-label="Input set"><option value="">All input sets</option></select></div>
-    </div>
-    <div id="run-count" class="section-caption"></div>
-    <nav id="run-list" aria-label="Model collections"><p class="empty-state">Loading results…</p></nav>
-    <footer class="sidebar-footer">Published results</footer>
-  </aside>
-  <main id="content" tabindex="-1"><p class="empty-state">Loading results…</p></main>
+<main class="current-results" id="content">
+<header>
+<p class="section-caption">CASP17 NMR · SR215</p>
+<h1>Current SR215 model scores</h1>
+<p>12,104 models across 12 sampling methods, including 1,200 classic AFSample models.</p>
+<p>RPF uses the audited SR215-TR-2026-11-06-v1 input and original-control variant. MolProbity uses the validated Phenix 2.2.1-6174 preparation. ProteinEBM energies are reported at t = 0.10.</p>
+</header>
+<nav class="current-links" aria-label="Current downloads and archives">
+<a href="./current/SR215_AIS_model_scores_12104.csv">Model scores CSV</a>
+<a href="./current/SR215_AIS_score_comparison_12104.pdf">Score distributions and scatter plots (PDF)</a>
+<a href="./legacy.html">Archived RPF ensembles</a>
+<a href="https://benavt.github.io/ais-casp17-clusters/sr215-archive.html">Archived clustering views</a>
+</nav>
+<section aria-labelledby="clustering-heading">
+<h2 id="clustering-heading">Clustering by residue range</h2>
+<ul><li><a href="https://benavt.github.io/ais-casp17-clusters/#SR215_bmr6366?cohort=current-12104&amp;range=all">Residues 1–139</a></li>
+<li><a href="https://benavt.github.io/ais-casp17-clusters/#SR215_bmr6366?cohort=current-12104&amp;range=res5-95">Residues 5–95</a></li>
+<li><a href="https://benavt.github.io/ais-casp17-clusters/#SR215_bmr6366?cohort=current-12104&amp;range=res32-47-plus78-99">Residues 32–47 and 78–99</a></li></ul>
+<p>Each range includes the same 12,104 models. The clustering uses Cα distances. The atlas can color models by score.</p>
+</section>
+<section aria-labelledby="summary-heading">
+<h2 id="summary-heading">Median model scores by sampling method</h2>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Score table">
+<table aria-labelledby="summary-heading">
+<thead><tr><th scope="col">Method</th><th scope="col">Models</th><th scope="col">RPF DP</th><th scope="col">RPF recall</th><th scope="col">RPF precision</th><th scope="col">MolProbity</th><th scope="col">Clashscore</th><th scope="col">ProteinEBM</th></tr></thead>
+<tbody><tr><th scope="row">afcluster</th><td>1,000</td><td>0.492</td><td>0.890</td><td>0.868</td><td>3.750</td><td>64.300</td><td>3974.132</td></tr>
+<tr><th scope="row">afsample-classic</th><td>1,200</td><td>0.737</td><td>0.953</td><td>0.908</td><td>3.510</td><td>60.925</td><td>4051.354</td></tr>
+<tr><th scope="row">afsample2</th><td>1,000</td><td>0.686</td><td>0.935</td><td>0.902</td><td>3.860</td><td>53.060</td><td>4159.688</td></tr>
+<tr><th scope="row">afsample3</th><td>1,000</td><td>0.775</td><td>0.958</td><td>0.921</td><td>1.650</td><td>8.540</td><td>3894.268</td></tr>
+<tr><th scope="row">alphaflow-md</th><td>993</td><td>0.674</td><td>0.931</td><td>0.900</td><td>2.340</td><td>32.370</td><td>4150.410</td></tr>
+<tr><th scope="row">alphaflow-pdb</th><td>990</td><td>0.661</td><td>0.937</td><td>0.889</td><td>3.370</td><td>80.040</td><td>4228.308</td></tr>
+<tr><th scope="row">bioemu</th><td>992</td><td>0.559</td><td>0.931</td><td>0.850</td><td>3.820</td><td>99.145</td><td>4172.026</td></tr>
+<tr><th scope="row">bioemu2</th><td>1,000</td><td>0.661</td><td>0.935</td><td>0.890</td><td>2.605</td><td>17.090</td><td>3998.709</td></tr>
+<tr><th scope="row">boltz2</th><td>1,000</td><td>0.695</td><td>0.952</td><td>0.891</td><td>1.770</td><td>18.880</td><td>3785.902</td></tr>
+<tr><th scope="row">esmflow-pdb</th><td>929</td><td>0.631</td><td>0.934</td><td>0.878</td><td>3.330</td><td>82.730</td><td>4215.069</td></tr>
+<tr><th scope="row">opendde</th><td>1,000</td><td>0.775</td><td>0.959</td><td>0.920</td><td>1.480</td><td>8.090</td><td>3820.534</td></tr>
+<tr><th scope="row">speachaf</th><td>1,000</td><td>0.736</td><td>0.945</td><td>0.914</td><td>3.470</td><td>39.120</td><td>4115.976</td></tr></tbody>
+</table>
 </div>
-<div id="notice" role="status" aria-live="polite" hidden></div>
+</section>
+</main>
 </body>
 </html>

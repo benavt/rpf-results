@@ -1241,6 +1241,22 @@
       "bytes": 185253,
       "sha256": "ff81546839c8bb33e104c2f78bb63640a8f6fd4fb54adfc742b9df8210e18a1d"
     },
+    "current.css": {
+      "bytes": 395,
+      "sha256": "4af1219b6d8cd9794e937c4caf20a9e4d7ae3f3c1598d38281d7a2f98b1317c2"
+    },
+    "current.js": {
+      "bytes": 270,
+      "sha256": "beb46464ff9728d6ae2cc1abc580e452b8e39f0b908582adeaf6e34121099a54"
+    },
+    "current/SR215_AIS_model_scores_12104.csv": {
+      "bytes": 7445027,
+      "sha256": "f0dce6b3e6527aa229417ee217c07a77dadc80c48dd13f35a68638c132055e85"
+    },
+    "current/SR215_AIS_score_comparison_12104.pdf": {
+      "bytes": 1207969,
+      "sha256": "a90746f1d8947f7997044cfce2d8eb2a38e21626021b3e0c3fd09511f4d88386"
+    },
     "data/index.json": {
       "bytes": 16358,
       "sha256": "c2133f492df9bf4beb7a5574dc0d9142e3a3a924deaa4c03a39343643d05a0bc"
@@ -1342,8 +1358,16 @@
       "sha256": "b44dc120286e9b3283fcf229e729f2520131cae6d4458be0d028cdc622cbf8e4"
     },
     "index.html": {
-      "bytes": 1739,
-      "sha256": "34c04527515291e9386b9d26cf964e49cf88a368da931e7d9c8d0ba2ebcbadfd"
+      "bytes": 4441,
+      "sha256": "6ead8d6a54f3bd4ca31a07608dc5d95e3e1d661cbd4edc9ed48f49b8cf29e41d"
+    },
+    "legacy-publication-manifest.json": {
+      "bytes": 66619,
+      "sha256": "8c2ca00a2639537d01a1080f7c112701f066aa8ff21ef29f71d90e9ed7ab3bfc"
+    },
+    "legacy.html": {
+      "bytes": 1820,
+      "sha256": "7497b5bebacb56d7e599b3c46a7a5ff6638eba7c5fb874f2d70cb9f8e2693523"
     },
     "structure.js": {
       "bytes": 20719,
@@ -1362,8 +1386,26 @@
       "sha256": "4ab374e1830bccec950b280fd285a430e05e91bd13c9ef0097c611c66de6cb36"
     }
   },
+  "legacy_entry": "legacy.html",
+  "legacy_manifest": "legacy-publication-manifest.json",
   "model_collections": 6,
   "model_evaluations": 600,
+  "model_score_cohort": {
+    "clustering_audit_job": 24234,
+    "data": "current/SR215_AIS_model_scores_12104.csv",
+    "methods": 12,
+    "models": 12104,
+    "report": "current/SR215_AIS_score_comparison_12104.pdf",
+    "rpf_control": "tr-original-control",
+    "rpf_inputs": "SR215-TR-2026-11-06-v1",
+    "source_audit_jobs": [
+      22854,
+      23257,
+      23605,
+      24185,
+      24197
+    ]
+  },
   "read_only": true,
   "run_ids": [
     "sr215-s1-disco-50-original",
@@ -1381,5 +1423,5 @@
   ],
   "runs": 12,
   "schema_version": 1,
-  "total_bytes_before_manifest": 134049646
+  "total_bytes_before_manifest": 142774448
 }

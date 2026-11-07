@@ -1,0 +1,6 @@
+.current-results { max-width: 72rem; margin: 0 auto; padding: clamp(1rem, 4vw, 3rem); }
+.current-results header p { max-width: 48rem; }
+.current-results section { margin: 2rem 0; }
+.current-links { display: flex; flex-wrap: wrap; gap: .8rem 1.5rem; }
+.current-results table td { font-variant-numeric: tabular-nums; }
+.current-results table th, .current-results table td { white-space: nowrap; }
