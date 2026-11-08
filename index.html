@@ -9,22 +9,69 @@
 <title>SR215 · Current model scores</title>
 <link rel="stylesheet" href="./styles.css">
 <link rel="stylesheet" href="./current.css">
+<script src="./current-structure.js" defer></script>
 <script src="./current.js" defer></script>
 </head>
 <body>
 <main class="current-results" id="content">
 <header>
 <p class="section-caption">CASP17 NMR · SR215</p>
-<h1>Current SR215 model scores</h1>
+<h1>SR215 RPF results</h1>
 <p>12,104 models across 12 sampling methods, including 1,200 classic AFSample models.</p>
 <p>RPF uses the audited SR215-TR-2026-11-06-v1 input and original-control variant. MolProbity uses the validated Phenix 2.2.1-6174 preparation. ProteinEBM energies are reported at t = 0.10.</p>
 </header>
 <nav class="current-links" aria-label="Current downloads and archives">
 <a href="./current/SR215_AIS_model_scores_12104.csv">Model scores CSV</a>
 <a href="./current/SR215_AIS_score_comparison_12104.pdf">Score distributions and scatter plots (PDF)</a>
+<a href="./current/catalog.json">Machine-readable results (JSON)</a>
 <a href="./legacy.html">Archived RPF ensembles</a>
 <a href="https://benavt.github.io/ais-casp17-clusters/sr215-archive.html">Archived clustering views</a>
 </nav>
+<details class="current-provenance">
+<summary>Peak lists and scoring provenance</summary>
+<p>SR215-TR-2026-11-06-v1 contains 4,916 carbon peaks from <code>Cnoesy-TR.list</code> and 1,667 nitrogen peaks from <code>Nnoesy-TR.list</code>. The RPF control variant is <code>tr-original-control</code>. The results catalog records the original and converted peak-list hashes, coordinate identities and accepted ensemble audit.</p>
+</details>
+<section aria-labelledby="browser-heading">
+<h2 id="browser-heading">Browse structures and scores</h2>
+<nav class="view-switch" aria-label="Result views">
+<a class="button" id="single-view" href="#models">Single models</a>
+<a class="button" id="ensemble-view" href="#ensembles">DISCO50 and MCMC50 ensembles</a>
+</nav>
+<p id="browser-status" role="status">Loading current results…</p>
+<noscript><p>Enable JavaScript for interactive structures. The scores CSV and results JSON are available above.</p></noscript>
+<div id="browser" hidden>
+<div id="model-tools" class="browse-tools" aria-label="Model filters">
+<label>Model name<input id="model-search" type="search" placeholder="Search by model ID, seed or frame"></label>
+<label>Sampling method<select id="method-filter"><option value="">All methods</option></select></label>
+<label>Minimum DP<input id="min-dp" type="number" step="any" placeholder="Any"></label>
+</div>
+<div id="panel-tools" class="browse-tools" aria-label="Ensemble filters" hidden>
+<label>State assignment residues<select id="range-filter"></select></label>
+<label>TM state<select id="state-filter"></select></label>
+<label>Selection method<select id="selector-filter"><option value="">Both methods</option><option value="disco50">DISCO50</option><option value="mcmc50">MCMC50</option></select></label>
+</div>
+<p id="score-context" class="browse-context"></p>
+<div class="browse-layout">
+<div>
+<p id="result-count" role="status"></p>
+<div id="result-table" class="table-wrap" tabindex="0" role="region" aria-label="Current results"></div>
+<div id="pagination" class="browse-tools">
+<button type="button" class="button" id="previous-page">Previous</button>
+<span id="page-label"></span>
+<button type="button" class="button" id="next-page">Next</button>
+</div>
+</div>
+<aside class="viewer-panel current-viewer" aria-label="Structure viewer">
+<div class="viewer-heading">
+<div><strong id="structure-title">Structure</strong><div id="structure-detail"></div></div>
+<a class="download-link" id="structure-download" hidden>Download PDB</a>
+</div>
+<div id="current-structure" aria-label="Molecular structure"></div>
+<div id="panel-members"></div>
+</aside>
+</div>
+</div>
+</section>
 <section aria-labelledby="clustering-heading">
 <h2 id="clustering-heading">Clustering by residue range</h2>
 <ul><li><a href="https://benavt.github.io/ais-casp17-clusters/#SR215_bmr6366?cohort=current-12104&amp;range=all">Residues 1–139</a></li>
