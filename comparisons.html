@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; object-src 'none'; base-uri 'self'">
+<title>SR215 · Compare RPF configurations</title>
+<link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="current.css">
+<script src="comparisons.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to results</a>
+<main class="current-results" id="content">
+<header>
+<p class="section-caption">CASP17 NMR · SR215 · current data</p>
+<h1>Compare RPF configurations</h1>
+<p>Explore clustering, state assignment and model selection using the current TR peak lists. The release includes 382 native ensemble study rows and 1,824 model-selection summaries. Reused panels appear in each study that assessed them.</p>
+<p class="input-badge">SR215-TR-2026-11-06-v1 · 4,916 C13 peaks + 1,667 N15 peaks · original-control variant</p>
+</header>
+<nav class="current-links" aria-label="Results navigation">
+<a href="./#models">Single-model structures</a><a href="./#ensembles">State ensemble structures</a>
+<a href="current/catalog.json">Results catalog (JSON)</a><a href="current/comparisons.json">Comparison data (JSON)</a>
+<a href="legacy.html">Historical input archive</a>
+</nav>
+<section aria-labelledby="filter-heading">
+<h2 id="filter-heading">Choose a comparison</h2>
+<div class="browse-tools comparison-filters">
+<label>Score context<select id="context"><option value="native_ensemble">Native ensemble scores</option><option value="mean_independent_member">Mean selected-model scores</option><option value="visit_weighted_member">Visit-weighted model scores</option></select></label>
+<label>Study<select id="study"><option value="">All studies</option></select></label>
+<label>Model cohort<select id="cohort"><option value="">Both cohorts</option><option value="12104">All 12,104 scored models</option><option value="11104">11,104 models, AFCluster excluded</option></select></label>
+<label>Clustering / state residues<select id="range"><option value="">All ranges</option><option value="all">1–139</option><option value="res5-95">5–95</option><option value="res32-47-plus78-99">32–47 + 78–99</option></select></label>
+<label>Clustering prior<select id="partition"><option value="">All priors</option></select></label>
+<label>State / eligibility<select id="pool"><option value="">All rules and states</option></select></label>
+<label>Selection method<select id="method"><option value="">All methods</option></select></label>
+<label>Seed<select id="seed"><option value="">All seeds</option></select></label>
+</div>
+<p id="context-note" class="browse-context"></p>
+<p class="browse-context">The residue mask defines clustering and eligibility. RPF scoring uses the full 139-residue construct. State names are local to each cohort and mask.</p>
+<button type="button" class="button" id="reset">Reset filters</button>
+<button type="button" class="button" id="export">Download matching rows (CSV)</button>
+<p id="load-status" role="status">Loading accepted results…</p>
+</section>
+<section aria-labelledby="plot-heading"><h2 id="plot-heading">DP for matching configurations</h2>
+<p id="plot-note" class="browse-context"></p><div id="plot" class="comparison-plot"></div></section>
+<section aria-labelledby="table-heading"><h2 id="table-heading">Scores and selections</h2>
+<p id="matches" role="status"></p>
+<div class="table-wrap" role="region" aria-label="Configuration scores" tabindex="0" id="comparison-table"></div>
+<div class="browse-tools"><button class="button" id="previous" type="button">Previous</button><span id="page"></span><button class="button" id="next" type="button">Next</button></div>
+<article id="selection-detail" class="selection-detail" aria-live="polite"></article>
+</section>
+<section aria-labelledby="coverage-heading"><h2 id="coverage-heading">What this release covers</h2>
+<div id="coverage" class="study-grid"></div>
+<p>Native ensemble scores use ASDP's midrange inter-proton distances. They are distinct from averages of individual model scores. Visit-weighted summaries count repeat visits. Seeds and reused models do not provide independent experimental validation. Top-DP controls select using the same RPF scores on which they are evaluated.</p>
+<p>The 48 state ensembles have exact scored ensemble structures and native residue diagnostics in the structure viewer. Other comparisons expose their saved member lists and single-model structures; their complete scored ensemble files are not included in this web release.</p>
+</section>
+<section aria-labelledby="reports-heading"><h2 id="reports-heading">Finished reports</h2>
+<p><a href="current/SR215_historical_sampling_benchmark_multiseed.pdf">Selection and clustering benchmark (PDF)</a> · <a href="current/SR215_no_AFCluster_clustering_and_sampling.pdf">AFCluster exclusion (PDF)</a> · <a href="current/SR215_AIS_score_comparison_12104.pdf">Model quality comparison (PDF)</a></p>
+</section>
+</main></body></html>
