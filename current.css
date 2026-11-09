@@ -34,3 +34,19 @@
 }
 .current-provenance { max-width: 60rem; margin-top: .75rem; color: #515e70; }
 .current-provenance p { font-size: .85rem; line-height: 1.5; margin-top: .25rem; }
+.input-badge { display: inline-block; padding: .55rem .8rem; background: #edf5f1; color: #205d4e; border-radius: .5rem; font-weight: 600; font-size: .85rem; }
+.comparison-filters label, .comparison-filters label:first-child { flex: 1 1 13rem; max-width: 24rem; }
+.comparison-plot { overflow: auto; max-height: 30rem; border: 1px solid #e1e6eb; border-radius: .5rem; }
+.comparison-plot svg { display: block; width: 100%; min-width: 55rem; }
+#comparison-table { max-height: 38rem; }
+.row-choice { border: 0; background: transparent; text-decoration: underline; color: #285a80; cursor: pointer; text-align: left; padding: 0; font: inherit; }
+.selected-row { background: #eef5f2; }
+.selection-detail:not(:empty) { padding: 1.2rem; margin-top: 1rem; background: #f5f8fa; border-radius: .7rem; }
+.selection-detail p { max-width: 65rem; }
+.hash, .member-list { overflow-wrap: anywhere; font-size: .8rem; }
+.member-list { columns: 2; }
+.study-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(15rem,1fr)); gap: .8rem; }
+.study-grid article { border: 1px solid #e1e6eb; border-radius: .7rem; padding: 1rem; }
+.study-grid h3 { font-size: 1rem; margin-top: 0; }
+.study-grid p { font-size: .8rem; }
+@media (max-width: 600px) { .member-list { columns: 1; } .comparison-filters label { max-width: none; } }

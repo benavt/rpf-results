@@ -60,6 +60,11 @@
     if (actual !== expected) throw new Error('Coordinate checksum does not match the scored structure');
     return bytes;
   }
+  async function snapshot(record) {
+    const bytes = new Uint8Array(await (await response(record.path)).arrayBuffer());
+    await verify(bytes, record.sha256);
+    return JSON.parse(new TextDecoder().decode(bytes));
+  }
   async function singleBytes(model) {
     const {path, offset, bytes, sha256} = model.structure;
     const packed = await queryPack(path);
@@ -208,8 +213,7 @@
     try {
       catalog = await (await response('current/catalog.json')).json();
       const [models, ensembles] = await Promise.all([
-        response(catalog.independent_models.path).then(res => res.json()),
-        response(catalog.ensemble_panels.path).then(res => res.json())
+        snapshot(catalog.independent_models), snapshot(catalog.ensemble_panels)
       ]);
       catalog.models = models;
       catalog.ensembles = ensembles;

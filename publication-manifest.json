@@ -1,13 +1,35 @@
 {
   "asset_objects": 308,
+  "current_release": {
+    "comparisons": {
+      "includes_reused_panels": true,
+      "member_summary_rows": 1824,
+      "native_ensemble_rows": 382,
+      "path": "current/comparisons.json",
+      "sha256": "71c55eb9b4ad2fc5e14c7bd22f7d1c3f363cb90e6a3cdd8fe7f950330d9c0230",
+      "study_count": 9
+    },
+    "date": "2026-11-09",
+    "exact_state_ensembles": 48,
+    "independent_models": 12104,
+    "input_version": "SR215-TR-2026-11-06-v1"
+  },
   "files": {
     ".gitattributes": {
       "bytes": 21,
       "sha256": "67e51432031bd1b818146329776c59dcab962617ab50b3e5222b96844c8e2d6e"
     },
+    ".gitignore": {
+      "bytes": 19,
+      "sha256": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793"
+    },
     ".nojekyll": {
       "bytes": 0,
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "README.md": {
+      "bytes": 1865,
+      "sha256": "f3599eceff235389ea4566b326ef2c63a84298e04838334243347be4a835310d"
     },
     "app.js": {
       "bytes": 16832,
@@ -1245,17 +1267,25 @@
       "bytes": 185253,
       "sha256": "ff81546839c8bb33e104c2f78bb63640a8f6fd4fb54adfc742b9df8210e18a1d"
     },
+    "comparisons.html": {
+      "bytes": 5229,
+      "sha256": "a959ab463a87fd76e2a321d7ceac8b688270c84eee05c9a76b5b28c4c3ec0b5a"
+    },
+    "comparisons.js": {
+      "bytes": 13977,
+      "sha256": "fb5014fcb8bf2aacad67b8f119ba59fae360b7a640c8717baeebf1083e436a43"
+    },
     "current-structure.js": {
       "bytes": 21276,
       "sha256": "cffe67e25d3547e13dcec394de8b93281b623a58474544ffbd6edd3ce4fd6b11"
     },
     "current.css": {
-      "bytes": 2390,
-      "sha256": "1103950d3826bd92ed74c398e8816f18643e4b16bfeaa95de6f3ca3fff8c0505"
+      "bytes": 3701,
+      "sha256": "13721175ac7419c19a21c1828bcde5adb6895d9e7754fb85041bea9fa63571d8"
     },
     "current.js": {
-      "bytes": 13150,
-      "sha256": "173d656e7d39f8a5b611ca5a5d7da50b23cd05ec01278a5db6f817ac7a68ef9f"
+      "bytes": 13305,
+      "sha256": "9e47df1a9df2d2526ddb69c92907ae759fb2c80683a71284a8c5dd5eec2273a4"
     },
     "current/SR215_AIS_model_scores_12104.csv": {
       "bytes": 7445027,
@@ -1265,9 +1295,21 @@
       "bytes": 1207969,
       "sha256": "a90746f1d8947f7997044cfce2d8eb2a38e21626021b3e0c3fd09511f4d88386"
     },
+    "current/SR215_historical_sampling_benchmark_multiseed.pdf": {
+      "bytes": 15059,
+      "sha256": "21f26276fcd6a5cf36f37809f89e5010751e3f0fc247e74fa26fd5b759da57e1"
+    },
+    "current/SR215_no_AFCluster_clustering_and_sampling.pdf": {
+      "bytes": 8283,
+      "sha256": "92b2c6dbf2c7aa4dbea4a3e5426cea6c26b7d3e047d4e3b42232b8ee1c7d3f73"
+    },
     "current/catalog.json": {
-      "bytes": 2483,
-      "sha256": "20f958ce5ff48ac24dcdf6298bfabf45cfde1940d65d4be843dcc33c30a236a5"
+      "bytes": 2723,
+      "sha256": "8395b23a459a00d4f319f57518410b0234e1282c091bf7dd2b5f3705337424eb"
+    },
+    "current/comparisons.json": {
+      "bytes": 2066668,
+      "sha256": "71c55eb9b4ad2fc5e14c7bd22f7d1c3f363cb90e6a3cdd8fe7f950330d9c0230"
     },
     "current/diagnostics/all--S1--disco50--r1.json": {
       "bytes": 56819,
@@ -3782,8 +3824,8 @@
       "sha256": "b44dc120286e9b3283fcf229e729f2520131cae6d4458be0d028cdc622cbf8e4"
     },
     "index.html": {
-      "bytes": 7185,
-      "sha256": "5d81a6520d77f7b09a29731b85eab7fd6c3604d1e1484e0aad9c3939a1a95108"
+      "bytes": 8227,
+      "sha256": "c80d7940319a7954fa44a4b5be2be605f5098dae3602d6dd6026e16600fa0144"
     },
     "legacy-publication-manifest.json": {
       "bytes": 66619,
@@ -3793,6 +3835,14 @@
       "bytes": 1820,
       "sha256": "7497b5bebacb56d7e599b3c46a7a5ff6638eba7c5fb874f2d70cb9f8e2693523"
     },
+    "scripts/build_comparisons.py": {
+      "bytes": 14080,
+      "sha256": "437bdfd63eefc2761e7603fd2e3552b5ac37fc054f4ff3a18f69553777deb87c"
+    },
+    "scripts/freeze_release.py": {
+      "bytes": 2559,
+      "sha256": "a0a9454002e7eb2df948b08a00ef9cb5d4dcb523bbdb164eb6dc6e32385d5275"
+    },
     "structure.js": {
       "bytes": 20719,
       "sha256": "4078aca642fe3a59cb2b7ce7d7ff3530fcba6e3970872ff59fd2b861648fd650"
@@ -3800,6 +3850,10 @@
     "styles.css": {
       "bytes": 8608,
       "sha256": "97c307771c30f8469338d96cd18b730c5c43a080f1e4efba7770d97c36d5e84a"
+    },
+    "tests/test_comparison_release.py": {
+      "bytes": 3730,
+      "sha256": "b88929ed8871cf9158cbb00b00499263678d06f0367b15e60bfeec9094a04e73"
     },
     "vendor/3Dmol-LICENSE": {
       "bytes": 4266,
@@ -3810,6 +3864,7 @@
       "sha256": "4ab374e1830bccec950b280fd285a430e05e91bd13c9ef0097c611c66de6cb36"
     }
   },
+  "legacy_count_scope": "runs, run_ids, model_collections and model_evaluations describe the archived release",
   "legacy_entry": "legacy.html",
   "legacy_manifest": "legacy-publication-manifest.json",
   "model_collections": 6,
@@ -3817,7 +3872,7 @@
   "model_score_cohort": {
     "catalog": {
       "path": "current/catalog.json",
-      "sha256": "20f958ce5ff48ac24dcdf6298bfabf45cfde1940d65d4be843dcc33c30a236a5"
+      "sha256": "8395b23a459a00d4f319f57518410b0234e1282c091bf7dd2b5f3705337424eb"
     },
     "clustering_audit_job": 24234,
     "data": "current/SR215_AIS_model_scores_12104.csv",
@@ -3851,5 +3906,5 @@
   ],
   "runs": 12,
   "schema_version": 1,
-  "total_bytes_before_manifest": 758462830
+  "total_bytes_before_manifest": 760597047
 }

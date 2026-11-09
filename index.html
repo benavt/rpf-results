@@ -6,7 +6,7 @@
 <meta name="color-scheme" content="light">
 <meta name="referrer" content="no-referrer">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'">
-<title>SR215 · Current model scores</title>
+<title>SR215 · Current RPF results</title>
 <link rel="stylesheet" href="./styles.css">
 <link rel="stylesheet" href="./current.css">
 <script src="./current-structure.js" defer></script>
@@ -17,10 +17,12 @@
 <header>
 <p class="section-caption">CASP17 NMR · SR215</p>
 <h1>SR215 RPF results</h1>
+<p class="input-badge">Current data · TR NOESY 2026-11-06 v1 · release 2026-11-09</p>
 <p>12,104 models across 12 sampling methods, including 1,200 classic AFSample models.</p>
 <p>RPF uses the audited SR215-TR-2026-11-06-v1 input and original-control variant. MolProbity uses the validated Phenix 2.2.1-6174 preparation. ProteinEBM energies are reported at t = 0.10.</p>
 </header>
 <nav class="current-links" aria-label="Current downloads and archives">
+<a href="./comparisons.html">Compare clustering, states and selection methods</a>
 <a href="./current/SR215_AIS_model_scores_12104.csv">Model scores CSV</a>
 <a href="./current/SR215_AIS_score_comparison_12104.pdf">Score distributions and scatter plots (PDF)</a>
 <a href="./current/catalog.json">Machine-readable results (JSON)</a>
@@ -36,6 +38,7 @@
 <nav class="view-switch" aria-label="Result views">
 <a class="button" id="single-view" href="#models">Single models</a>
 <a class="button" id="ensemble-view" href="#ensembles">DISCO50 and MCMC50 ensembles</a>
+<a class="button" href="./comparisons.html">All configuration comparisons</a>
 </nav>
 <p id="browser-status" role="status">Loading current results…</p>
 <noscript><p>Enable JavaScript for interactive structures. The scores CSV and results JSON are available above.</p></noscript>
@@ -71,6 +74,11 @@
 </aside>
 </div>
 </div>
+</section>
+<section aria-labelledby="configuration-heading">
+<h2 id="configuration-heading">More configurations have been assessed</h2>
+<p>The <a href="comparisons.html">configuration browser</a> includes 382 native ensemble study rows across eight studies: current state ensembles, clustering and selector benchmarks, three-seed comparisons, AFCluster exclusion, eight-repeat MCMC, coverage selection, blind selection, and quality/diversity selection. It also includes 1,824 separately labeled model-selection and occupancy summaries. Reused panels remain identified within their study.</p>
+<p><a href="current/SR215_historical_sampling_benchmark_multiseed.pdf">Selection benchmark (PDF)</a> · <a href="current/SR215_no_AFCluster_clustering_and_sampling.pdf">AFCluster exclusion (PDF)</a></p>
 </section>
 <section aria-labelledby="clustering-heading">
 <h2 id="clustering-heading">Clustering by residue range</h2>
