@@ -23,7 +23,7 @@ def inventory():
         for name in names:
             path = Path(folder) / name
             relative = path.relative_to(ROOT).as_posix()
-            if relative != "publication-manifest.json" and not name.endswith(".pyc"):
+            if relative not in ("publication-manifest.json", ".git") and not name.endswith(".pyc"):
                 files[relative] = digest(path)
     return files
 

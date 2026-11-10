@@ -149,7 +149,7 @@
     if (new Set(records.map(modelID)).size !== records.length) throw new Error('Duplicate model metric identities');
     const artifact = (run?.artifacts || []).find(item => item.key === run.structure_key) ||
       (run?.artifacts || []).find(item => (item.key === 'ensemble' || ['ensemble', 'structure'].includes(item.kind)) && item.available !== false);
-    const saved = preferences.get(run?.id) || {mode: run.initial_display || 'single', color: 'rainbow', opacity: 100};
+    const saved = preferences.get(run?.id) || {mode: run.initial_display || 'single', color: run.initial_color || 'rainbow', opacity: 100};
     container.replaceChildren();
     const shell = element('div'); shell.className = 'rpf-molecule';
     shell.style.cssText = 'display:flex;flex-direction:column;min-height:420px;height:100%;gap:10px';
@@ -174,6 +174,8 @@
     const isolate = element('button', 'Isolate'); isolate.type = 'button'; isolate.title = 'Show the selected model alone';
     const reset = element('button', 'Reset view'); reset.type = 'button';
     toolbar.append(mode, choice, color, reset, isolate, opacityBox);
+    const residueStatus = element('span'); residueStatus.setAttribute('role', 'status');
+    residueStatus.style.cssText = 'font-size:11px;color:#68717d'; toolbar.appendChild(residueStatus);
     const canvas = element('div'); canvas.style.cssText = 'position:relative;min-height:340px;flex:1;background:#fafafa;border-radius:10px;overflow:hidden';
     const message = element('div', 'Loading structure…'); message.setAttribute('role', 'status'); message.style.cssText = 'padding:20px;color:#68717d'; canvas.appendChild(message);
     const legend = element('div'); legend.className = 'structure-legend'; legend.style.cssText = 'font-size:11px;color:#5e6672;min-height:28px;line-height:1.5';
@@ -245,7 +247,8 @@
         maps[0].chains.forEach((chain, index) => legend.appendChild(element('span', `${index ? ' · ' : ''}${chain || 'Blank chain'}`)));
       } else if (layer) {
         const shared = layer.scope !== 'model';
-        const scope = shared ? `Ensemble diagnostic · same residue map on all ${records.length} models` : 'Residue metric · model-specific';
+        const scope = run.single_model ? 'Independent single-model residue diagnostic' :
+          shared ? `Ensemble diagnostic · same residue map on all ${records.length} models` : 'Residue metric · model-specific';
         if (layer.id === 'legacy_rpf_heat') nativeLegend(layer, domain, scope);
         else scaleLegend(`${layer.label}${layer.unit ? ' · ' + layer.unit : ''}`, domain, palette, scope);
         legend.title = layer.definition || '';
@@ -291,13 +294,23 @@
     );
     // Residue diagnostics are optional; a missing supplement does not block coordinates.
     const residueURL = run.residue_metrics_url ? new URL(run.residue_metrics_url, document.baseURI).href : `/api/runs/${encodeURIComponent(run.id)}/residue-metrics`;
-    if (run.residue_metrics_url || !run.single_model) fetch(residueURL, {credentials: 'same-origin'}).then(response => response.ok ? response.json() : {layers: []}).then(data => {
-      if (disposed) return;
-      layers = (data.layers || []).filter(item => item.id && item.label && Array.isArray(item.values));
-      for (const layer of layers) { const option = element('option', 'Residue · ' + layer.label); option.value = 'residue:' + layer.id; color.appendChild(option); }
-      if (layers.some(layer => 'residue:' + layer.id === saved.color)) color.value = saved.color;
-      paint();
-    }).catch(() => {});
+    const residuePromise = run.residue_metrics ? Promise.resolve().then(run.residue_metrics) :
+      run.residue_metrics_url || !run.single_model ? fetch(residueURL, {credentials: 'same-origin'}).then(response => {
+        if (!response.ok) throw new Error('Saved residue diagnostics unavailable');
+        return response.json();
+      }) : null;
+    if (residuePromise) {
+      residueStatus.textContent = 'Loading residue colors…';
+      residuePromise.then(data => {
+        if (disposed) return;
+        layers = (data.layers || []).filter(item => item.id && item.label && Array.isArray(item.values));
+        for (const layer of layers) { const option = element('option', 'Residue · ' + layer.label); option.value = 'residue:' + layer.id; color.appendChild(option); }
+        const preferred = preferences.get(run.id)?.color || saved.color;
+        if (layers.some(layer => 'residue:' + layer.id === preferred)) color.value = preferred;
+        residueStatus.textContent = layers.length ? '' : 'Residue coloring unavailable';
+        paint();
+      }).catch(() => { if (!disposed) residueStatus.textContent = 'Residue coloring unavailable'; });
+    }
     Promise.all([library(), framesPromise]).then(([api, frames]) => {
       if (disposed) return;
       if (frames.length !== records.length) throw new Error('Structure/model mapping does not match this run');
