@@ -15,9 +15,14 @@ their original payloads and permalinks.
 Study rows include repeated panels across studies. Cohorts, masks, state rules,
 clustering priors, selectors and seeds remain explicit. Native ensemble scores,
 mean member scores and visit-weighted summaries must not be pooled as one metric.
-Only the original 48 state ensembles have full scored ensemble coordinates and
-residue diagnostics bundled here; other native comparisons link all 50 saved
-members to their independent scored structures.
+All 12,104 independent models include residue diagnostics from their own saved
+native QP report, bound to the scored PDB hash. The single-model viewer starts
+with the legacy RPF heat index and also offers violation counts, short
+violations, and shortest unsupported distance. These are residue precision
+diagnostics; no residue-wise Recall, Precision fraction, or DP is inferred.
+Unassigned residues remain gray. Only the original 48 state ensembles have full
+scored ensemble coordinates and ensemble residue diagnostics bundled here; other
+native comparisons link all 50 saved members to their independent structures.
 
 Rebuild comparison data from an existing RPF evidence collection:
 
@@ -25,6 +30,8 @@ Rebuild comparison data from an existing RPF evidence collection:
 python3 scripts/build_comparisons.py --source-root /path/to/RPF
 python3 -m unittest discover -s tests -v
 node --check comparisons.js
+node tests/test_structure_colors.cjs
+node tests/test_diagnostic_loader.cjs
 python3 scripts/freeze_release.py
 python3 scripts/freeze_release.py --verify
 ```
@@ -34,3 +41,9 @@ identities and ordered panel membership. It does not prepare coordinates,
 sample, cluster or run scientific scoring. Export schemas exclude private
 native-output locations. Historical payloads and scored coordinate packs remain
 byte-identical. Freeze the manifest only after reviewing the export and UI.
+
+The `scripts/build_model_diagnostics.py` exporter reads hash-verified accepted
+archives using the existing RPF parser and native archive readers. Supply its
+private frozen source plan with `--plan`, the pinned parser source bundle with
+`--rpf-source`, and a fresh `--output` directory. It exports compact diagnostic
+packs without preparing coordinates or running scientific scoring.
