@@ -51,6 +51,11 @@ packs without preparing coordinates or running scientific scoring.
 
 ## Structure presentation
 
+The ensemble residue selector has a prominent **Open structure atlas** link
+that follows the active range, including direct links to saved ensemble results.
+It opens the matching `current-12104` atlas view in a new tab and keeps the RPF
+results available. All three atlas ranges also remain linked below the browser.
+
 Continuous colors use the standard Matplotlib **Spectral** 256-color map, low
 values red and high values purple, including residue diagnostics and sequence
 position. Missing assignments remain gray. Stored diagnostic values are unchanged;

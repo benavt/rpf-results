@@ -14,6 +14,12 @@
 .browse-tools label:first-child { flex: 1 1 15rem; max-width: 28rem; }
 .browse-tools input, .browse-tools select { font-size: .85rem; background: white; border: 1px solid #dfe3eb; border-radius: 7px; min-height: 2.5rem; padding: .5rem .6rem; width: 100%; }
 .browse-context, #result-count, #page-label { font-size: .85rem; color: #515e70; }
+.atlas-context { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem 1.25rem; margin-top: 1rem; padding: 1rem; border: 1px solid #b8cec9; border-left: 4px solid #24786b; border-radius: .5rem; background: #f1f7f5; }
+.atlas-context > div { flex: 1 1 24rem; }
+.atlas-context strong { color: #205d4e; }
+.atlas-context p { margin: .35rem 0 0; font-size: .85rem; color: #425b55; }
+.atlas-context .atlas-button { white-space: normal; background: #205d4e; border-color: #205d4e; color: white; text-decoration: none; }
+.atlas-tab-note { flex-basis: 100%; font-size: .75rem; color: #515e70; }
 .browse-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(24rem, 1fr); gap: 1rem; align-items: start; }
 .browse-layout .table-wrap th { color: #4e5d73; }
 .browse-layout .table-wrap th, .browse-layout .table-wrap td { padding: .65rem; }

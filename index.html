@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="./current.css">
 <script src="./structure-presentation.js?v=20261111" defer></script>
 <script src="./current-structure.js?v=20261111" defer></script>
-<script src="./current.js?v=20261111" defer></script>
+<script src="./current.js?v=20261111-atlas" defer></script>
 </head>
 <body>
 <main class="current-results" id="content">
@@ -54,6 +54,12 @@
 <label>TM state<select id="state-filter"></select></label>
 <label>Selection method<select id="selector-filter"><option value="">Both methods</option><option value="disco50">DISCO50</option><option value="mcmc50">MCMC50</option></select></label>
 </div>
+<div id="atlas-context" class="atlas-context" hidden>
+<div><strong>Structure atlas for this residue selection</strong>
+<p>Explore clustering, projections and structures for the same 12,104 models using <span id="atlas-range"></span>.</p></div>
+<a id="selected-atlas" class="button atlas-button" target="_blank" rel="noopener noreferrer"></a>
+<span class="atlas-tab-note">Opens in a new tab · keeps your RPF results here</span>
+</div>
 <p id="score-context" class="browse-context"></p>
 <div class="browse-layout">
 <div>
@@ -83,7 +89,7 @@
 <p><a href="current/SR215_historical_sampling_benchmark_multiseed.pdf">Selection benchmark (PDF)</a> · <a href="current/SR215_no_AFCluster_clustering_and_sampling.pdf">AFCluster exclusion (PDF)</a></p>
 </section>
 <section aria-labelledby="clustering-heading">
-<h2 id="clustering-heading">Clustering by residue range</h2>
+<h2 id="clustering-heading">Structure atlas · all residue selections</h2>
 <ul><li><a href="https://benavt.github.io/ais-casp17-clusters/#SR215_bmr6366?cohort=current-12104&amp;range=all">Residues 1–139</a></li>
 <li><a href="https://benavt.github.io/ais-casp17-clusters/#SR215_bmr6366?cohort=current-12104&amp;range=res5-95">Residues 5–95</a></li>
 <li><a href="https://benavt.github.io/ais-casp17-clusters/#SR215_bmr6366?cohort=current-12104&amp;range=res32-47-plus78-99">Residues 32–47 and 78–99</a></li></ul>
