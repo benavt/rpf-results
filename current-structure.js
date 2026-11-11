@@ -1,4 +1,4 @@
-/* Same-origin structure inspection; scored coordinates and metric values are unchanged. */
+/* Same-origin inspection; rigid display copies preserve scored sources and values. */
 (function () {
   'use strict';
   const mounted = new WeakMap();
@@ -6,8 +6,7 @@
   const cache = new Map();
   const preferences = new Map();
   const MISSING = '#b9bec7';
-  const VIRIDIS = ['#440154', '#3b528b', '#21918c', '#5ec962', '#fde725'];
-  const VIOLATIONS = ['#2166ac', '#f7f7f7', '#b2182b'];
+  const SPECTRAL = window.RpfPresentation.SPECTRAL;
   const CHAINS = ['#0072b2', '#d55e00', '#009e73', '#cc79a7', '#e69f00', '#56b4e9', '#882255', '#999933'];
   let libraryPromise;
 
@@ -81,21 +80,8 @@
     const value = model[metric] ?? model[keys[metric]] ?? model.metrics?.[metric];
     return finite(value) ? value : null;
   }
-  function paletteColor(value, low, high, palette = VIRIDIS, constant = 0.5) {
-    if (!finite(value)) return MISSING;
-    const t = high === low ? constant : Math.max(0, Math.min(1, (value - low) / (high - low)));
-    const p = t * (palette.length - 1), i = Math.min(palette.length - 2, Math.floor(p)), fraction = p - i;
-    const rgb = color => [1, 3, 5].map(offset => parseInt(color.slice(offset, offset + 2), 16));
-    const a = rgb(palette[i]), b = rgb(palette[i + 1]);
-    return '#' + a.map((x, k) => Math.round(x + fraction * (b[k] - x)).toString(16).padStart(2, '0')).join('');
-  }
-  function rainbow(t) {
-    // Blue at the first available polymer residue, red at the last.
-    const h = (1 - Math.max(0, Math.min(1, t))) * 240 / 60;
-    const x = 1 - Math.abs(h % 2 - 1);
-    const rgb = h < 1 ? [1, x, 0] : h < 2 ? [x, 1, 0] : h < 3 ? [0, 1, x] : [0, x, 1];
-    return '#' + rgb.map(v => Math.round(v * 255).toString(16).padStart(2, '0')).join('');
-  }
+  function paletteColor(value, low, high) { return window.RpfPresentation.spectral(value,low,high); }
+  function rainbow(t) { return paletteColor(t,0,1); }
   function residueKey(atom) { return [String(atom.chain ?? '').trim(), String(atom.resi), String(atom.icode ?? '').trim()].join('|'); }
   function structureMap(frame) {
     const residues = [], chains = [], seen = new Set();
@@ -110,11 +96,7 @@
     const ranks = new Map(residues.map((record, index) => [residueKey(record), index]));
     return {residues, chains, ranks};
   }
-  function layerPalette(layer) {
-    const colors = layer.colors;
-    if (Array.isArray(colors) && colors.length >= 2 && colors.every(x => /^#[0-9a-f]{6}$/i.test(x))) return colors;
-    return layer.direction === 'lower_worse' ? [...VIOLATIONS].reverse() : VIOLATIONS;
-  }
+  function layerPalette() { return SPECTRAL; }
   function layerDomain(layer) {
     if (Array.isArray(layer.domain) && layer.domain.length === 2 && layer.domain.every(finite) && layer.domain[0] <= layer.domain[1]) return layer.domain;
     const values = (layer.values || []).map(x => x.value).filter(finite);
@@ -136,13 +118,12 @@
   function missingColor(layer) { return /^#[0-9a-f]{6}$/i.test(layer.missing_color || '') ? layer.missing_color : MISSING; }
   function residueColor(row, layer, domain, palette) {
     if (!row || !finite(row.value)) return missingColor(layer);
-    if (/^#[0-9a-f]{6}$/i.test(row.color || '')) return row.color;
-    if (layer.id === 'legacy_rpf_heat') throw new Error('Native RPF colors are missing from this metric layer');
-    return paletteColor(row.value, ...domain, palette, layer.direction === 'higher_worse' ? 0 : .5);
+    return paletteColor(row.value, ...domain);
   }
 
-  function mount(container, {run, model, onSelect, coordinateText} = {}) {
+  function mount(container, {run, model, onSelect, coordinateText, onCoordinates} = {}) {
     mounted.get(container)?.destroy();
+    let downloadURL;
     let disposed = false, viewer = null, observer = null, selected = 0, glModels = [], maps = [], styled = [], layers = [];
     const records = run?.models || [];
     if (!records.every((item, index) => item.index === undefined || item.index === index + 1)) throw new Error('Model metric order differs from the scored ensemble');
@@ -162,8 +143,8 @@
     records.forEach((item, index) => { choice.options[index].title = modelID(item); });
     if (run.single_model) { mode.hidden = true; choice.hidden = true; }
     choice.style.maxWidth = 'min(100%,360px)';
-    const choices = [['rainbow', 'Rainbow · sequence'], ['chain', 'Chain'], ['uniform', 'Structure']];
-    for (const metric of ['dp', 'recall', 'precision']) if (records.some(item => modelValue(item, metric) !== null)) choices.push([metric, `Model ${metric === 'dp' ? 'DP' : metric[0].toUpperCase() + metric.slice(1)}`]);
+    const choices = [['rainbow', 'Spectral · sequence'], ['chain', 'Chain'], ['uniform', 'Structure']];
+    for (const metric of ['dp', 'recall', 'precision']) if (records.some(item => modelValue(item, metric) !== null)) choices.push([metric, `${run.model_score_label || 'Model'} ${metric === 'dp' ? 'DP' : metric[0].toUpperCase() + metric.slice(1)}`]);
     const color = selector('Structure color', choices);
     if (choices.some(([key]) => key === saved.color)) color.value = saved.color;
     const opacityBox = element('label'); opacityBox.style.cssText = 'display:flex;align-items:center;gap:6px;font-size:11px';
@@ -188,23 +169,11 @@
       item.append(dot, element('span', label)); return item;
     }
     function scaleLegend(label, domain, palette, detail) {
-      legend.appendChild(element('div', label));
+      legend.appendChild(element('div', label + ' · Spectral (Matplotlib)'));
       const scale = element('div'); scale.style.cssText = 'display:flex;align-items:center;gap:7px;margin-top:3px';
       const bar = element('span'); bar.style.cssText = `display:inline-block;width:160px;height:9px;border-radius:2px;background:linear-gradient(to right,${palette.join(',')})`;
       scale.append(element('span', domain[0].toFixed(3)), bar, element('span', domain[1].toFixed(3)));
       legend.append(scale, element('div', detail));
-    }
-    function nativeLegend(layer, domain, detail) {
-      const stops = (layer.color_stops || []).filter(item => finite(item.value) && /^#[0-9a-f]{6}$/i.test(item.color || ''));
-      if (stops.length < 2 || domain[0] >= domain[1]) throw new Error('Native RPF legend stops unavailable');
-      legend.appendChild(element('div', `${layer.label}${layer.unit ? ' · ' + layer.unit : ''}`));
-      const bar = element('div');
-      bar.style.cssText = `width:100%;max-width:320px;height:9px;margin:4px 0;border-radius:2px;background:linear-gradient(to right,${stops.map(item => `${item.color} ${Math.max(0, Math.min(100, (item.value-domain[0])/(domain[1]-domain[0])*100))}%`).join(',')})`;
-      legend.appendChild(bar);
-      const ticks = element('div');
-      const labels = stops.filter((stop, index) => index === stops.length - 1 || stop.color !== stops[index + 1].color);
-      labels.forEach((stop, index) => ticks.appendChild(swatch(stop.label || `${index === 0 ? '≤' : index === labels.length - 1 ? '≥' : ''}${stop.value}`, stop.color)));
-      legend.append(ticks, element('div', detail));
     }
     function paint() {
       if (!viewer || disposed) return;
@@ -214,7 +183,7 @@
       const layer = layers.find(item => 'residue:' + item.id === color.value);
       const values = records.map(item => modelValue(item, color.value)).filter(finite);
       const domain = layer ? layerDomain(layer) : run.score_domains?.[color.value] || (values.length ? [Math.min(...values), Math.max(...values)] : [0, 1]);
-      const palette = layer ? layerPalette(layer) : VIRIDIS;
+      const palette = layer ? layerPalette(layer) : SPECTRAL;
       for (let index = 0; index < glModels.length; index++) {
         const gl = glModels[index], map = maps[index];
         if (mode.value === 'ensemble' || index === selected) gl.show(); else gl.hide();
@@ -240,17 +209,16 @@
         legend.appendChild(element('div', 'Chain'));
         maps[0].chains.forEach((chain, index) => legend.appendChild(swatch(chain || 'Blank chain', CHAINS[index % CHAINS.length])));
       } else if (color.value === 'rainbow') {
-        legend.appendChild(element('div', 'Sequence · N → C across available chains'));
+        legend.appendChild(element('div', 'Spectral (Matplotlib) · sequence N → C'));
         const line = element('div'); line.style.cssText = 'display:flex;align-items:center;gap:7px';
-        const bar = element('span'); bar.style.cssText = 'display:inline-block;width:160px;height:9px;background:linear-gradient(to right,#0000ff,#00ffff,#00ff00,#ffff00,#ff0000);border-radius:2px';
+        const bar = element('span'); bar.style.cssText = `display:inline-block;width:160px;height:9px;background:linear-gradient(to right,${SPECTRAL.join(',')});border-radius:2px`;
         line.append(element('span', 'N'), bar, element('span', 'C')); legend.appendChild(line);
         maps[0].chains.forEach((chain, index) => legend.appendChild(element('span', `${index ? ' · ' : ''}${chain || 'Blank chain'}`)));
       } else if (layer) {
         const shared = layer.scope !== 'model';
         const scope = run.single_model ? 'Independent single-model residue diagnostic' :
           shared ? `Ensemble diagnostic · same residue map on all ${records.length} models` : 'Residue metric · model-specific';
-        if (layer.id === 'legacy_rpf_heat') nativeLegend(layer, domain, scope);
-        else scaleLegend(`${layer.label}${layer.unit ? ' · ' + layer.unit : ''}`, domain, palette, scope);
+        scaleLegend(`${layer.label}${layer.unit ? ' · ' + layer.unit : ''}`, domain, palette, scope);
         legend.title = layer.definition || '';
         const missing = layer.id === 'shortest_unsupported_distance' ? 'No reported group / no assignment' : 'No assigned proton coverage';
         legend.appendChild(swatch(missing, missingColor(layer)));
@@ -260,7 +228,7 @@
         const unique = new Set(values).size;
         if (run.single_model) {
           scaleLegend(`${label} per model · cohort range`, domain, palette, `Selected model: ${finite(value) ? value.toFixed(3) : 'unavailable'}`);
-        } else scaleLegend(`${label} per model · range within this ensemble`, domain, palette,
+        } else scaleLegend(`${run.model_score_label || 'Model'} ${label} · range within this ensemble`, domain, palette,
           `${unique} distinct scores · selected model ${records[selected].index || selected + 1}: ${finite(value) ? value.toFixed(3) : 'unavailable'}${unique === 1 ? ' · all models have the same score' : ''}`);
       }
       viewer.render();
@@ -278,7 +246,7 @@
       }
     }
     const controller = {selectModel, destroy() {
-      disposed = true; observer?.disconnect(); if (viewer) { viewer.clear(); viewer = null; }
+      disposed = true; observer?.disconnect(); if(downloadURL) URL.revokeObjectURL(downloadURL); if (viewer) { viewer.clear(); viewer = null; }
       container.replaceChildren(); mounted.delete(container);
     }};
     mounted.set(container, controller); selectModel(model);
@@ -311,18 +279,33 @@
         paint();
       }).catch(() => { if (!disposed) residueStatus.textContent = 'Residue coloring unavailable'; });
     }
-    Promise.all([library(), framesPromise]).then(([api, frames]) => {
+    Promise.all([library(), framesPromise]).then(async ([api, frames]) => {
       if (disposed) return;
       if (frames.length !== records.length) throw new Error('Structure/model mapping does not match this run');
+      let presentation;
+      if(frames.length>1) {
+        presentation=window.RpfPresentation.alignEnsemble(frames,run.alignment,records.map(modelID));
+        frames=presentation.frames;
+        const note=element('div',presentation.label);note.className='alignment-note';toolbar.appendChild(note);
+        const download=element('a','Download aligned ensemble PDB');download.className='download-link';
+        downloadURL=URL.createObjectURL(new Blob([presentation.pdb],{type:'chemical/x-pdb'}));
+        download.href=downloadURL;download.download=String(run.id).replace(/[^a-zA-Z0-9_-]/g,'_')+'.aligned.pdb';toolbar.appendChild(download);
+      }
       maps = frames.map(structureMap);
       const first = [...maps[0].ranks.keys()].sort().join('\n');
       if (maps.some(item => [...item.ranks.keys()].sort().join('\n') !== first)) throw new Error('Residue identities differ between ensemble models');
-      message.remove(); viewer = api.createViewer(canvas, {backgroundColor: '#fafafa', antialias: true});
-      glModels = frames.map(frame => viewer.addModel(frame, 'pdb', {keepH: true}));
+      viewer = api.createViewer(canvas, {backgroundColor: '#fafafa', antialias: true});
+      glModels=[];
+      for(const [index,frame] of frames.entries()){
+        if(disposed)return;
+        glModels.push(viewer.addModel(frame,'pdb',{keepH:true}));
+        if(index%5===4)await new Promise(resolve=>setTimeout(resolve,0));
+      }
+      if(disposed)return;message.remove();
       if (typeof ResizeObserver !== 'undefined') { observer = new ResizeObserver(() => { if (viewer && !disposed) viewer.resize(); }); observer.observe(canvas); }
-      paint(); recenter();
-    }).catch(() => { if (!disposed) { toolbar.hidden = true; canvas.replaceChildren(element('p', 'Structure unavailable')); } });
+      paint(); recenter(); if(onCoordinates)onCoordinates(presentation || {pdb:frames[0],frames});
+    }).catch(error => { if (!disposed) { toolbar.hidden = true; canvas.replaceChildren(element('p', 'Structure unavailable: '+error.message)); } });
     return controller;
   }
-  window.RpfStructure = {mount, colors: {modelValue, paletteColor, rainbow, residueKey, structureMap, layerMap, layerRows, residueColor, layerDomain, VIRIDIS, MISSING}};
+  window.RpfStructure = {mount, colors: {modelValue, paletteColor, rainbow, residueKey, structureMap, layerMap, layerRows, residueColor, layerDomain, SPECTRAL, MISSING}};
 })();

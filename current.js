@@ -12,7 +12,7 @@
   const packs = new Map();
   const diagnosticPacks = new Map();
   let diagnosticIndex;
-  let catalog, modelIndex, panelIndex, viewer, loaded, activeURL, request = 0;
+  let catalog, modelIndex, panelIndex, viewer, loaded, activeURL, alignedURL, request = 0;
 
   function esc(value) {
     return String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -132,9 +132,10 @@
     loaded = key;
     const token = ++request;
     clearViewer();
-    const download = $('structure-download'), container = $('current-structure');
+    const download = $('structure-download'), original = $('original-structure-download'), container = $('current-structure');
     download.hidden = true;
-    download.removeAttribute('href');
+    download.removeAttribute('href'); original.hidden=true;original.removeAttribute('href');
+    if(alignedURL){URL.revokeObjectURL(alignedURL);alignedURL=null;}
     $('structure-title').textContent = item ? title(item, ensemble) : 'Structure';
     $('structure-detail').textContent = item ? (ensemble ?
       `${ranges[item.residue_range]} · 50 protonated models · seed ${item.seed}` : item.method + ' · protonated scored coordinates') : '';
@@ -148,22 +149,29 @@
       activeURL = url;
       download.href = url;
       download.download = (ensemble ? item.id : item.id + '.protonated') + '.pdb';
-      download.hidden = false;
+      download.hidden = ensemble;
+      download.textContent=ensemble?'Download aligned ensemble PDB':'Download PDB';
+      if(ensemble){original.href=url;original.download=item.id+'.scored.pdb';original.hidden=false;}
       const models = ensemble ? item.members.map((id, i) => ({id,index:i + 1,...item.member_scores[i]})) : [{id:item.id,index:1,...item}];
       viewer = window.RpfStructure.mount(container, {run:{
         id:ensemble ? item.id : 'current-single-model',
         models,
         single_model:!ensemble,
         initial_display:ensemble ? 'ensemble' : 'single',
+        alignment:ensemble ? window.RpfPresentation.selection(item.residue_range) : undefined,
         score_domains:ensemble ? undefined : catalog.score_domains,
         initial_color:ensemble ? undefined : 'residue:legacy_rpf_heat',
         residue_metrics:ensemble ? undefined : () => singleDiagnostics(item),
         residue_metrics_url:ensemble ? asset(item.diagnostics.path).href : undefined
-      }, model:models[0], coordinateText:new TextDecoder().decode(bytes)});
+      }, model:models[0], coordinateText:new TextDecoder().decode(bytes),onCoordinates:presentation=>{
+        if(token!==request || !ensemble)return;
+        alignedURL=URL.createObjectURL(new Blob([presentation.pdb],{type:'chemical/x-pdb'}));
+        download.href=alignedURL;download.download=item.id+'.aligned.pdb';download.hidden=false;
+      }});
     } catch (error) {
       if (token !== request) return;
       loaded = undefined;
-      download.hidden = true;
+      download.hidden = true; original.hidden=true;
       clearViewer();
       container.innerHTML = `<p role="status">${esc(error.message)}. Select this result again to retry.</p>`;
     }

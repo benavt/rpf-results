@@ -75,6 +75,7 @@
     }).join('')}</g></svg>`;
   }
   function detail(row) {
+    window.RpfComparisonEnsemble.clear();
     if(!row){$('selection-detail').replaceChildren();return;}
     const study=studies.get(row.study);
     const members=row.members || [];
@@ -83,11 +84,14 @@
       <p>${esc(ranges[row.range])} · ${esc(priors[row.partition]||row.partition)} · ${esc(pool(row))} · seed ${esc(row.seed)} · ${row.models} models</p>
       <p>${esc(contextNotes[row.score_context])}</p>
       ${row.member_metrics?`<div class="table-wrap"><table aria-label="Ensemble scores and mean member quality"><thead><tr><th>Measure</th><th>Native ensemble</th><th>Mean independent member</th></tr></thead><tbody>${[['dp','DP'],['recall','Recall'],['precision','Precision'],['molprobity','MolProbity'],['clashscore','Clashscore'],['energy_t10','ProteinEBM t=0.10']].map(([key,title])=>`<tr><th scope="row">${title}</th><td>${['dp','recall','precision'].includes(key)?fmt(row[key]):'—'}</td><td>${memberMetric(row.member_metrics[key])}</td></tr>`).join('')}</tbody></table></div>`:''}
-      <p>${row.viewer_id?`<a href="./#ensembles?id=${encodeURIComponent(row.viewer_id)}">Open exact scored ensemble and residue coloring</a>`:members.length?'Inspect the individual protonated member structures below. The exact scored ensemble file is not bundled for this comparison.':'This screen reports model-score summaries. Its individual selections are available in the saved study, outside this web release.'}</p>
+      <p>${row.viewer_id?`<a href="./#ensembles?id=${encodeURIComponent(row.viewer_id)}">Open exact scored ensemble and residue coloring</a>`:members.length?'View or download the aligned ensemble below, or inspect its individual members.':'This screen reports model-score summaries. Its individual selections are available in the saved study, outside this web release.'}</p>
+      ${members.length && row.score_context==='native_ensemble'?'<button type="button" class="button" id="view-comparison-ensemble">View aligned ensemble / download PDB</button><p>Alignment uses this row’s clustering residues. Per-model colors use independent single-model scores. The saved native ensemble scores above retain their original interpretation.</p><div id="comparison-structure" style="min-height:0"></div>':''}
       <details><summary>Scoring provenance</summary><p>Peak lists: ${esc(data.peak_list_version)} · control: ${esc(data.control_variant)}</p>
       <p class="hash">Snapshot SHA-256: ${esc(study.snapshot_sha256)}<br>Acceptance SHA-256: ${esc(study.audit_sha256)}${row.ensemble_sha256?'<br>Scored ensemble SHA-256: '+esc(row.ensemble_sha256):''}</p>
       <p>Source row: <code>${esc(row.source_id)}</code></p></details>
       ${members.length?`<details><summary>${members.length} saved members</summary><ol class="member-list">${members.map(id=>`<li><a href="./#models?id=${encodeURIComponent(id)}">${esc(id.replace(/^SR215_bmr6366__/,''))}</a></li>`).join('')}</ol></details>`:''}`;
+    const button=$('view-comparison-ensemble');
+    if(button)button.addEventListener('click',()=>window.RpfComparisonEnsemble.show(row,$('comparison-structure')));
   }
   function render() {
     updateChoices();
