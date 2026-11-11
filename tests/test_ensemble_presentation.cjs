@@ -35,4 +35,10 @@ for(const range of ['all','res5-95','res32-47-plus78-99']){
   assert(Math.abs(dist(before[0],before.at(-1))-dist(after[0],after.at(-1)))<.003,'Rigid display must preserve internal distances');
  }
 }
+const legacyRuns=fs.readdirSync(path.join(root,'data/runs')).map(name=>JSON.parse(fs.readFileSync(path.join(root,'data/runs',name))));
+const legacyWindow={RpfPresentation:window.RpfPresentation,RpfStructure:{mount(container,options){return options.run;}}};
+vm.runInNewContext(fs.readFileSync(path.join(root,'legacy-alignment.js'),'utf8'),{window:legacyWindow});
+for(const run of legacyRuns) {
+ const bound=legacyWindow.RpfStructure.mount(null,{run});assert.equal(bound.alignment.positions.length,38);assert.equal(bound.alignment.positions[0],32);assert.equal(bound.alignment.positions.at(-1),99);
+}
 console.log('Spectral samples, clustering-only rigid fits, ordered multi-model downloads, unchanged atom identities, invalid selections, and three real 50-model scopes passed.');

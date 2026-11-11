@@ -54,8 +54,9 @@ packs without preparing coordinates or running scientific scoring.
 Continuous colors use the standard Matplotlib **Spectral** 256-color map, low
 values red and high values purple, including residue diagnostics and sequence
 position. Missing assignments remain gray. Stored diagnostic values are unchanged;
-the current viewer replaces their saved display colors with Spectral. The archived
-release retains its original files and presentation.
+the viewers replace their saved display colors with Spectral. The archive viewer
+uses its explicitly saved 32–47 plus 78–99 clustering scope; its original scored
+payloads, historical scripts and release manifest remain byte-identical.
 
 Every current ensemble is rigidly fitted to its first saved member using chain A
 Cα atoms in that panel's clustering/state residue selection: 1–139, 5–95, or

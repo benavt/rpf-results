@@ -1,4 +1,4 @@
-/* Same-origin structure inspection; scored coordinates and metric values are unchanged. */
+/* Same-origin inspection; rigid display copies preserve scored sources and values. */
 (function () {
   'use strict';
   const mounted = new WeakMap();
@@ -279,7 +279,7 @@
         paint();
       }).catch(() => { if (!disposed) residueStatus.textContent = 'Residue coloring unavailable'; });
     }
-    Promise.all([library(), framesPromise]).then(([api, frames]) => {
+    Promise.all([library(), framesPromise]).then(async ([api, frames]) => {
       if (disposed) return;
       if (frames.length !== records.length) throw new Error('Structure/model mapping does not match this run');
       let presentation;
@@ -294,8 +294,14 @@
       maps = frames.map(structureMap);
       const first = [...maps[0].ranks.keys()].sort().join('\n');
       if (maps.some(item => [...item.ranks.keys()].sort().join('\n') !== first)) throw new Error('Residue identities differ between ensemble models');
-      message.remove(); viewer = api.createViewer(canvas, {backgroundColor: '#fafafa', antialias: true});
-      glModels = frames.map(frame => viewer.addModel(frame, 'pdb', {keepH: true}));
+      viewer = api.createViewer(canvas, {backgroundColor: '#fafafa', antialias: true});
+      glModels=[];
+      for(const [index,frame] of frames.entries()){
+        if(disposed)return;
+        glModels.push(viewer.addModel(frame,'pdb',{keepH:true}));
+        if(index%5===4)await new Promise(resolve=>setTimeout(resolve,0));
+      }
+      if(disposed)return;message.remove();
       if (typeof ResizeObserver !== 'undefined') { observer = new ResizeObserver(() => { if (viewer && !disposed) viewer.resize(); }); observer.observe(canvas); }
       paint(); recenter(); if(onCoordinates)onCoordinates(presentation || {pdb:frames[0],frames});
     }).catch(error => { if (!disposed) { toolbar.hidden = true; canvas.replaceChildren(element('p', 'Structure unavailable: '+error.message)); } });

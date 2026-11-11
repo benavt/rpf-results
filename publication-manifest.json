@@ -28,8 +28,8 @@
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     "README.md": {
-      "bytes": 4361,
-      "sha256": "44f5c48a04b7178c99ebd04ed0953db3568c457651368cc550e9cd0f5afc240b"
+      "bytes": 4464,
+      "sha256": "acbba6599b10d44602a672ceb91bf7d7e7cac239c178734e45b1a5a322d1f945"
     },
     "app.js": {
       "bytes": 16832,
@@ -1280,8 +1280,8 @@
       "sha256": "3e80662579acaf32aaf5efe45f5b9d8e3b005d76e307d9a23c3fc410cfbf4f91"
     },
     "current-structure.js": {
-      "bytes": 20471,
-      "sha256": "ccbc56f7d8756fb2554740358b99e437226111c6ee208f1d01daca24a4f5b67f"
+      "bytes": 20660,
+      "sha256": "73fec66faed8918ec5304ef924e61b665d6295c4b6fdaa79f746a46bee7099fd"
     },
     "current.css": {
       "bytes": 3701,
@@ -5859,13 +5859,17 @@
       "bytes": 8418,
       "sha256": "5fb2d6a59f31329d58bb4ab91ee9da0398b03bde7c990e02a1fe154c5caa86d9"
     },
+    "legacy-alignment.js": {
+      "bytes": 472,
+      "sha256": "fbd66bb1af4ace661e1d51cf7c682cffe9afa246a667add027a3bdc0c22192d2"
+    },
     "legacy-publication-manifest.json": {
       "bytes": 66619,
       "sha256": "8c2ca00a2639537d01a1080f7c112701f066aa8ff21ef29f71d90e9ed7ab3bfc"
     },
     "legacy.html": {
-      "bytes": 1820,
-      "sha256": "7497b5bebacb56d7e599b3c46a7a5ff6638eba7c5fb874f2d70cb9f8e2693523"
+      "bytes": 1971,
+      "sha256": "0c4d34cb4ef296e41e0ccadda26ef6eb4f8b85a673bad1472f9462fda618bee9"
     },
     "scripts/build_comparisons.py": {
       "bytes": 14080,
@@ -5904,8 +5908,8 @@
       "sha256": "cb02b56dcad4c971a7dc6841ecb27163822b6127bf10c4c4dd3dd4ceee893d77"
     },
     "tests/test_ensemble_presentation.cjs": {
-      "bytes": 3577,
-      "sha256": "c9905d0176cb8246974fa43c5418272d7e7c5bf91d4302c046459426bdcf2873"
+      "bytes": 4176,
+      "sha256": "f9f7b9bb5cd8cdad3dec7be45882a685437aee1dd00ef5d78762a40881df5b22"
     },
     "tests/test_model_diagnostics.py": {
       "bytes": 3650,
@@ -5966,5 +5970,5 @@
   ],
   "runs": 12,
   "schema_version": 1,
-  "total_bytes_before_manifest": 787911533
+  "total_bytes_before_manifest": 787913047
 }
