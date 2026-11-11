@@ -32,6 +32,7 @@ const viewer = {addModel(text) {
 },render(){rendered++;},zoomTo(){},clear(){}};
 const document = {baseURI:'https://example.test/',currentScript:{src:'https://example.test/current-structure.js'},createElement:tag=>new Element(tag)};
 const window = {$3Dmol:{createViewer(){return viewer;}}};
+vm.runInNewContext(fs.readFileSync(path.join(__dirname,'../structure-presentation.js'),'utf8'),{window});
 vm.runInNewContext(fs.readFileSync(path.join(__dirname,'../current-structure.js'),'utf8'), {window,document,URL,fetch(){throw Error('Unexpected network call');}});
 const tick = async () => { for (let i=0;i<6;i++) await new Promise(resolve=>setImmediate(resolve)); };
 const container = new Element('main');
@@ -41,7 +42,7 @@ const run = {id:'single',models:[model],single_model:true,initial_color:'residue
   window.RpfStructure.mount(container,{run,model,coordinateText:pdb}); await tick();
   const color = find(container,x=>x.attributes['aria-label']==='Structure color');
   assert.equal(color.value,'residue:legacy_rpf_heat');
-  assert.equal(styles.at(-1).cartoon.colorfunc({chain:'A',resi:1}),'#ff0000');
+  assert.equal(styles.at(-1).cartoon.colorfunc({chain:'A',resi:1}),'#5e4fa2');
   assert.equal(styles.at(-1).cartoon.colorfunc({chain:'A',resi:2}),'#aeb4be');
   assert.equal(styles.at(-1).cartoon.colorfunc({chain:'B',resi:1}),'#aeb4be');
   assert.equal(frames[0],pdb);

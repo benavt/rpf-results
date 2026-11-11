@@ -22,7 +22,8 @@ violations, and shortest unsupported distance. These are residue precision
 diagnostics; no residue-wise Recall, Precision fraction, or DP is inferred.
 Unassigned residues remain gray. Only the original 48 state ensembles have full
 scored ensemble coordinates and ensemble residue diagnostics bundled here; other
-native comparisons link all 50 saved members to their independent structures.
+native comparisons link all 50 saved members to their independent structures. All 382 native comparison rows can also assemble
+and display their verified selected members as an aligned multi-model PDB.
 
 Rebuild comparison data from an existing RPF evidence collection:
 
@@ -47,3 +48,30 @@ archives using the existing RPF parser and native archive readers. Supply its
 private frozen source plan with `--plan`, the pinned parser source bundle with
 `--rpf-source`, and a fresh `--output` directory. It exports compact diagnostic
 packs without preparing coordinates or running scientific scoring.
+
+## Structure presentation
+
+Continuous colors use the standard Matplotlib **Spectral** 256-color map, low
+values red and high values purple, including residue diagnostics and sequence
+position. Missing assignments remain gray. Stored diagnostic values are unchanged;
+the current viewer replaces their saved display colors with Spectral. The archived
+release retains its original files and presentation.
+
+Every current ensemble is rigidly fitted to its first saved member using chain A
+Cα atoms in that panel's clustering/state residue selection: 1–139, 5–95, or
+32–47 plus 78–99. Full structures remain visible, and the selected residues and
+reference model are labeled. Missing or ambiguous fit atoms stop display rather
+than substituting another selection. This is a display transform with no
+relaxation, reflection, scaling, outlier removal or change in scores.
+
+**Download aligned ensemble PDB** exports every displayed model in saved order
+with standard MODEL/ENDMDL blocks and source model IDs. Coordinates are rounded
+to PDB's three decimals after fitting; original scored coordinates remain available
+separately for the 48 exact scored state panels. Comparison ensembles are rebuilt
+from hash-verified prepared members; their aligned PDBs are presentation artifacts,
+not replacements for the scored original's SHA-256. Per-model colors there are
+explicitly independent single-model scores; native ensemble scores stay separate.
+
+```sh
+node tests/test_ensemble_presentation.cjs
+```
