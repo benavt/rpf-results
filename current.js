@@ -220,6 +220,14 @@
     const item = selection || rows[state.page * pageSize];
     $('model-tools').hidden = ensemble;
     $('panel-tools').hidden = !ensemble;
+    $('atlas-context').hidden = !ensemble;
+    if (ensemble) {
+      const range = $('range-filter').value;
+      $('atlas-range').textContent = ranges[range].toLowerCase();
+      $('selected-atlas').textContent = `Open structure atlas · ${ranges[range].toLowerCase()} ↗`;
+      $('selected-atlas').href = 'https://benavt.github.io/ais-casp17-clusters/#SR215_bmr6366?' +
+        new URLSearchParams({cohort:'current-12104', range});
+    }
     for (const [id, active] of [['single-view', !ensemble], ['ensemble-view', ensemble]]) {
       if (active) $(id).setAttribute('aria-current','page');
       else $(id).removeAttribute('aria-current');
