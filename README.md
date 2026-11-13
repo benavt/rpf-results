@@ -49,6 +49,30 @@ private frozen source plan with `--plan`, the pinned parser source bundle with
 `--rpf-source`, and a fresh `--output` directory. It exports compact diagnostic
 packs without preparing coordinates or running scientific scoring.
 
+## Focused two-method cohort
+
+`cohort-2000.html` reports exactly 1,000 AFSample3 and 1,000 BioEMU2 models.
+It includes current independent-model RPF scores, four clustering residue
+subsets, eight accepted MCMC50/DISCO50 native ensemble scores, and 31 directional
+Double Recall comparisons. `current/cohort-2000/report.json` pins the accepted
+source hashes and complete summary; CSV downloads expose individual scores,
+ordered memberships, native panel scores and all 99 representative TM triples.
+
+The native ensemble viewer fetches each exact saved query from the public cohort
+asset store and verifies its uncompressed SHA256 before rendering. Display
+alignment uses the selected clustering residues; original scored coordinates
+remain available separately. All eight panels link to the matching atlas view
+with their exact 50 sampled members highlighted. Both discontinuous subsets have
+AFSample3-only supported states; unassigned models remain in the denominator.
+TM certification cores differ from clustering masks. Ensemble scores are kept
+separate from independent-member medians, and Double Recall tables retain the
+prediction/reference preparation caveat and directional pair counts.
+
+```sh
+python3 -m unittest discover -s tests -p test_cohort_2000.py -v
+node --check cohort-2000.js
+```
+
 ## Structure presentation
 
 The ensemble residue selector has a prominent **Open structure atlas** link
