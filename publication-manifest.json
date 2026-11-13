@@ -1267,6 +1267,18 @@
       "bytes": 185253,
       "sha256": "ff81546839c8bb33e104c2f78bb63640a8f6fd4fb54adfc742b9df8210e18a1d"
     },
+    "cohort-2000.css": {
+      "bytes": 1569,
+      "sha256": "bf971b557cd9800a6b98fd26329af1eb0ada18975a5d17498222992989b54bc0"
+    },
+    "cohort-2000.html": {
+      "bytes": 8766,
+      "sha256": "0b9f95212c4e02dbced500f7c7735b5361f67989ca51bd7580da57ac8274221e"
+    },
+    "cohort-2000.js": {
+      "bytes": 7777,
+      "sha256": "5d18ce36ed73cd8374930c1efd8bf5d0252fee888831c316f09ae82771413396"
+    },
     "comparison-ensemble.js": {
       "bytes": 3810,
       "sha256": "1037ea5aa540017f008b00f831eaf410340069632adef0ddd91074b10e640a9e"
@@ -1310,6 +1322,18 @@
     "current/catalog.json": {
       "bytes": 3644,
       "sha256": "a8729dced8cbfc313d59e90cfa3e699238741504e91f023755e35c78976f2565"
+    },
+    "current/cohort-2000/models.csv": {
+      "bytes": 1205554,
+      "sha256": "623de7e078be5facea417d887b3d31d655830695e3ac7399deb0edf347329868"
+    },
+    "current/cohort-2000/report.json": {
+      "bytes": 478693,
+      "sha256": "83390542cb0af458699c85fbad27d3849b6736c6984b595c6087640dbc66d1b1"
+    },
+    "current/cohort-2000/selected-members.csv": {
+      "bytes": 64254,
+      "sha256": "5d26219c628f319c3c20699ece4b6191ba26a67fc11ab5075e12e2638cda3052"
     },
     "current/comparisons.json": {
       "bytes": 2066668,
@@ -5856,8 +5880,8 @@
       "sha256": "b44dc120286e9b3283fcf229e729f2520131cae6d4458be0d028cdc622cbf8e4"
     },
     "index.html": {
-      "bytes": 8873,
-      "sha256": "a2caf026f1ef09d2f73c82e8cd91c92b017bfe0b3bfd8b22bbe9a0cf74487d8b"
+      "bytes": 8949,
+      "sha256": "ad9460e20b7cc9ce5d09770b3c28a3432b42167878cc969d9eba07d34dc5daa3"
     },
     "legacy-alignment.js": {
       "bytes": 472,
@@ -5970,5 +5994,5 @@
   ],
   "runs": 12,
   "schema_version": 1,
-  "total_bytes_before_manifest": 787914857
+  "total_bytes_before_manifest": 789681546
 }
