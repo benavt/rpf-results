@@ -28,8 +28,8 @@
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     "README.md": {
-      "bytes": 4782,
-      "sha256": "7bcb111fd4cd65763f7f51779754c4e645cce6d51e7375f5ac6841c216459d40"
+      "bytes": 6079,
+      "sha256": "31b83dfff57c09c57c7206e9aa8e963d13ae8866f9c1e5ade3f46dccaed58d07"
     },
     "app.js": {
       "bytes": 16832,
@@ -1268,16 +1268,16 @@
       "sha256": "ff81546839c8bb33e104c2f78bb63640a8f6fd4fb54adfc742b9df8210e18a1d"
     },
     "cohort-2000.css": {
-      "bytes": 1569,
-      "sha256": "bf971b557cd9800a6b98fd26329af1eb0ada18975a5d17498222992989b54bc0"
+      "bytes": 1960,
+      "sha256": "085ae251d6bb36cd1115a3c435aa69711323dcb8be16feccecb2cdb463734534"
     },
     "cohort-2000.html": {
-      "bytes": 8766,
-      "sha256": "0b9f95212c4e02dbced500f7c7735b5361f67989ca51bd7580da57ac8274221e"
+      "bytes": 10099,
+      "sha256": "bae373dc6e2fdbe7b2d83d96c5414252f01c7fec559d6bc64cac425d2e6b46fb"
     },
     "cohort-2000.js": {
-      "bytes": 7777,
-      "sha256": "5d18ce36ed73cd8374930c1efd8bf5d0252fee888831c316f09ae82771413396"
+      "bytes": 12704,
+      "sha256": "a03b88b5861fb2d56e08c034d8eb38cf2e0ab694d97fd9bc47d0e1b1d683380f"
     },
     "comparison-ensemble.js": {
       "bytes": 3810,
@@ -1323,17 +1323,33 @@
       "bytes": 3644,
       "sha256": "a8729dced8cbfc313d59e90cfa3e699238741504e91f023755e35c78976f2565"
     },
+    "current/cohort-2000/double-recall.json": {
+      "bytes": 16662,
+      "sha256": "456bb910c24f7162326646096a04d895d7d97e8ca951e32b22ff652e106ee523"
+    },
     "current/cohort-2000/models.csv": {
       "bytes": 1205554,
       "sha256": "623de7e078be5facea417d887b3d31d655830695e3ac7399deb0edf347329868"
     },
+    "current/cohort-2000/panel-scores.csv": {
+      "bytes": 2801,
+      "sha256": "70c963d6982cc375c909fef64582db9c9d411628b78c52e67b89e7d1494b8040"
+    },
     "current/cohort-2000/report.json": {
-      "bytes": 478693,
-      "sha256": "83390542cb0af458699c85fbad27d3849b6736c6984b595c6087640dbc66d1b1"
+      "bytes": 521066,
+      "sha256": "443f9d9bed303ec9b4a2857164f657d11dd19d8a3630f3f2d62eefed166475b0"
+    },
+    "current/cohort-2000/representative-tm.csv": {
+      "bytes": 23630,
+      "sha256": "71f56eb300e2389f60ba3f68a117742c81280c94713d91273e6e7c6b4e3d25f9"
+    },
+    "current/cohort-2000/representative-tm.json": {
+      "bytes": 41363,
+      "sha256": "474a87ab2d9d687110d37b871b78e9fce1c807e0a2928a01c0d3c9ef60db4ad8"
     },
     "current/cohort-2000/selected-members.csv": {
-      "bytes": 64254,
-      "sha256": "5d26219c628f319c3c20699ece4b6191ba26a67fc11ab5075e12e2638cda3052"
+      "bytes": 63425,
+      "sha256": "7546db92534162575a7d26aa3022ccd3d27a1df2c7f2901da7c7cfe4056f1b6b"
     },
     "current/comparisons.json": {
       "bytes": 2066668,
@@ -5919,6 +5935,10 @@
       "bytes": 8608,
       "sha256": "97c307771c30f8469338d96cd18b730c5c43a080f1e4efba7770d97c36d5e84a"
     },
+    "tests/test_cohort_2000.py": {
+      "bytes": 10078,
+      "sha256": "ad86129905ca5679bb0d6caf03814f373bde0206ac38345e1fc735d2e3b794f2"
+    },
     "tests/test_comparison_ensemble.cjs": {
       "bytes": 3896,
       "sha256": "ed5b676687dc64dd8e0154486b6318f01251781a4a97235b04ccb15561b720b3"
@@ -5994,5 +6014,5 @@
   ],
   "runs": 12,
   "schema_version": 1,
-  "total_bytes_before_manifest": 789681546
+  "total_bytes_before_manifest": 789825572
 }
