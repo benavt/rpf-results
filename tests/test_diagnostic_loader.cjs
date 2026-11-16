@@ -25,12 +25,14 @@ function setup({wrongModel=false,wrongContext=false,corrupt=false}={}) {
   const source = fs.readFileSync(path.join(__dirname,'../current.js'),'utf8');
   const replaced = source.replace(/\n  load\(\);\n\}\)\(\);\s*$/, '\n  window.testLoader={singleDiagnostics,setCatalog(value){catalog=value;}};\n})();');
   assert.notEqual(replaced,source);
-  vm.runInNewContext(replaced,{window,document:{baseURI:'https://example.test/'},URL,TextDecoder,Uint8Array,
+  const context={window,document:{baseURI:'https://example.test/'},location:{search:'?input=v1'},URL,URLSearchParams,TextDecoder,Uint8Array,
     crypto:webcrypto,Blob,Response,DecompressionStream,fetch:async url=>{
       calls.push(url.pathname);
       const body=url.pathname.endsWith('model-diagnostics.json')?index:corrupt?Buffer.from('corrupt'):packed;
       return new Response(body);
-    }});
+    }};
+  vm.runInNewContext(fs.readFileSync(path.join(__dirname,'../score-checksum.js'),'utf8'),context);
+  vm.runInNewContext(replaced,context);
   window.testLoader.setCatalog(catalog);
   return {loader:window.testLoader,calls};
 }

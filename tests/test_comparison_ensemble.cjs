@@ -17,7 +17,7 @@ const window={$3Dmol:{createViewer(){return viewer;}}},document={baseURI:'https:
 const context={window,document,URL,Blob,Response,DecompressionStream,TextDecoder,Uint8Array,crypto:webcrypto,fetch:async url=>{
  calls.push(url.pathname);const b=url.pathname.endsWith('catalog.json')?catalog:url.pathname.endsWith('models.json')?index:packed;return new Response(b);
 }};
-for(const f of ['structure-presentation.js','current-structure.js','comparison-ensemble.js'])vm.runInNewContext(fs.readFileSync(path.join(root,f),'utf8'),context);
+for(const f of ['score-checksum.js','structure-presentation.js','current-structure.js','comparison-ensemble.js'])vm.runInNewContext(fs.readFileSync(path.join(root,f),'utf8'),context);
 // This fixture uses the public alignment selection interface; the selected range
 // is shortened to the fixture's three residues, not a different native input.
 window.RpfPresentation.selection=()=>({chain:'A',positions:[1,2,3],label:'1–3'});

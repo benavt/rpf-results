@@ -85,11 +85,11 @@
       <p>${esc(contextNotes[row.score_context])}</p>
       ${row.member_metrics?`<div class="table-wrap"><table aria-label="Ensemble scores and mean member quality"><thead><tr><th>Measure</th><th>Native ensemble</th><th>Mean independent member</th></tr></thead><tbody>${[['dp','DP'],['recall','Recall'],['precision','Precision'],['molprobity','MolProbity'],['clashscore','Clashscore'],['energy_t10','ProteinEBM t=0.10']].map(([key,title])=>`<tr><th scope="row">${title}</th><td>${['dp','recall','precision'].includes(key)?fmt(row[key]):'—'}</td><td>${memberMetric(row.member_metrics[key])}</td></tr>`).join('')}</tbody></table></div>`:''}
       <p>${row.viewer_id?`<a href="./#ensembles?id=${encodeURIComponent(row.viewer_id)}">Open exact scored ensemble and residue coloring</a>`:members.length?'View or download the aligned ensemble below, or inspect its individual members.':'This screen reports model-score summaries. Its individual selections are available in the saved study, outside this web release.'}</p>
-      ${members.length && row.score_context==='native_ensemble'?'<button type="button" class="button" id="view-comparison-ensemble">View aligned ensemble / download PDB</button><p>Alignment uses this row’s clustering residues. Per-model colors use independent single-model scores. The saved native ensemble scores above retain their original interpretation.</p><div id="comparison-structure" style="min-height:0"></div>':''}
+      ${members.length && row.score_context==='native_ensemble'?'<button type="button" class="button" id="view-comparison-ensemble">View aligned ensemble / download PDB</button><p>Alignment uses this row’s clustering residues. Per-model colors use independent v1 single-model scores. The saved native ensemble scores above retain their original interpretation.</p><div id="comparison-structure" style="min-height:0"></div>':''}
       <details><summary>Scoring provenance</summary><p>Peak lists: ${esc(data.peak_list_version)} · control: ${esc(data.control_variant)}</p>
       <p class="hash">Snapshot SHA-256: ${esc(study.snapshot_sha256)}<br>Acceptance SHA-256: ${esc(study.audit_sha256)}${row.ensemble_sha256?'<br>Scored ensemble SHA-256: '+esc(row.ensemble_sha256):''}</p>
       <p>Source row: <code>${esc(row.source_id)}</code></p></details>
-      ${members.length?`<details><summary>${members.length} saved members</summary><ol class="member-list">${members.map(id=>`<li><a href="./#models?id=${encodeURIComponent(id)}">${esc(id.replace(/^SR215_bmr6366__/,''))}</a></li>`).join('')}</ol></details>`:''}`;
+      ${members.length?`<details><summary>${members.length} saved members</summary><ol class="member-list">${members.map(id=>`<li><a href="./?input=v1#models?id=${encodeURIComponent(id)}">${esc(id.replace(/^SR215_bmr6366__/,''))}</a></li>`).join('')}</ol></details>`:''}`;
     const button=$('view-comparison-ensemble');
     if(button)button.addEventListener('click',()=>window.RpfComparisonEnsemble.show(row,$('comparison-structure')));
   }
@@ -116,14 +116,14 @@
     const cell=v=>'"'+String(v??'').replaceAll('"','""')+'"';
     const csv=[fields.join(','),...selectedRows.map(r=>fields.map(k=>cell(r[k])).join(','))].join('\r\n')+'\r\n';
     exportURL=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'}));
-    const link=document.createElement('a');link.href=exportURL;link.download='SR215-current-configurations.csv';link.click();
+    const link=document.createElement('a');link.href=exportURL;link.download='SR215-v1-configurations.csv';link.click();
   }
   async function load() {
     try {
       const catalog=await (await fetch('current/catalog.json')).json();
       const res=await fetch(catalog.configuration_comparisons.path);if(!res.ok)throw new Error('Comparison file unavailable');
-      const bytes=await res.arrayBuffer(),digest=await crypto.subtle.digest('SHA-256',bytes);
-      if([...new Uint8Array(digest)].map(b=>b.toString(16).padStart(2,'0')).join('')!==catalog.configuration_comparisons.sha256) throw new Error('Comparison checksum differs from catalog');
+      const bytes=await res.arrayBuffer();
+      if(await window.RpfChecksum(bytes)!==catalog.configuration_comparisons.sha256) throw new Error('Comparison checksum differs from catalog');
       data=JSON.parse(new TextDecoder().decode(bytes));
       if(data.peak_list_version!==catalog.peak_list_version)throw new Error('Input versions do not match');
       studies=new Map(data.studies.map(s=>[s.id,s]));
@@ -145,7 +145,7 @@
       });
       $('coverage').addEventListener('click',e=>{const id=e.target.closest('[data-study]')?.dataset.study;if(id){for(const f of filters)$(f).value='';$('context').value=id==='member-screen'?'mean_independent_member':'native_ensemble';$('study').value=id;state.page=0;state.selected=null;render();$('filter-heading').scrollIntoView();}});
       window.addEventListener('hashchange',()=>{restore();state.page=0;render();});
-      restore();render();$('load-status').textContent=`Current input version verified · ${data.studies.length} accepted studies · release ${data.release_date}`;
+      restore();render();$('load-status').textContent=`Historical v1 input version verified · ${data.studies.length} accepted studies · release ${data.release_date}`;
     } catch(error){$('load-status').textContent=`Comparison viewer unavailable: ${error.message}. Download the results catalog or use the archive links above.`;}
   }
   load();
