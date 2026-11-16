@@ -19,6 +19,10 @@
       "bytes": 21,
       "sha256": "67e51432031bd1b818146329776c59dcab962617ab50b3e5222b96844c8e2d6e"
     },
+    ".github/workflows/privacy.yml": {
+      "bytes": 956,
+      "sha256": "fd272dedc9e20c5092951afc6310c34ad5baec7e35a78c800b43dc85317e4594"
+    },
     ".gitignore": {
       "bytes": 19,
       "sha256": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793"
@@ -5905,7 +5909,7 @@
     },
     "legacy-publication-manifest.json": {
       "bytes": 66619,
-      "sha256": "8c2ca00a2639537d01a1080f7c112701f066aa8ff21ef29f71d90e9ed7ab3bfc"
+      "sha256": "312d8fa5a265eb1354743d5812b524fc631fe5133777b8e4e469b5404fe65165"
     },
     "legacy.html": {
       "bytes": 1971,
@@ -5918,6 +5922,10 @@
     "scripts/build_model_diagnostics.py": {
       "bytes": 9091,
       "sha256": "9994a66860ce5fa89281326d1e89f07ea95171ea63c1d163235abecf58ce2acc"
+    },
+    "scripts/check_privacy.py": {
+      "bytes": 10226,
+      "sha256": "03c5f4f58025b1f5f39a020d113df870a223504acb5445dcc1cf279fc88efe65"
     },
     "scripts/freeze_release.py": {
       "bytes": 2573,
@@ -5934,6 +5942,10 @@
     "styles.css": {
       "bytes": 8608,
       "sha256": "97c307771c30f8469338d96cd18b730c5c43a080f1e4efba7770d97c36d5e84a"
+    },
+    "tests/test_check_privacy.py": {
+      "bytes": 9026,
+      "sha256": "0ada61e6bf4eb93bb06a72904bb6d1faa8742813d8a2bea79d5f9135debd452f"
     },
     "tests/test_cohort_2000.py": {
       "bytes": 10078,
@@ -6014,5 +6026,5 @@
   ],
   "runs": 12,
   "schema_version": 1,
-  "total_bytes_before_manifest": 789825608
+  "total_bytes_before_manifest": 789845816
 }
