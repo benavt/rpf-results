@@ -46,11 +46,15 @@ def main():
         manifest["total_bytes_before_manifest"] = total
         manifest["model_score_cohort"]["catalog"]["sha256"] = files["current/catalog.json"]["sha256"]
         manifest["legacy_count_scope"] = "runs, run_ids, model_collections and model_evaluations describe the archived release"
-        catalog = json.loads((ROOT / "current/catalog.json").read_text())
-        manifest["current_release"] = dict(date="2026-11-09", input_version=catalog["peak_list_version"],
-                                           independent_models=catalog["independent_models"]["count"],
-                                           exact_state_ensembles=catalog["ensemble_panels"]["count"],
-                                           comparisons=catalog["configuration_comparisons"])
+        v1 = json.loads((ROOT / "current/catalog.json").read_text())
+        v3 = json.loads((ROOT / "current/v3/catalog.json").read_text())
+        manifest["current_release"] = dict(date=v3["release_date"], input_version=v3["peak_list_version"],
+                                           independent_models=v3["independent_models"]["count"],
+                                           catalog=dict(path="current/v3/catalog.json", **files["current/v3/catalog.json"]),
+                                           exact_state_ensembles=0)
+        manifest["historical_v1_release"] = dict(input_version=v1["peak_list_version"],
+                                           exact_state_ensembles=v1["ensemble_panels"]["count"],
+                                           comparisons=v1["configuration_comparisons"])
         path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2, sort_keys=True) + "\n")
     print(json.dumps(dict(status="verified" if args.verify else "frozen", files=len(files), bytes=total)))
 

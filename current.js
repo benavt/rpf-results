@@ -8,11 +8,15 @@
     'res32-47-plus78-99': 'Residues 32–47 and 78–99'
   };
   const scoreNames = {dp: 'DP', recall: 'Recall', precision: 'Precision'};
+  const params = new URLSearchParams(location.search);
+  const archivedModels = params.get('input') === 'v1';
+  const focused = params.get('cohort') === '2000';
+  const scopeMethods = new Set(['afsample3', 'bioemu2']);
   const state = {page: 0, sort: 'dp', ascending: false};
   const packs = new Map();
   const diagnosticPacks = new Map();
   let diagnosticIndex;
-  let catalog, modelIndex, panelIndex, viewer, loaded, activeURL, alignedURL, request = 0;
+  let catalog, v1, v3, modelIndex, archivedIndex, panelIndex, viewer, loaded, activeURL, alignedURL, request = 0;
 
   function esc(value) {
     return String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -57,8 +61,7 @@
     return packs.get(path);
   }
   async function verify(bytes, expected, label = 'Coordinate') {
-    const digest = await crypto.subtle.digest('SHA-256', bytes);
-    const actual = Array.from(new Uint8Array(digest), b => b.toString(16).padStart(2, '0')).join('');
+    const actual = await window.RpfChecksum(bytes);
     if (actual !== expected) throw new Error(`${label} checksum does not match the scored structure`);
     return bytes;
   }
@@ -116,15 +119,31 @@
   function title(item, ensemble) {
     return ensemble ? `${item.state} · ${item.selection.toUpperCase()} · repeat ${item.repeat}` : pretty(item.id);
   }
-  function showMembers(item) {
-    $('panel-members').innerHTML = item ? `<details><summary>50 members and independent scores</summary>
-      <p>Member links open each model’s independent score and exact protonated structure.</p>
+  async function showMembers(item, token) {
+    const container = $('panel-members');
+    container.replaceChildren();
+    if (!item) return;
+    if (!archivedIndex) {
+      archivedIndex = snapshot(v1.independent_models).then(rows => {
+        const index = new Map(rows.map(row => [row.id, row]));
+        if (index.size !== v1.independent_models.count) throw new Error('Historical model roster is incomplete');
+        return index;
+      }).catch(error => { archivedIndex = null; throw error; });
+    }
+    try {
+      const models = await archivedIndex;
+      if (token !== request) return;
+      container.innerHTML = `<details><summary>50 members and v1 independent scores</summary>
+      <p>Member links open the matching historical v1 score and exact protonated structure.</p>
       <div class="table-wrap"><table aria-label="Independent scores for ensemble members">
       <thead><tr><th scope="col">Member</th><th scope="col" class="numeric">DP</th><th scope="col" class="numeric">Recall</th><th scope="col" class="numeric">Precision</th></tr></thead>
       <tbody>${item.members.map((id, index) => {
-        const member = modelIndex.get(id);
-        return `<tr><td><a href="${esc(href('models',id))}">${index + 1}. ${esc(pretty(id))}</a></td>${scoreCells(member)}</tr>`;
-      }).join('')}</tbody></table></div></details>` : '';
+        const member = models.get(id);
+        return `<tr><td><a href="./?input=v1${esc(href('models',id))}">${index + 1}. ${esc(pretty(id))}</a></td>${scoreCells(member)}</tr>`;
+      }).join('')}</tbody></table></div></details>`;
+    } catch (error) {
+      if (token === request) container.textContent = 'Historical v1 member scores unavailable: ' + error.message;
+    }
   }
   async function showStructure(item, ensemble) {
     const key = item ? `${ensemble ? 'ensemble' : 'model'}:${item.id}` : '';
@@ -138,8 +157,8 @@
     if(alignedURL){URL.revokeObjectURL(alignedURL);alignedURL=null;}
     $('structure-title').textContent = item ? title(item, ensemble) : 'Structure';
     $('structure-detail').textContent = item ? (ensemble ?
-      `${ranges[item.residue_range]} · 50 protonated models · seed ${item.seed}` : item.method + ' · protonated scored coordinates') : '';
-    showMembers(ensemble && item);
+      `${ranges[item.residue_range]} · 50 protonated models · seed ${item.seed} · v1` : item.method + ' · protonated scored coordinates · ' + (archivedModels ? 'v1' : 'v3')) : '';
+    showMembers(ensemble && item, token);
     container.innerHTML = item ? '<p role="status">Loading verified coordinates…</p>' : '<p>Select a result to inspect its structure.</p>';
     if (!item) return;
     try {
@@ -154,14 +173,14 @@
       if(ensemble){original.href=url;original.download=item.id+'.scored.pdb';original.hidden=false;}
       const models = ensemble ? item.members.map((id, i) => ({id,index:i + 1,...item.member_scores[i]})) : [{id:item.id,index:1,...item}];
       viewer = window.RpfStructure.mount(container, {run:{
-        id:ensemble ? item.id : 'current-single-model',
+        id:ensemble ? item.id : `single-model-${archivedModels ? 'v1' : 'v3'}`,
         models,
         single_model:!ensemble,
         initial_display:ensemble ? 'ensemble' : 'single',
         alignment:ensemble ? window.RpfPresentation.selection(item.residue_range) : undefined,
         score_domains:ensemble ? undefined : catalog.score_domains,
-        initial_color:ensemble ? undefined : 'residue:legacy_rpf_heat',
-        residue_metrics:ensemble ? undefined : () => singleDiagnostics(item),
+        initial_color:ensemble || !archivedModels ? undefined : 'residue:legacy_rpf_heat',
+        residue_metrics:ensemble || !archivedModels ? undefined : () => singleDiagnostics(item),
         residue_metrics_url:ensemble ? asset(item.diagnostics.path).href : undefined
       }, model:models[0], coordinateText:new TextDecoder().decode(bytes),onCoordinates:presentation=>{
         if(token!==request || !ensemble)return;
@@ -190,7 +209,7 @@
   }
   function states() {
     const input = $('state-filter'), previous = input.value;
-    const available = [...new Set(catalog.ensembles.filter(p => p.residue_range === $('range-filter').value).map(p => p.state))].sort();
+    const available = [...new Set([...panelIndex.values()].filter(p => p.residue_range === $('range-filter').value).map(p => p.state))].sort();
     input.replaceChildren(new Option('All states', ''), ...available.map(s => new Option(s,s)));
     input.value = available.includes(previous) ? previous : '';
   }
@@ -213,7 +232,7 @@
       $('state-filter').value = '';
       $('selector-filter').value = '';
     }
-    const rows = (ensemble ? catalog.ensembles.filter(panelMatches) : catalog.models.filter(modelMatches)).sort(compare);
+    const rows = [...index.values()].filter(ensemble ? panelMatches : modelMatches).sort(compare);
     if (locate && selection && rows.includes(selection)) state.page = Math.floor(rows.indexOf(selection) / pageSize);
     const pages = Math.max(1, Math.ceil(rows.length / pageSize));
     state.page = Math.min(state.page, pages - 1);
@@ -233,8 +252,9 @@
       else $(id).removeAttribute('aria-current');
     }
     $('score-context').textContent = ensemble ?
-      'Native RPF ensemble scores (ASDP Model ave). The residue range defines state assignment. RPF uses the full construct and the current TR peak lists.' :
-      'Independent RPF scores for individual protonated structures using the current TR peak lists.';
+      `Historical native RPF ensemble scores (ASDP Model ave). Input: ${v1.peak_list_version}. The residue range defines state assignment; RPF uses the full construct. No v3 ensemble scores are available in this release.` :
+      archivedModels ? `Historical independent model scores and residue diagnostics · ${v1.peak_list_version}.` :
+      `Independent model scores · ${v3.peak_list_version}${focused ? ' · 1,000 AFSample3 and 1,000 BioEMU2 models' : ''}. Residue RPF coloring is available in the v1 archive only.`;
     $('result-count').textContent = `${count(rows.length)} / ${count(index.size)} ${ensemble ? 'ensembles' : 'models'}`;
     $('page-label').textContent = `Page ${state.page + 1} of ${pages}`;
     $('pagination').hidden = pages <= 1;
@@ -242,7 +262,7 @@
     $('next-page').disabled = state.page === pages - 1;
 
     const columns = {id: ensemble ? 'Ensemble' : 'Model', ...scoreNames};
-    $('result-table').innerHTML = rows.length ? `<table aria-label="${ensemble ? 'Current ensemble' : 'Current independent model'} RPF scores">
+    $('result-table').innerHTML = rows.length ? `<table aria-label="${ensemble ? 'Historical ensemble' : (archivedModels ? 'Historical' : 'Current') + ' independent model'} RPF scores">
       <thead><tr>${Object.entries(columns).map(([key, label]) => `<th scope="col"${key === 'id' ? '' : ' class="numeric"'}${key === state.sort ? ` aria-sort="${state.ascending ? 'ascending' : 'descending'}"` : ''}><button type="button" data-sort="${key}">${label}${key === state.sort ? (state.ascending ? ' ↑' : ' ↓') : ''}</button></th>`).join('')}</tr></thead>
       <tbody>${rows.slice(state.page * pageSize, (state.page + 1) * pageSize).map(row => `<tr><td><a href="${esc(href(current.view,row.id))}"${item === row ? ' aria-current="true"' : ''}>${esc(title(row,ensemble))}</a></td>${scoreCells(row)}</tr>`).join('')}</tbody></table>` : '<p class="empty-state">No results match these filters.</p>';
     $('browser-status').hidden = false;
@@ -265,18 +285,37 @@
   async function load() {
     if (!route()) return;
     try {
-      catalog = await (await response('current/catalog.json')).json();
+      [v1, v3] = await Promise.all(['current/catalog.json','current/v3/catalog.json'].map(async path => (await response(path)).json()));
+      if(v3.peak_list_version !== 'SR215-TR-2026-11-13-v3' || v3.archived_v1.input_version !== v1.peak_list_version) {
+        throw new Error('Input versions differ from the selected release');
+      }
+      catalog = archivedModels ? v1 : v3;
       const [models, ensembles] = await Promise.all([
-        snapshot(catalog.independent_models), snapshot(catalog.ensemble_panels)
+        snapshot(catalog.independent_models), snapshot(v1.ensemble_panels)
       ]);
-      catalog.models = models;
-      catalog.ensembles = ensembles;
-      modelIndex = new Map(models.map(row => [row.id, row]));
+      modelIndex = new Map(models.filter(row => !focused || scopeMethods.has(row.method)).map(row => [row.id, row]));
+      if (archivedModels) archivedIndex = Promise.resolve(new Map(models.map(row => [row.id,row])));
       panelIndex = new Map(ensembles.map(row => [row.id, row]));
-      if (modelIndex.size !== catalog.independent_models.count || panelIndex.size !== catalog.ensemble_panels.count) {
+      if (models.length !== catalog.independent_models.count || modelIndex.size !== (focused ? 2000 : catalog.independent_models.count) ||
+          panelIndex.size !== v1.ensemble_panels.count) {
         throw new Error('Snapshot inventory is incomplete');
       }
-      $('method-filter').append(...[...new Set(models.map(model => model.method))].sort().map(m => new Option(m,m)));
+      $('method-filter').append(...[...new Set([...modelIndex.values()].map(model => model.method))].sort().map(m => new Option(m,m)));
+      if (archivedModels) {
+        $('input-badge').textContent = 'Archived independent models · ' + v1.peak_list_version;
+        $('version-archive').textContent = 'Return to current v3 model scores';
+        $('version-archive').href = './#models';
+        $('current-score-csv').textContent = 'Historical v1 model scores CSV';
+        $('current-score-csv').href = v1.independent_models.csv_path;
+        $('current-score-pdf').textContent = 'Historical v1 score distributions (PDF)';
+        $('current-score-pdf').href = 'current/SR215_AIS_score_comparison_12104.pdf';
+        $('model-overview').textContent = 'Archived v1 model scores and matching residue diagnostics. The summary table below reports the current v3 release.';
+      } else if (focused) {
+        $('input-badge').textContent = 'Current v3 · AFSample3 and BioEMU2 · 2,000 models';
+        $('model-overview').textContent = 'Focused independent-model scores: 1,000 AFSample3 and 1,000 BioEMU2 models. The summary table below covers all 12 methods.';
+        $('current-score-csv').href = 'current/v3/cohort-2000-models.csv';
+        $('current-score-csv').textContent = '2,000 focused model scores CSV';
+      }
       $('range-filter').replaceChildren(...Object.entries(ranges).map(([key,label]) => new Option(label,key)));
       states();
       for (const id of ['model-search','min-dp']) $(id).addEventListener('input', filtered);
