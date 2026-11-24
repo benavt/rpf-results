@@ -1,4 +1,4 @@
-"""Build the public v3 independent model release from the accepted Mimas handoff."""
+"""Build the public v3 independent model release from the accepted HPC handoff."""
 import argparse
 import csv
 import hashlib

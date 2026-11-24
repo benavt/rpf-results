@@ -4,7 +4,7 @@
     "catalog": {
       "bytes": 2652,
       "path": "current/v3/catalog.json",
-      "sha256": "dcd7f33354f80b5d0603f817bde5014e608ce392e311ef9a4ce513dbdef7ffef"
+      "sha256": "99b7376315878432e210c44ab2b8d659d9b395505816ef7c22a220bd07449cfd"
     },
     "date": "2026-11-16",
     "exact_state_ensembles": 0,
@@ -33,8 +33,8 @@
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     "README.md": {
-      "bytes": 6791,
-      "sha256": "a40e818df94464dd0933da5aa7d186ac90804500fba288ede3ff47b323eb4732"
+      "bytes": 6789,
+      "sha256": "c509e463994733e121fcba8e19314bb1fe93955e53e6dce044afa877c6d95f44"
     },
     "app.js": {
       "bytes": 16832,
@@ -1317,12 +1317,12 @@
       "sha256": "a90746f1d8947f7997044cfce2d8eb2a38e21626021b3e0c3fd09511f4d88386"
     },
     "current/SR215_historical_sampling_benchmark_multiseed.pdf": {
-      "bytes": 15059,
-      "sha256": "21f26276fcd6a5cf36f37809f89e5010751e3f0fc247e74fa26fd5b759da57e1"
+      "bytes": 12319,
+      "sha256": "1d0034380aabb662bb377daca3e1ff09cc38ad02aea4eb5add46f979c28faaf7"
     },
     "current/SR215_no_AFCluster_clustering_and_sampling.pdf": {
-      "bytes": 8283,
-      "sha256": "92b2c6dbf2c7aa4dbea4a3e5426cea6c26b7d3e047d4e3b42232b8ee1c7d3f73"
+      "bytes": 6823,
+      "sha256": "91f891b6f8e94629d8f076d6049813d7d357d6845c47023317a0b831615b77fa"
     },
     "current/catalog.json": {
       "bytes": 3644,
@@ -5805,12 +5805,12 @@
       "sha256": "dd7a0d1c4be0b8283e05952eba3da04482a77cccf21d3cbb8f904ec3ba4147d6"
     },
     "current/v3/SR215_AIS_score_comparison_12104_v3.pdf": {
-      "bytes": 1185356,
-      "sha256": "fc7f8c7a40661dc9539edd24e5060e004c0761ed60d492176558383a60e24aac"
+      "bytes": 957221,
+      "sha256": "d447c829e6e24135c81efc5b3bf2e7183a5dfba58f48b6991e8ed2ff914ae2fc"
     },
     "current/v3/catalog.json": {
       "bytes": 2652,
-      "sha256": "dcd7f33354f80b5d0603f817bde5014e608ce392e311ef9a4ce513dbdef7ffef"
+      "sha256": "99b7376315878432e210c44ab2b8d659d9b395505816ef7c22a220bd07449cfd"
     },
     "current/v3/cohort-2000-models.csv": {
       "bytes": 1251278,
@@ -5953,8 +5953,8 @@
       "sha256": "9994a66860ce5fa89281326d1e89f07ea95171ea63c1d163235abecf58ce2acc"
     },
     "scripts/build_v3_scores.py": {
-      "bytes": 7340,
-      "sha256": "4e9ceedb3140a42a2bb377bb8395d75d4bc415fd8dd993708ebb03f2fab3fa5c"
+      "bytes": 7338,
+      "sha256": "646b806c608baef8de2b576b5b5da3b612cf6d4f0081dbc19fe475c960a3f55a"
     },
     "scripts/check_pr_text.py": {
       "bytes": 2206,
@@ -6087,5 +6087,5 @@
   ],
   "runs": 12,
   "schema_version": 1,
-  "total_bytes_before_manifest": 805265917
+  "total_bytes_before_manifest": 805033578
 }
