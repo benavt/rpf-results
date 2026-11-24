@@ -1,22 +1,27 @@
 # SR215 RPF results
 
-The default release uses the designated `SR215-TR-2026-11-06-v1` peak lists and
-`tr-original-control`. `legacy.html` preserves the historical ensembles and all
-their original payloads and permalinks.
+The default independent-model release uses `SR215-TR-2026-11-13-v3` and
+`user-v3-exact`. All 12,104 scores were accepted in the full-cohort Mimas run
+documented in [RPF PR #21](https://github.com/benavt/RPF/pull/21). The scored
+coordinate bytes, MolProbity and ProteinEBM annotations were preserved.
 
-- `index.html`: 12,104 independent scored structures and 48 exact native-scored
-  state ensembles, with the existing structure and residue-color controls.
-- `comparisons.html`: nine accepted studies, including 382 native ensemble
-  study rows and 1,824 separately labeled member/occupancy summaries.
-- `current/catalog.json`: input identities, coordinate hashes and index hashes.
+- `index.html`: v3 independent scores, sortable model browser, CSV and PDF.
+  `?cohort=2000#models` limits the browser to AFSample3 and BioEMU2.
+- `?input=v1#models`: archived v1 independent scores and matched residue coloring.
+  `#ensembles` retains the 48 exact native v1 ensembles and original deep links.
+- `comparisons.html`: nine historical v1 studies, including 382 native ensemble
+  rows and 1,824 separately labeled member/occupancy summaries.
+- `current/v3/catalog.json`: accepted v3 identities and model, CSV and PDF hashes.
+  `current/catalog.json` is the unchanged v1 catalog for existing consumers.
 - `current/comparisons.json`: public score schema, ordered memberships,
   accepted source-table hashes, study snapshots and material qualifications.
 
 Study rows include repeated panels across studies. Cohorts, masks, state rules,
 clustering priors, selectors and seeds remain explicit. Native ensemble scores,
 mean member scores and visit-weighted summaries must not be pooled as one metric.
-All 12,104 independent models include residue diagnostics from their own saved
-native QP report, bound to the scored PDB hash. The single-model viewer starts
+The archived v1 single-model viewer uses each model's saved native QP report,
+bound to its scored PDB hash. No v3 residue diagnostics or native ensemble
+scores are claimed in this release. The archived viewer starts
 with the legacy RPF heat index and also offers violation counts, short
 violations, and shortest unsupported distance. These are residue precision
 diagnostics; no residue-wise Recall, Precision fraction, or DP is inferred.
@@ -25,7 +30,14 @@ scored ensemble coordinates and ensemble residue diagnostics bundled here; other
 native comparisons link all 50 saved members to their independent structures. All 382 native comparison rows can also assemble
 and display their verified selected members as an aligned multi-model PDB.
 
-Rebuild comparison data from an existing RPF evidence collection:
+Rebuild the v3 score assets from the accepted handoff and exact input manifest:
+
+```sh
+python3 scripts/build_v3_scores.py --handoff /path/to/accepted-handoff \
+  --input-spec /path/to/exact-input-manifest.json --pdf /path/to/v3-report.pdf
+```
+
+Rebuild archived comparison data from an existing RPF evidence collection:
 
 ```sh
 python3 scripts/build_comparisons.py --source-root /path/to/RPF
@@ -52,8 +64,9 @@ packs without preparing coordinates or running scientific scoring.
 ## Focused two-method cohort
 
 `cohort-2000.html` reports exactly 1,000 AFSample3 and 1,000 BioEMU2 models.
-It includes current independent-model RPF scores, four clustering residue
-subsets, eight accepted MCMC50/DISCO50 native ensemble scores, and 31 directional
+It summarizes v3 independent-model results and links to the exact focused CSV
+and model browser. The archived v1 study retains four clustering residue
+subsets, eight MCMC50/DISCO50 native ensemble scores, and 31 directional
 Double Recall comparisons. `current/cohort-2000/report.json` pins the accepted
 source hashes and complete summary; CSV downloads expose individual scores,
 ordered memberships, native panel scores and all 99 representative TM triples.

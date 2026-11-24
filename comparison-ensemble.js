@@ -8,7 +8,7 @@
     return new URL(path,document.baseURI);
   }
   async function verify(bytes, expected) {
-    const hash=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',bytes)),v=>v.toString(16).padStart(2,'0')).join('');
+    const hash=await window.RpfChecksum(bytes);
     if(hash!==expected)throw Error('Saved member checksum differs.');return bytes;
   }
   async function response(path) { const r=await fetch(asset(path));if(!r.ok)throw Error('Saved coordinates unavailable.');return r; }
