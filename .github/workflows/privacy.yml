@@ -1,0 +1,33 @@
+name: Privacy
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  privacy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          submodules: false
+          lfs: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: sudo apt-get update -qq && sudo apt-get install -y poppler-utils
+      - name: Scan tracked files
+        run: python scripts/check_privacy.py
+      - name: Scan the published site (Pages serves the repository root of main)
+        if: always()
+        run: |
+          site="$RUNNER_TEMP/site"
+          mkdir -p "$site"
+          rsync -a --exclude .git --exclude .github ./ "$site/"
+          python scripts/check_privacy.py --dir "$site"
+      - name: Checker unit tests
+        if: always()
+        run: python -m unittest tests.test_check_privacy -v

@@ -1,7 +1,7 @@
 # SR215 RPF results
 
 The default independent-model release uses `SR215-TR-2026-11-13-v3` and
-`user-v3-exact`. All 12,104 scores were accepted in the full-cohort Mimas run
+`user-v3-exact`. All 12,104 scores were accepted in the full-cohort HPC run
 documented in [RPF PR #21](https://github.com/benavt/RPF/pull/21). The scored
 coordinate bytes, MolProbity and ProteinEBM annotations were preserved.
 
